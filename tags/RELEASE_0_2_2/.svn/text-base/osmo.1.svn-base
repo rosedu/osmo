@@ -1,0 +1,69 @@
+.TH "Osmo" "1" "0.2.2" "Tomasz Maka <pasp@users.sf.net>" ""
+.SH "NAME"
+.LP 
+Osmo \- a handy personal organizer
+.SH "SYNTAX"
+.LP 
+osmo [\fIoption\fP]
+.SH "DESCRIPTION"
+.LP 
+Osmo is a handy personal organizer, which includes calendar, tasks manager and address book modules. It was designed to be a small, easy to use and good looking PIM tool to help to manage personal information.
+.SH "OPTIONS"
+.LP 
+.TP 
+\fB\-c, \-\-calendar\fR
+Show small calendar window
+.TP 
+\fB\-e, \-\-check\fR
+Check for events since last run
+.TP 
+\fB\-d, \-\-days\fR
+Number of days to check forward for events (default: 0)
+.TP 
+\fB\-s, \-\-config=PATH\fR
+Set absolute path for settings and data files
+.TP 
+\fB\-?, \-\-help\fR
+Output help information and exit.
+.SH "FILES"
+.LP 
+\fI$HOME/.osmo/calendar_notes.xml\fP \- calendar groups and notes
+.br 
+\fI$HOME/.osmo/config.xml\fP \- configuration
+.br 
+\fI$HOME/.osmo/contacts_records.xml\fP \- contacts data
+.br 
+\fI$HOME/.osmo/ical_files.xml\fP \- active iCalendar files
+.br 
+\fI$HOME/.osmo/notes_entries.xml\fP \- encrypted notes list
+.br 
+\fI$HOME/.osmo/notes/*.osm\fP \- encrypted notes data files
+.br 
+\fI$HOME/.osmo/tasks_entries.xml\fP \- tasks data
+.SH "EXAMPLES"
+.LP 
+To run this program the standard way type:
+.LP 
+osmo
+.LP 
+To run small calendar type:
+.LP 
+osmo \-c
+.LP 
+To check events for two days since today type:
+.LP 
+osmo \-e \-d 2
+.SH "HOMEPAGE"
+.LP 
+\fIhttp://clay.ll.pl/osmo\fP
+.SH "AUTHORS"
+.LP 
+Tomasz Maka <pasp@users.sourceforge.net> (programming)
+.br 
+Maja Kocon <ironya@ll.pl> (graphics)
+.SH "CONTRIBUTORS"
+.LP 
+Piotr Maka <silloz@users.sourceforge.net> (Date calculator, reminder)
+.br 
+Markus Dahms <mad@automagically.de> (LibSyncML support)
+

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/osmo-pim/!svn/ver/712/trunk/data/sounds
+END
+alarm.wav
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/osmo-pim/!svn/ver/712/trunk/data/sounds/alarm.wav
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/osmo-pim/!svn/ver/712/trunk/data/sounds/Makefile.am
+END

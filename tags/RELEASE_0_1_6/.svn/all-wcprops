@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6
+END
+osmo.png
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/osmo.png
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/configure.ac
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/AUTHORS
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/ChangeLog
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/COPYING
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/Makefile.am
+END
+autogen.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/autogen.sh
+END
+osmo.svg
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/osmo.svg
+END
+TRANSLATORS
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/TRANSLATORS
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/README
+END

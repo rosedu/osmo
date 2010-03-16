@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/osmo-pim/!svn/ver/690/tags/RELEASE_0_2_6/data/icons/16x16
+END
+osmo.png
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/osmo-pim/!svn/ver/690/tags/RELEASE_0_2_6/data/icons/16x16/osmo.png
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/osmo-pim/!svn/ver/690/tags/RELEASE_0_2_6/data/icons/16x16/Makefile.am
+END

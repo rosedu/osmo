@@ -1,0 +1,74 @@
+
+/*
+ * Osmo - a handy personal organizer
+ *
+ * Copyright (C) 2007 Tomasz Maka <pasp@users.sourceforge.net>
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+ */
+
+#ifndef _STOCK_ICONS_H
+#define _STOCK_ICONS_H
+
+#define     TRANSLATION_DOMAIN                  "osmo"
+
+#define     OSMO_STOCK_BUTTON_ADD               "osmo-button-add"
+#define     OSMO_STOCK_BUTTON_CLEAR             "osmo-button-clear"
+#define     OSMO_STOCK_BUTTON_CLOSE             "osmo-button-close"
+#define     OSMO_STOCK_BUTTON_CANCEL            "osmo-button-cancel"
+#define     OSMO_STOCK_BUTTON_JUMPTO            "osmo-button-jumpto"
+#define     OSMO_STOCK_BUTTON_CONTACTS_EXPORT   "osmo-button-contacts-export"
+#define     OSMO_STOCK_BUTTON_INSERT_TIMELINE   "osmo-button-insert_timeline"
+#define     OSMO_STOCK_BUTTON_NEXT_YEAR         "osmo-button-next_year"
+#define     OSMO_STOCK_BUTTON_NO                "osmo-button-no"
+#define     OSMO_STOCK_BUTTON_OK                "osmo-button-ok"
+#define     OSMO_STOCK_BUTTON_OPEN              "osmo-button-open"
+#define     OSMO_STOCK_BUTTON_PREV_YEAR         "osmo-button-prev_year"
+#define     OSMO_STOCK_BUTTON_REMOVE            "osmo-button-remove"
+#define     OSMO_STOCK_BUTTON_SELECT_DATE       "osmo-button-select_date"
+#define     OSMO_STOCK_BUTTON_SELECT_FONT       "osmo-button-select_font"
+#define     OSMO_STOCK_BUTTON_TODAY             "osmo-button-today"
+#define     OSMO_STOCK_BUTTON_YES               "osmo-button-yes"
+
+#define     OSMO_STOCK_ABOUT                    "osmo-about"
+#define     OSMO_STOCK_CALENDAR                 "osmo-calendar"
+#define     OSMO_STOCK_CONTACTS_ADD             "osmo-contacts-add"
+#define     OSMO_STOCK_CONTACTS_EDIT            "osmo-contacts-edit"
+#define     OSMO_STOCK_CONTACTS_EXPORT          "osmo-contacts-export"
+#define     OSMO_STOCK_CONTACTS_REMOVE          "osmo-contacts-remove"
+#define     OSMO_STOCK_CONTACTS                 "osmo-contacts"
+#define     OSMO_STOCK_EDIT_NOTE                "osmo-edit_note"
+#define     OSMO_STOCK_FULLYEAR                 "osmo-fullyear"
+#define     OSMO_STOCK_HELP                     "osmo-help"
+#define     OSMO_STOCK_JUMPTO                   "osmo-jumpto"
+#define     OSMO_STOCK_LICENSE                  "osmo-license"
+#define     OSMO_STOCK_NEXT_DAY                 "osmo-next-day"
+#define     OSMO_STOCK_NEXT_MONTH               "osmo-next-month"
+#define     OSMO_STOCK_NEXT_YEAR                "osmo-next-year"
+#define     OSMO_STOCK_PREFERENCES              "osmo-preferences"
+#define     OSMO_STOCK_PREV_DAY                 "osmo-prev-day"
+#define     OSMO_STOCK_PREV_MONTH               "osmo-prev-month"
+#define     OSMO_STOCK_PREV_YEAR                "osmo-prev-year"
+#define     OSMO_STOCK_TASKS_ADD                "osmo-tasks-add"
+#define     OSMO_STOCK_TASKS_EDIT               "osmo-tasks-edit"
+#define     OSMO_STOCK_TASKS_REMOVE             "osmo-tasks-remove"
+#define     OSMO_STOCK_TASKS                    "osmo-tasks"
+#define     OSMO_STOCK_TASKS                    "osmo-tasks"
+#define     OSMO_STOCK_TODAY                    "osmo-today"
+
+void    osmo_register_stock_icons   (void);
+
+#endif /* _STOCK_ICONS_H */
+

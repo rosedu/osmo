@@ -1,0 +1,1643 @@
+# German translation of osmo.
+# This file is distributed under the same license as the osmo package.
+# Markus Dahms <mad@automagically.de>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: osmo 0.1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-12-03 20:27+0100\n"
+"PO-Revision-Date: 2007-11-15 11:34+0100\n"
+"Last-Translator: Markus Dahms <mad@automagically.de>\n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../src/calendar.c:251
+msgid "Finished"
+msgstr "Beendet"
+
+#: ../src/calendar.c:310
+msgid "was born"
+msgstr "wurde geboren"
+
+#: ../src/calendar.c:313
+msgid "year old"
+msgid_plural "years old"
+msgstr[0] "Jahr alt"
+msgstr[1] "Jahre alt"
+
+#: ../src/calendar.c:353
+msgid "Day tasks"
+msgstr "Tagesaufgaben"
+
+#: ../src/calendar.c:364 ../src/stock_icons.c:63
+msgid "Birthday"
+msgstr "Geburtstag"
+
+#: ../src/calendar.c:494 ../src/calendar_calc.c:672 ../src/calendar_calc.c:837
+#: ../src/calendar_calc.c:1064
+msgid "Current time"
+msgstr "Aktuelle Zeit"
+
+#: ../src/calendar.c:504
+msgid "Day number"
+msgstr "Tag im Jahr"
+
+#: ../src/calendar.c:513
+msgid "Week number"
+msgstr "Kalenderwoche"
+
+#: ../src/calendar.c:522
+msgid "Marked days"
+msgstr "Markierte Tage"
+
+#: ../src/calendar.c:531
+msgid "Weekend days"
+msgstr "Wochenende"
+
+#: ../src/calendar.c:540
+msgid "Moon phase"
+msgstr "Mondphase"
+
+#: ../src/calendar.c:615
+msgid "day till end of year"
+msgid_plural "days till end of year"
+msgstr[0] "Tag bis zum Jahresende"
+msgstr[1] "Tage bis zum Jahresende"
+
+#: ../src/calendar.c:617
+msgid "the last day of the year"
+msgstr ""
+
+#: ../src/calendar.c:643
+msgid "Day notes"
+msgstr "Tagesnotizen"
+
+#: ../src/calendar.c:800
+msgid "Selected day note will be removed."
+msgstr "Die ausgewählte Tagesnotiz wird entfernt."
+
+#: ../src/calendar.c:800
+msgid "Continue?"
+msgstr "Fortsetzen?"
+
+#: ../src/calendar.c:1289 ../src/calendar_fullyear.c:294
+#: ../src/stock_icons.c:55 ../src/stock_icons.c:88
+msgid "Previous year"
+msgstr "Vorheriges Jahr"
+
+#: ../src/calendar.c:1290 ../src/stock_icons.c:87
+msgid "Previous month"
+msgstr "Vorheriger Monat"
+
+#: ../src/calendar.c:1291 ../src/stock_icons.c:86
+msgid "Previous day"
+msgstr "Vorheriger Tag"
+
+#: ../src/calendar.c:1292 ../src/stock_icons.c:60 ../src/stock_icons.c:93
+#: ../src/tasks_items.c:245
+msgid "Today"
+msgstr "Heute"
+
+#: ../src/calendar.c:1293 ../src/stock_icons.c:82
+msgid "Next day"
+msgstr "Nächster Tag"
+
+#: ../src/calendar.c:1294 ../src/stock_icons.c:83
+msgid "Next month"
+msgstr "Nächster Monat"
+
+#: ../src/calendar.c:1295 ../src/calendar_fullyear.c:318
+#: ../src/stock_icons.c:51 ../src/stock_icons.c:84
+msgid "Next year"
+msgstr "Nächstes Jahr"
+
+#: ../src/calendar.c:1296 ../src/calendar_jumpto.c:197 ../src/stock_icons.c:80
+msgid "Jump to date"
+msgstr "Zu einem Datum springen"
+
+#: ../src/calendar.c:1297 ../src/calendar_fullyear.c:251
+msgid "Full-year calendar"
+msgstr "Jahreskalender"
+
+#: ../src/calendar.c:1298 ../src/calendar_calc.c:509
+msgid "Date calculator"
+msgstr "Datumsrechner"
+
+#: ../src/calendar.c:1302
+msgid "Toggle day note panel"
+msgstr "Notizanzeige an-/ausschalten"
+
+#: ../src/calendar.c:1311 ../src/gui.c:911 ../src/options_gui.c:146
+#: ../src/options_gui_calendar.c:1112 ../src/stock_icons.c:68
+msgid "Calendar"
+msgstr "Kalender"
+
+#: ../src/calendar.c:1430
+#, fuzzy
+msgid "Previous and next month"
+msgstr "Vorheriger Monat"
+
+#: ../src/calendar.c:1505
+msgid "Notes"
+msgstr "Notizen"
+
+#: ../src/calendar.c:1517
+msgid "Close note panel"
+msgstr "Notizanzeige schließen"
+
+#: ../src/calendar.c:1530 ../src/calendar_timeline.c:161
+msgid "Insert timeline"
+msgstr "Zeitlinie einfügen"
+
+#: ../src/calendar.c:1539
+msgid "Clear text"
+msgstr "Text löschen"
+
+#: ../src/calendar.c:1548
+msgid "Select day color"
+msgstr "Farbe des Tages auswählen"
+
+#: ../src/calendar.c:1589
+msgid "Info"
+msgstr "Info"
+
+#: ../src/calendar.c:1767 ../src/stock_icons.c:57
+msgid "Select color"
+msgstr "Farbe auswählen"
+
+#: ../src/calendar.c:1825 ../src/contacts_export.c:761
+#: ../src/contacts_import.c:430 ../src/contacts_import.c:437
+#: ../src/contacts_import.c:444 ../src/contacts_import.c:750
+#: ../src/contacts_items.c:1161 ../src/contacts_items.c:1162
+#: ../src/options_gui_calendar.c:784 ../src/tasks.c:69
+msgid "None"
+msgstr "Nichts"
+
+#: ../src/calendar_calc.c:274
+msgid "Start date is after the end date!"
+msgstr "Beginn ist nach dem Ende!"
+
+#: ../src/calendar_calc.c:286
+msgid "year"
+msgid_plural "years"
+msgstr[0] "Jahr"
+msgstr[1] "Jahre"
+
+#: ../src/calendar_calc.c:287
+msgid "month"
+msgid_plural "months"
+msgstr[0] "Monat"
+msgstr[1] "Monate"
+
+#: ../src/calendar_calc.c:288 ../src/calendar_calc.c:302
+msgid "day"
+msgid_plural "days"
+msgstr[0] "Tag"
+msgstr[1] "Tage"
+
+#: ../src/calendar_calc.c:292 ../src/calendar_calc.c:303
+#: ../src/calendar_calc.c:316
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "Stunde"
+msgstr[1] "Stunden"
+
+#: ../src/calendar_calc.c:293 ../src/calendar_calc.c:304
+#: ../src/calendar_calc.c:315
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "Minute"
+msgstr[1] "Minuten"
+
+#: ../src/calendar_calc.c:294 ../src/calendar_calc.c:305
+#: ../src/calendar_calc.c:314
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "Sekunde"
+msgstr[1] "Sekunden"
+
+#: ../src/calendar_calc.c:297 ../src/calendar_calc.c:899
+msgid "Alternative time units"
+msgstr "Alternative Zeiteinheiten"
+
+#: ../src/calendar_calc.c:301
+msgid "or"
+msgstr "oder"
+
+#: ../src/calendar_calc.c:315 ../src/calendar_calc.c:316
+#: ../src/calendar_calc.c:317
+msgid "rounded down"
+msgstr "abgerundet"
+
+#: ../src/calendar_calc.c:317
+msgid "week"
+msgid_plural "weeks"
+msgstr[0] "Woche"
+msgstr[1] "Wochen"
+
+#: ../src/calendar_calc.c:445
+msgid "This calculator only supports dates after year 1."
+msgstr "Dieser Rechner unterstützt nur Datumsangaben nach dem Jahr 1."
+
+#: ../src/calendar_calc.c:561 ../src/calendar_calc.c:726
+#: ../src/calendar_calc.c:953 ../src/calendar_fullyear.c:270
+#: ../src/calendar_jumpto.c:245
+msgid "Year"
+msgstr "Jahr"
+
+#: ../src/calendar_calc.c:568 ../src/calendar_calc.c:733
+#: ../src/calendar_calc.c:960 ../src/calendar_jumpto.c:231
+msgid "Month"
+msgstr "Monat"
+
+#: ../src/calendar_calc.c:575 ../src/calendar_calc.c:740
+#: ../src/calendar_calc.c:967 ../src/calendar_jumpto.c:217
+msgid "Day"
+msgstr "Tag"
+
+#: ../src/calendar_calc.c:607 ../src/calendar_calc.c:772
+#: ../src/calendar_calc.c:999
+msgid "Current date"
+msgstr "Aktuelles Datum"
+
+#: ../src/calendar_calc.c:612 ../src/calendar_calc.c:777
+#: ../src/calendar_calc.c:1004
+msgid "Set current date"
+msgstr "Aktuelles Datum setzen"
+
+#: ../src/calendar_calc.c:626 ../src/calendar_calc.c:791
+#: ../src/calendar_calc.c:1018
+msgid "Hour"
+msgstr "Stunde"
+
+#: ../src/calendar_calc.c:633 ../src/calendar_calc.c:798
+#: ../src/calendar_calc.c:1025
+msgid "Minute"
+msgstr "Minute"
+
+#: ../src/calendar_calc.c:640 ../src/calendar_calc.c:805
+#: ../src/calendar_calc.c:1032
+msgid "Second"
+msgstr "Sekunde"
+
+#: ../src/calendar_calc.c:677 ../src/calendar_calc.c:842
+#: ../src/calendar_calc.c:1069
+msgid "Set current time"
+msgstr "Aktuelle Zeit setzen"
+
+#: ../src/calendar_calc.c:690 ../src/calendar_calc.c:855
+#: ../src/calendar_calc.c:1082
+msgid "Reset time"
+msgstr "Zeit zurücksetzen"
+
+#: ../src/calendar_calc.c:693
+msgid "Start date and time"
+msgstr "Anfangsdatum und -zeit"
+
+#: ../src/calendar_calc.c:858
+msgid "End date and time"
+msgstr "Enddatum und -zeit"
+
+#: ../src/calendar_calc.c:912 ../src/calendar_calc.c:1279
+msgid "Result"
+msgstr "Ergebnis"
+
+#: ../src/calendar_calc.c:918
+msgid "Duration between two dates"
+msgstr "Dauer zwischen den Datumsangaben"
+
+#: ../src/calendar_calc.c:1085
+msgid "Date and time to add or substract from"
+msgstr "Datum und Zeit zum Addieren oder Subtrahieren"
+
+#: ../src/calendar_calc.c:1113
+msgid "Years"
+msgstr "Jahre"
+
+#: ../src/calendar_calc.c:1120
+msgid "Months"
+msgstr "Monate"
+
+#: ../src/calendar_calc.c:1148
+msgid "Days"
+msgstr "Tage"
+
+#: ../src/calendar_calc.c:1155
+msgid "Weeks"
+msgstr "Wochen"
+
+#: ../src/calendar_calc.c:1176
+msgid "Hours"
+msgstr "Stunden"
+
+#: ../src/calendar_calc.c:1183
+msgid "Minutes"
+msgstr "Minuten"
+
+#: ../src/calendar_calc.c:1190
+msgid "Seconds"
+msgstr "Sekunden"
+
+#: ../src/calendar_calc.c:1222
+msgid "Operation"
+msgstr "Operation"
+
+#: ../src/calendar_calc.c:1227
+msgid "add"
+msgstr "Addieren"
+
+#: ../src/calendar_calc.c:1233
+msgid "substract"
+msgstr "Subtrahieren"
+
+#: ../src/calendar_calc.c:1249
+msgid "Reset fields"
+msgstr "Felder zurücksetzen"
+
+#: ../src/calendar_calc.c:1252
+msgid "Time to add or substract"
+msgstr "Zeit zum Addieren oder Subtrahieren"
+
+#: ../src/calendar_calc.c:1285
+msgid "Add to or subtract from a date"
+msgstr "Von einem Datum subtrahieren oder zu einem Datum addieren"
+
+#: ../src/calendar_fullyear.c:306
+msgid "Current year"
+msgstr "Aktuelles Jahr"
+
+#: ../src/calendar_timeline.c:180
+msgid "Timeline"
+msgstr "Zeitlinie"
+
+#: ../src/calendar_timeline.c:199
+msgid "From (hour)"
+msgstr "Von (Stunde)"
+
+#: ../src/calendar_timeline.c:215
+msgid "Step (minutes)"
+msgstr "Schritt (Minute)"
+
+#: ../src/calendar_timeline.c:231
+msgid "To (hour)"
+msgstr "Nach (Stunde)"
+
+#: ../src/contacts_birthdays.c:109
+#, fuzzy
+msgid "No birthdays defined"
+msgstr "Geburtstag"
+
+#: ../src/contacts_birthdays.c:114
+#, fuzzy
+msgid "Birthdays list"
+msgstr "Geburtstag"
+
+#: ../src/contacts_birthdays.c:148 ../src/options_gui_calendar.c:393
+msgid "Name"
+msgstr "Name"
+
+#: ../src/contacts_birthdays.c:154
+msgid "Days to birthday"
+msgstr ""
+
+#: ../src/contacts_birthdays.c:161
+msgid "Age"
+msgstr ""
+
+#: ../src/contacts.c:735 ../src/contacts_items.c:610
+#: ../src/options_gui_contacts.c:655 ../src/options_gui_contacts.c:657
+#: ../src/options_gui_contacts.c:659 ../src/options_gui_contacts.c:661
+#: ../src/options_gui_contacts.c:663 ../src/options_gui_contacts.c:665
+msgid "Group"
+msgstr "Gruppe"
+
+#: ../src/contacts.c:735
+msgid "First name"
+msgstr "Vorname"
+
+#: ../src/contacts.c:735
+msgid "Second name"
+msgstr "Zweiter Vorname"
+
+#: ../src/contacts.c:736
+msgid "Last name"
+msgstr "Nachname"
+
+#: ../src/contacts.c:737
+msgid "Nickname"
+msgstr "Spitzname"
+
+#: ../src/contacts.c:737
+msgid "Birthday date"
+msgstr "Geburtstag"
+
+#: ../src/contacts.c:737
+msgid "Name day date"
+msgstr "Namenstag"
+
+#: ../src/contacts.c:740
+msgid "Home address"
+msgstr "Adresse (privat)"
+
+#: ../src/contacts.c:740
+msgid "Home postcode"
+msgstr "Postleitzahl (privat)"
+
+#: ../src/contacts.c:740
+msgid "Home city"
+msgstr "Stadt (privat)"
+
+#: ../src/contacts.c:741
+msgid "Home state"
+msgstr "Bundesland (privat)"
+
+#: ../src/contacts.c:741
+msgid "Home country"
+msgstr "Land (privat)"
+
+#: ../src/contacts.c:744
+msgid "Organization"
+msgstr "Organisation"
+
+#: ../src/contacts.c:744
+msgid "Department"
+msgstr "Abteilung"
+
+#: ../src/contacts.c:747
+msgid "Work address"
+msgstr "Adresse (geschäftlich)"
+
+#: ../src/contacts.c:747
+msgid "Work postcode"
+msgstr "Postleitzahl (geschäftlich)"
+
+#: ../src/contacts.c:747
+msgid "Work city"
+msgstr "Stadt (geschäftlich)"
+
+#: ../src/contacts.c:748
+msgid "Work state"
+msgstr "Bundesland (geschäftlich)"
+
+#: ../src/contacts.c:748
+msgid "Work country"
+msgstr "Land (geschäftlich)"
+
+#: ../src/contacts.c:751
+msgid "Fax"
+msgstr "Fax"
+
+#: ../src/contacts.c:754
+msgid "Home phone"
+msgstr "Telefon (privat)"
+
+#: ../src/contacts.c:754
+msgid "Home phone 2"
+msgstr "2. Telefon (privat)"
+
+#: ../src/contacts.c:755
+msgid "Home phone 3"
+msgstr "3. Telefon (privat)"
+
+#: ../src/contacts.c:755
+msgid "Home phone 4"
+msgstr "4. Telefon (privat)"
+
+#: ../src/contacts.c:756
+msgid "Work phone"
+msgstr "Telefon (geschäftlich)"
+
+#: ../src/contacts.c:756
+msgid "Work phone 2"
+msgstr "2. Telefon (geschäftlich)"
+
+#: ../src/contacts.c:757
+msgid "Work phone 3"
+msgstr "3. Telefon (geschäftlich)"
+
+#: ../src/contacts.c:757
+msgid "Work phone 4"
+msgstr "4. Telefon (geschäftlich)"
+
+#: ../src/contacts.c:758
+msgid "Cell phone"
+msgstr "Mobiltelefon"
+
+#: ../src/contacts.c:758
+msgid "Cell phone 2"
+msgstr "2. Mobiltelefon"
+
+#: ../src/contacts.c:759
+msgid "Cell phone 3"
+msgstr "3. Mobiltelefon"
+
+#: ../src/contacts.c:759
+msgid "Cell phone 4"
+msgstr "4. Mobiltelefon"
+
+#: ../src/contacts.c:760
+msgid "E-Mail"
+msgstr "E-Mail-Adresse"
+
+#: ../src/contacts.c:760
+msgid "E-Mail 2"
+msgstr "2. E-Mail-Adresse"
+
+#: ../src/contacts.c:760
+msgid "E-Mail 3"
+msgstr "3. E-Mail-Adresse"
+
+#: ../src/contacts.c:761
+msgid "E-Mail 4"
+msgstr "4. E-Mail-Adresse"
+
+#: ../src/contacts.c:761
+msgid "WWW"
+msgstr "Homepage"
+
+#: ../src/contacts.c:761
+msgid "WWW 2"
+msgstr "2. Homepage"
+
+#: ../src/contacts.c:761
+msgid "WWW 3"
+msgstr "3. Homepage"
+
+#: ../src/contacts.c:762
+msgid "WWW 4"
+msgstr "4. Homepage"
+
+#: ../src/contacts.c:765
+msgid "IM Gadu-Gadu"
+msgstr "IM Gadu-Gadu"
+
+#: ../src/contacts.c:765
+msgid "IM Yahoo"
+msgstr "IM Yahoo"
+
+#: ../src/contacts.c:765
+msgid "IM MSN"
+msgstr "IM MSN"
+
+#: ../src/contacts.c:766
+msgid "IM ICQ"
+msgstr "IM ICQ"
+
+#: ../src/contacts.c:766
+msgid "IM AOL"
+msgstr "IM AOL"
+
+#: ../src/contacts.c:767
+msgid "IM Jabber"
+msgstr "IM Jabber"
+
+#: ../src/contacts.c:767
+msgid "IM Skype"
+msgstr "IM Skype"
+
+#: ../src/contacts.c:767
+msgid "IM Tlen"
+msgstr "IM Tlen"
+
+#: ../src/contacts.c:768
+msgid "Blog"
+msgstr "Blog"
+
+#: ../src/contacts.c:768
+msgid "Photo"
+msgstr "Foto"
+
+#: ../src/contacts.c:768 ../src/contacts_items.c:968
+msgid "Additional info"
+msgstr "Zusätzliche Informationen"
+
+#: ../src/contacts.c:784
+msgid "New contact"
+msgstr "Neuer Kontakt"
+
+#: ../src/contacts.c:785 ../src/stock_icons.c:75
+msgid "Remove contact"
+msgstr "Kontakt entfernen"
+
+#: ../src/contacts.c:786 ../src/contacts_items.c:535 ../src/stock_icons.c:72
+msgid "Edit contact"
+msgstr "Kontakt bearbeiten"
+
+#: ../src/contacts.c:787 ../src/stock_icons.c:71
+#, fuzzy
+msgid "Show birthdays"
+msgstr "Tagesnamen zeigen"
+
+#: ../src/contacts.c:788 ../src/contacts_import.c:582 ../src/stock_icons.c:74
+msgid "Import contacts"
+msgstr "Kontakte importieren"
+
+#: ../src/contacts.c:789 ../src/contacts_export.c:589 ../src/stock_icons.c:73
+msgid "Export contacts"
+msgstr "Kontakte exportieren"
+
+#: ../src/contacts.c:805 ../src/gui.c:929 ../src/options_gui.c:173
+#: ../src/stock_icons.c:76
+msgid "Contacts"
+msgstr "Kontakte"
+
+#: ../src/contacts.c:859
+msgid "Search"
+msgstr "Suche"
+
+#: ../src/contacts.c:885 ../src/options_gui_contacts.c:655
+#: ../src/options_gui_contacts.c:657 ../src/options_gui_contacts.c:659
+#: ../src/options_gui_contacts.c:661 ../src/options_gui_contacts.c:663
+#: ../src/options_gui_contacts.c:665
+msgid "First Name"
+msgstr "Vorname"
+
+#: ../src/contacts.c:886 ../src/options_gui_contacts.c:655
+#: ../src/options_gui_contacts.c:657 ../src/options_gui_contacts.c:659
+#: ../src/options_gui_contacts.c:661 ../src/options_gui_contacts.c:663
+#: ../src/options_gui_contacts.c:665
+msgid "Last Name"
+msgstr "Nachname"
+
+#: ../src/contacts.c:887
+msgid "All fields"
+msgstr "Alle Felder"
+
+#: ../src/contacts.c:987
+msgid "Contact details"
+msgstr "Kontaktdetails"
+
+#: ../src/contacts.c:999
+msgid "Close contact panel"
+msgstr "Kontaktanzeige schliessen"
+
+#: ../src/contacts_export.c:101
+msgid "Done!"
+msgstr "Fertig!"
+
+#: ../src/contacts_export.c:102
+msgid "contact exported"
+msgid_plural "contacts exported"
+msgstr[0] "Kontakt exportiert"
+msgstr[1] "Kontakte exportiert"
+
+#: ../src/contacts_export.c:141
+msgid "Selected file exist! Overwrite?"
+msgstr "Ausgewählte Datei existiert. Überschreiben?"
+
+#: ../src/contacts_export.c:417
+msgid "Cannot create file."
+msgstr "Datei kann nicht erstellt werden."
+
+#: ../src/contacts_export.c:434
+msgid "Select output file"
+msgstr "Ausgabedatei auswählen"
+
+#: ../src/contacts_export.c:663
+msgid "Output format"
+msgstr "Ausgabeformat"
+
+#: ../src/contacts_export.c:684 ../src/options_gui.c:129
+msgid "Options"
+msgstr "Optionen"
+
+#: ../src/contacts_export.c:690
+msgid "Add header"
+msgstr "Kopfzeile hinzufügen"
+
+#: ../src/contacts_export.c:730
+msgid "Fields to export"
+msgstr "Felder zum Exportieren"
+
+#: ../src/contacts_export.c:752
+msgid "All"
+msgstr "Alle"
+
+#: ../src/contacts_export.c:770
+msgid "Invert"
+msgstr "Invertieren"
+
+#: ../src/contacts_export.c:780
+msgid "Select fields"
+msgstr "Felder auswählen"
+
+#: ../src/contacts_export.c:839
+msgid "Output filename"
+msgstr "Ausgabedateiname"
+
+#: ../src/contacts_import.c:49
+msgid "Select CSV file"
+msgstr "CSV-Datei auswählen"
+
+#: ../src/contacts_import.c:62
+msgid "All Files"
+msgstr "Alle Dateien"
+
+#: ../src/contacts_import.c:67
+msgid "CSV (comma-separated values) files (*.csv)"
+msgstr "CSV-Dateien (comma-separated values, *.csv)"
+
+#: ../src/contacts_import.c:349
+msgid "Nothing to import."
+msgstr "Nichts zu importieren"
+
+#: ../src/contacts_import.c:452
+msgid "contact added"
+msgid_plural "contacts added"
+msgstr[0] "Kontakt hinzugefügt"
+msgstr[1] "Kontakte hinzugefügt"
+
+#: ../src/contacts_import.c:617
+msgid "of"
+msgstr "von"
+
+#: ../src/contacts_import.c:631
+msgid "Record"
+msgstr "Datensatz"
+
+#: ../src/contacts_import.c:638
+msgid "Number fields per record"
+msgstr "Anzahl der Felder pro Datensatz"
+
+#: ../src/contacts_import.c:667
+msgid "Use first record as header"
+msgstr "Ersten Datensatz als Kopfzeile benutzen"
+
+#: ../src/contacts_import.c:715
+msgid "Field type"
+msgstr "Feldtyp"
+
+#: ../src/contacts_import.c:725
+msgid "Value"
+msgstr "Wert"
+
+#: ../src/contacts_import.c:796
+msgid "No records found in selected file."
+msgstr "Keine Datensätze in der ausgewählten Datei gefunden."
+
+#: ../src/contacts_import.c:801
+msgid "Cannot read file."
+msgstr "Datei kann nicht gelesen werden."
+
+#: ../src/contacts_import.c:805
+msgid "Cannot open file."
+msgstr "Datei kann nicht geöffnet werden."
+
+#: ../src/contacts_items.c:171
+msgid "Selected contact will be removed."
+msgstr "Der ausgewählte Kontakt wird entfernt."
+
+#: ../src/contacts_items.c:171 ../src/tasks_items.c:344
+msgid "Are you sure?"
+msgstr "Sind Sie sicher?"
+
+#: ../src/contacts_items.c:393 ../src/date_utils.c:309 ../src/tasks.c:485
+#: ../src/tasks_items.c:178 ../src/tasks_items.c:251 ../src/tasks_items.c:569
+msgid "No date"
+msgstr "Kein Datum"
+
+#: ../src/contacts_items.c:438
+msgid "Select photo"
+msgstr "Foto auswählen"
+
+#: ../src/contacts_items.c:528
+msgid "Address"
+msgstr "Adresse"
+
+#: ../src/contacts_items.c:528
+msgid "Postcode"
+msgstr "Postleitzahl"
+
+#: ../src/contacts_items.c:528
+msgid "City"
+msgstr "Stadt"
+
+#: ../src/contacts_items.c:528
+msgid "State"
+msgstr "Bundesland"
+
+#: ../src/contacts_items.c:528
+msgid "Country"
+msgstr "Land"
+
+#: ../src/contacts_items.c:537 ../src/stock_icons.c:70
+msgid "Add contact"
+msgstr "Kontakt hinzufügen"
+
+#: ../src/contacts_items.c:592
+msgid "Personal"
+msgstr "Persönlich"
+
+#: ../src/contacts_items.c:766
+msgid "Home"
+msgstr "Privat"
+
+#: ../src/contacts_items.c:811
+msgid "Work"
+msgstr "Geschäftlich"
+
+#: ../src/contacts_items.c:860
+msgid "Phones"
+msgstr "Telefone"
+
+#: ../src/contacts_items.c:913
+msgid "Internet"
+msgstr "Internet"
+
+#: ../src/date_utils.c:290
+msgid "New Moon"
+msgstr "Neumond"
+
+#: ../src/date_utils.c:290
+msgid "Waxing Crescent Moon"
+msgstr ""
+
+#: ../src/date_utils.c:290
+msgid "Quarter Moon"
+msgstr ""
+
+#: ../src/date_utils.c:290
+msgid "Waxing Gibbous Moon"
+msgstr ""
+
+#: ../src/date_utils.c:291
+msgid "Full Moon"
+msgstr "Vollmond"
+
+#: ../src/date_utils.c:291
+msgid "Waning Gibbous Moon"
+msgstr ""
+
+#: ../src/date_utils.c:291
+msgid "Last Quarter Moon"
+msgstr ""
+
+#: ../src/date_utils.c:291
+msgid "Waning Crescent Moon"
+msgstr ""
+
+#: ../src/gui.c:606
+#, fuzzy
+msgid "Birthday found"
+msgstr "Geburtstag"
+
+#: ../src/gui.c:615
+#, fuzzy
+msgid "Task found"
+msgstr "Schriftart für Aufgabeninformationen"
+
+#: ../src/gui.c:624
+msgid "Day note available"
+msgstr ""
+
+#: ../src/gui.c:645
+#, fuzzy
+msgid "Show calendar"
+msgstr "Kalender"
+
+#: ../src/gui.c:651
+#, fuzzy
+msgid "Show tasks"
+msgstr "Neue Aufgabe"
+
+#: ../src/gui.c:657
+#, fuzzy
+msgid "Show contacts"
+msgstr "Neuer Kontakt"
+
+#: ../src/gui.c:667
+msgid "Quit"
+msgstr ""
+
+#: ../src/gui.c:731 ../src/main.c:100
+msgid "a handy personal organizer"
+msgstr "ein praktischer persönlicher Planer"
+
+#: ../src/gui.c:851
+msgid "switch to calendar tab"
+msgstr "zum Kalender-Reiter umschalten"
+
+#: ../src/gui.c:852
+msgid "switch to tasks tab"
+msgstr "zum Aufgaben-Reiter umschalten"
+
+#: ../src/gui.c:853
+msgid "switch to options tab"
+msgstr "zum Optionen-Reiter umschalten"
+
+#: ../src/gui.c:854
+msgid "switch to about tab"
+msgstr "zum Über-Reiter umschalten"
+
+#: ../src/gui.c:855
+msgid "switch to previous tab"
+msgstr "zum vorherigen Reiter umschalten"
+
+#: ../src/gui.c:856
+msgid "switch to next tab"
+msgstr "zum nächsten Reiter umschalten"
+
+#: ../src/gui.c:857
+msgid "switch page in options and about tab"
+msgstr "Seite wechseln im Optionen- und Über-Reiter"
+
+#: ../src/gui.c:858
+msgid "exit"
+msgstr "Beenden"
+
+#: ../src/gui.c:862
+msgid "select current date"
+msgstr "Aktuelles Datum auswählen"
+
+#: ../src/gui.c:863
+msgid "change day"
+msgstr "Tag wechseln"
+
+#: ../src/gui.c:864
+msgid "change day while note editing"
+msgstr "Tag während der Notizbearbeitung ändern"
+
+#: ../src/gui.c:865
+msgid "change month"
+msgstr "Monat wechseln"
+
+#: ../src/gui.c:866
+msgid "change year"
+msgstr "Jahr wechseln"
+
+#: ../src/gui.c:867
+msgid "assign background color to day note"
+msgstr "der Tagesnotiz eine Hintergrundfarbe zuweisen"
+
+#: ../src/gui.c:868
+msgid "date calculator"
+msgstr "Datumsrechner"
+
+#: ../src/gui.c:869
+msgid "jump to date"
+msgstr "zum Datum springen"
+
+#: ../src/gui.c:870
+msgid "show full-year calendar"
+msgstr "Jahreskalender zeigen"
+
+#: ../src/gui.c:871
+msgid "toggle calendars for the previous and next month"
+msgstr ""
+
+#: ../src/gui.c:872
+msgid "remove day note"
+msgstr "Tagesnotiz entfernen"
+
+#: ../src/gui.c:873
+msgid "close day note panel"
+msgstr "Tagesnotiz-Anzeige schließen"
+
+#: ../src/gui.c:877
+msgid "add task"
+msgstr "Aufgabe hinzufügen"
+
+#: ../src/gui.c:878
+msgid "edit task"
+msgstr "Aufgabe bearbeiten"
+
+#: ../src/gui.c:879
+msgid "remove task"
+msgstr "Aufgabe entfernen"
+
+#: ../src/gui.c:880
+msgid "toggle hidden tasks"
+msgstr "versteckte Aufgaben an-/ausschalten"
+
+#: ../src/gui.c:881
+msgid "change category filter"
+msgstr "Kategoriefilter wechseln"
+
+#: ../src/gui.c:882
+msgid "close task info panel"
+msgstr "Aufgabeninformationen schließen"
+
+#: ../src/gui.c:886
+msgid "add contact"
+msgstr "Kontakt hinzufügen"
+
+#: ../src/gui.c:887
+msgid "edit contact"
+msgstr "Kontakt bearbeiten"
+
+#: ../src/gui.c:888
+msgid "remove contact"
+msgstr "Kontakt entfernen"
+
+#: ../src/gui.c:889
+msgid "activate search field"
+msgstr "Suchfeld aktivieren"
+
+#: ../src/gui.c:890
+msgid "change search mode"
+msgstr "Suchmodus ändern"
+
+#: ../src/gui.c:891
+msgid "close contact details panel"
+msgstr "Kontaktdetails schließen"
+
+#: ../src/gui.c:899
+msgid ""
+"OSMO was designed keeping in mind the user convenience, so there are many "
+"key shorctuts. Here is the full list:"
+msgstr ""
+"OSMO wurde mit Bequemlichkeit für den Nutzer im Hinterkopf entwickelt, daher "
+"gibt es viele Tastenkombinationen. Hier ist die vollständige Liste:"
+
+#: ../src/gui.c:902 ../src/options_gui.c:186 ../src/options_gui_general.c:254
+msgid "General"
+msgstr "Allgemein"
+
+#: ../src/gui.c:920 ../src/options_gui.c:160 ../src/stock_icons.c:92
+#: ../src/tasks.c:761
+msgid "Tasks"
+msgstr "Aufgaben"
+
+#: ../src/gui.c:953
+msgid "A handy personal organizer"
+msgstr "Ein praktischer persönlicher Planer"
+
+#: ../src/gui.c:963
+msgid "compiled on"
+msgstr "kompiliert am"
+
+#: ../src/gui.c:967
+msgid "Programming"
+msgstr "Programmierung"
+
+#: ../src/gui.c:977
+msgid "Graphics"
+msgstr "Grafiken"
+
+#: ../src/gui.c:987
+msgid "Contributors"
+msgstr "Mithelfende"
+
+#: ../src/gui.c:997
+msgid "Translators"
+msgstr "Übersetzer"
+
+#: ../src/gui.c:1114 ../src/gui.c:1149 ../src/stock_icons.c:67
+msgid "About"
+msgstr "Über"
+
+#: ../src/gui.c:1127
+msgid "version"
+msgstr "Version"
+
+#: ../src/gui.c:1129
+msgid "SVN revision"
+msgstr "SVN-Revision"
+
+#: ../src/gui.c:1164
+msgid "Key shortcuts"
+msgstr "Tastenkombinationen"
+
+#: ../src/gui.c:1177 ../src/stock_icons.c:81
+msgid "License"
+msgstr "Lizenz"
+
+#: ../src/gui_utils.c:86 ../src/gui_utils.c:88
+msgid "Question"
+msgstr "Frage"
+
+#: ../src/gui_utils.c:101 ../src/gui_utils.c:103
+msgid "Information"
+msgstr "Information"
+
+#: ../src/gui_utils.c:115 ../src/gui_utils.c:117
+msgid "Error"
+msgstr "Fehler"
+
+#: ../src/gui_utils.c:129 ../src/gui_utils.c:131 ../src/main.c:135
+msgid "Warning"
+msgstr "Warnung"
+
+#: ../src/main.c:102
+msgid "usage"
+msgstr "Benutzung"
+
+#: ../src/main.c:102 ../src/main.c:103
+msgid "options"
+msgstr "Optionen"
+
+#: ../src/main.c:104
+msgid "show small calendar window"
+msgstr "kleines Kalenderfenster zeigen"
+
+#: ../src/main.c:128
+#, fuzzy
+msgid "Another copy of OSMO is already running."
+msgstr ""
+"Eine andere Instanz von OSMO läuft bereits oder wurde unsauber beendet (in "
+"diesem Fall löschen Sie bitte die Datei '%s' und versuchen es nochmal)."
+
+#: ../src/main.c:129
+msgid ""
+"Simultaneously use two or more copies of OSMO can be a cause of data loss."
+msgstr ""
+
+#: ../src/main.c:130
+msgid "Do you really want to continue?"
+msgstr ""
+
+#: ../src/options_gui_calendar.c:58 ../src/options_gui_calendar.c:93
+#: ../src/options_gui_calendar.c:128 ../src/options_gui_tasks.c:60
+msgid "Select a font..."
+msgstr "Eine Schriftart auswählen..."
+
+#: ../src/options_gui_calendar.c:331
+msgid "Modify color"
+msgstr "Die Farbe verändern"
+
+#: ../src/options_gui_calendar.c:369
+msgid "Color"
+msgstr "Farbe"
+
+#: ../src/options_gui_calendar.c:755 ../src/options_gui_contacts.c:340
+#: ../src/options_gui_general.c:220 ../src/options_gui_tasks.c:376
+msgid "Appearance"
+msgstr "Erscheinung"
+
+#: ../src/options_gui_calendar.c:785
+msgid "Middle dot"
+msgstr "Punkt"
+
+#: ../src/options_gui_calendar.c:786
+msgid "Apostrophe"
+msgstr "Apostroph"
+
+#: ../src/options_gui_calendar.c:787
+msgid "Asterisk"
+msgstr "Dach"
+
+#: ../src/options_gui_calendar.c:788
+msgid "Tilde"
+msgstr "Tilde"
+
+#: ../src/options_gui_calendar.c:789
+msgid "Vertical line"
+msgstr "Vertikale Linie"
+
+#: ../src/options_gui_calendar.c:790
+msgid "Degree sign"
+msgstr "Grad-Zeichen"
+
+#: ../src/options_gui_calendar.c:804
+msgid "Header color"
+msgstr "Farbe der Kopfzeile"
+
+#: ../src/options_gui_calendar.c:813
+msgid "Weekend days color"
+msgstr "Farbe für das Wochenende"
+
+#: ../src/options_gui_calendar.c:822
+msgid "Cursor color"
+msgstr "Cursor-Farbe"
+
+#: ../src/options_gui_calendar.c:831
+msgid "Marked day color"
+msgstr "Farbe des markierten Tages"
+
+#: ../src/options_gui_calendar.c:896 ../src/options_gui_contacts.c:362
+#: ../src/options_gui_tasks.c:459
+msgid "Colors"
+msgstr "Farben"
+
+#: ../src/options_gui_calendar.c:904
+msgid "Date font"
+msgstr "Datumsschriftart"
+
+#: ../src/options_gui_calendar.c:912
+msgid "Calendar font"
+msgstr "Kalenderschriftart"
+
+#: ../src/options_gui_calendar.c:920
+msgid "Note font"
+msgstr "Notizschriftart"
+
+#: ../src/options_gui_calendar.c:928
+msgid "Mark symbol"
+msgstr "Markierungssymbol"
+
+#: ../src/options_gui_calendar.c:937
+msgid "Enable block cursor"
+msgstr "Blockcursor anschalten"
+
+#: ../src/options_gui_calendar.c:946
+msgid "Cursor thickness"
+msgstr "Cursor-Dicke"
+
+#: ../src/options_gui_calendar.c:954
+msgid "Thin"
+msgstr "Dünn"
+
+#: ../src/options_gui_calendar.c:963
+msgid "Thick"
+msgstr "Dick"
+
+#: ../src/options_gui_calendar.c:988
+msgid "Day categories"
+msgstr "Tageskategorien"
+
+#: ../src/options_gui_calendar.c:1133
+msgid "Week start on Monday"
+msgstr "Wochenanfang am Montag"
+
+#: ../src/options_gui_calendar.c:1142
+msgid "Show day names"
+msgstr "Tagesnamen zeigen"
+
+#: ../src/options_gui_calendar.c:1151
+msgid "No month change"
+msgstr "Kein Monatswechsel"
+
+#: ../src/options_gui_calendar.c:1160
+msgid "Show week numbers"
+msgstr "Kalenderwoche anzeigen"
+
+#: ../src/options_gui_calendar.c:1169
+msgid "Simple view in full-year calendar"
+msgstr "Einfache Ansicht im Jahreskalender"
+
+#: ../src/options_gui_calendar.c:1178
+msgid "Show notes in info panel"
+msgstr "Notizen in der Info-Anzeige"
+
+#: ../src/options_gui_calendar.c:1187
+#, fuzzy
+msgid "Enable auxilary calendars"
+msgstr "Jahreskalender"
+
+#: ../src/options_gui_contacts.c:380
+msgid "Color of contact tags"
+msgstr "Farbe für Kontakt-Tags"
+
+#: ../src/options_gui_contacts.c:389
+msgid "Color of links"
+msgstr "Farbe der Links"
+
+#: ../src/options_gui_contacts.c:394
+msgid "Name font size"
+msgstr "Schriftgröße für Namen"
+
+#: ../src/options_gui_contacts.c:413
+msgid "Tags font size"
+msgstr "Schriftgröße für Tags"
+
+#: ../src/options_gui_contacts.c:431
+msgid "Photo size"
+msgstr "Fotogröße"
+
+#: ../src/options_gui_contacts.c:450
+msgid "Small"
+msgstr "Klein"
+
+#: ../src/options_gui_contacts.c:451 ../src/tasks.c:91 ../src/tasks.c:116
+#: ../src/tasks_items.c:501
+msgid "Medium"
+msgstr "Mittel"
+
+#: ../src/options_gui_contacts.c:452
+msgid "Large"
+msgstr "Groß"
+
+#: ../src/options_gui_contacts.c:462 ../src/options_gui_tasks.c:467
+msgid "Draw rows in alternating colors"
+msgstr ""
+
+#: ../src/options_gui_contacts.c:474
+msgid "Miscellaneous"
+msgstr "Verschiedenes"
+
+#: ../src/options_gui_contacts.c:491
+msgid "Select and show first item after search"
+msgstr "Ersten Treffer nach Suche auswählen und anzeigen"
+
+#: ../src/options_gui_contacts.c:498
+msgid "Hide group column"
+msgstr "Gruppenspalte verstecken"
+
+#: ../src/options_gui_contacts.c:510
+msgid "Groups"
+msgstr "Gruppen"
+
+#: ../src/options_gui_contacts.c:599 ../src/options_gui_tasks.c:623
+msgid "Sorting"
+msgstr "Sortierung"
+
+#: ../src/options_gui_contacts.c:621 ../src/options_gui_tasks.c:645
+msgid "Order"
+msgstr "Reihenfolge"
+
+#: ../src/options_gui_contacts.c:629 ../src/options_gui_tasks.c:653
+msgid "Mode"
+msgstr "Modus"
+
+#: ../src/options_gui_contacts.c:644 ../src/options_gui_tasks.c:668
+msgid "Ascending"
+msgstr "Aufsteigend"
+
+#: ../src/options_gui_contacts.c:645 ../src/options_gui_tasks.c:669
+msgid "Descending"
+msgstr "Absteigend"
+
+#: ../src/options_gui_general.c:236
+msgid "Use default stock icons (needs restart)"
+msgstr "Standard-Icons verwenden (benötigt einen Neustart)"
+
+#: ../src/options_gui_general.c:243
+msgid "Disable underline in links"
+msgstr "Unterstreichen von Links ausschalten"
+
+#: ../src/options_gui_general.c:276
+msgid "Date format"
+msgstr "Datumsformat"
+
+#: ../src/options_gui_general.c:292
+msgid "DD-MM-YYYY"
+msgstr "TT-MM-JJJJ"
+
+#: ../src/options_gui_general.c:293
+msgid "MM-DD-YYYY"
+msgstr "MM-TT-JJJJ"
+
+#: ../src/options_gui_general.c:294
+msgid "YYYY-MM-DD"
+msgstr "JJJJ-MM-TT"
+
+#: ../src/options_gui_general.c:295
+msgid "YYYY-DD-MM"
+msgstr "JJJJ-TT-MM"
+
+#: ../src/options_gui_general.c:298
+#, fuzzy
+msgid "Time format"
+msgstr "Datumsformat"
+
+#: ../src/options_gui_general.c:314 ../src/options_gui_general.c:316
+#, fuzzy
+msgid "hours"
+msgstr "Stunde"
+
+#: ../src/options_gui_general.c:321
+msgid "Enable tooltips"
+msgstr "Tooltips benutzen"
+
+#: ../src/options_gui_general.c:330
+msgid "Remember last selected page"
+msgstr "Letzte ausgewählte Seite merken"
+
+#: ../src/options_gui_general.c:344
+msgid "Helpers"
+msgstr "Hilfsprogramme"
+
+#: ../src/options_gui_general.c:367
+msgid "Web browser"
+msgstr "Webbrowser"
+
+#: ../src/options_gui_general.c:375
+msgid "E-mail client"
+msgstr "E-Mail-Programm"
+
+#: ../src/options_gui_general.c:405
+msgid "System tray"
+msgstr ""
+
+#: ../src/options_gui_general.c:427
+msgid "Enable system tray"
+msgstr ""
+
+#: ../src/options_gui_general.c:436
+#, fuzzy
+msgid "Start minimised"
+msgstr "Angefangen"
+
+#: ../src/options_gui_tasks.c:408
+msgid "Color of items that are due today"
+msgstr "Farbe der Punkte, die heute fällig sind"
+
+#: ../src/options_gui_tasks.c:417
+msgid "Color of items that are due in the next 7 days"
+msgstr "Farbe der Punkte, die in den nächsten 7 Tagen fällig sind"
+
+#: ../src/options_gui_tasks.c:426
+msgid "Color of items that are past due"
+msgstr "Farbe der Punkte, die überfällig sind"
+
+#: ../src/options_gui_tasks.c:451
+msgid "Task info font"
+msgstr "Schriftart für Aufgabeninformationen"
+
+#: ../src/options_gui_tasks.c:480
+msgid "Visible columns"
+msgstr "Sichtbare Spalten"
+
+#: ../src/options_gui_tasks.c:502 ../src/options_gui_tasks.c:679
+#: ../src/options_gui_tasks.c:681 ../src/options_gui_tasks.c:683
+#: ../src/options_gui_tasks.c:685 ../src/options_gui_tasks.c:687
+#: ../src/options_gui_tasks.c:689 ../src/tasks.c:905 ../src/tasks_items.c:431
+msgid "Due date"
+msgstr "Stichtag"
+
+#: ../src/options_gui_tasks.c:511 ../src/options_gui_tasks.c:679
+#: ../src/options_gui_tasks.c:681 ../src/options_gui_tasks.c:683
+#: ../src/options_gui_tasks.c:685 ../src/options_gui_tasks.c:687
+#: ../src/options_gui_tasks.c:689 ../src/tasks.c:935 ../src/tasks_items.c:488
+msgid "Priority"
+msgstr "Priorität"
+
+#: ../src/options_gui_tasks.c:520 ../src/tasks.c:945 ../src/tasks_items.c:467
+msgid "Category"
+msgstr "Kategorie"
+
+#: ../src/options_gui_tasks.c:534
+msgid "Categories"
+msgstr "Kategorien"
+
+#: ../src/options_gui_tasks.c:679 ../src/options_gui_tasks.c:681
+#: ../src/options_gui_tasks.c:683 ../src/options_gui_tasks.c:685
+#: ../src/options_gui_tasks.c:687 ../src/options_gui_tasks.c:689
+#: ../src/tasks.c:896
+msgid "Done"
+msgstr "Fertig"
+
+#: ../src/options_gui_tasks.c:697
+msgid "Tasks options"
+msgstr "Optionen für Aufgaben"
+
+#: ../src/options_gui_tasks.c:713
+msgid "Hide completed tasks"
+msgstr "Fertige Aufgaben verstecken"
+
+#: ../src/options_gui_tasks.c:722
+msgid "Delete completed tasks without confirmation"
+msgstr "Fertige Aufgaben ohne Nachfrage löschen"
+
+#: ../src/stock_icons.c:42
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: ../src/stock_icons.c:43
+msgid "Clear"
+msgstr "Leeren"
+
+#: ../src/stock_icons.c:44
+msgid "Close"
+msgstr "Schließen"
+
+#: ../src/stock_icons.c:45
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: ../src/stock_icons.c:46
+msgid "Jump to"
+msgstr "Hinspringen"
+
+#: ../src/stock_icons.c:47
+msgid "Export"
+msgstr "Exportieren"
+
+#: ../src/stock_icons.c:48
+msgid "Import"
+msgstr "Importieren"
+
+#: ../src/stock_icons.c:49
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: ../src/stock_icons.c:50
+msgid "Insert"
+msgstr "Einfügen"
+
+#: ../src/stock_icons.c:52
+msgid "No"
+msgstr "Nein"
+
+#: ../src/stock_icons.c:53
+msgid "OK"
+msgstr "Ok"
+
+#: ../src/stock_icons.c:54
+msgid "Browse"
+msgstr "Durchsuchen"
+
+#: ../src/stock_icons.c:56
+msgid "Remove"
+msgstr "Entfernen"
+
+#: ../src/stock_icons.c:58
+msgid "Select date"
+msgstr "Datum auswählen"
+
+#: ../src/stock_icons.c:59
+msgid "Select font"
+msgstr "Schriftart auswählen"
+
+#: ../src/stock_icons.c:61
+msgid "Yes"
+msgstr "Ja"
+
+#: ../src/stock_icons.c:65
+#, fuzzy
+msgid "Task"
+msgstr "Aufgaben"
+
+#: ../src/stock_icons.c:69
+msgid "Calculator"
+msgstr "Rechner"
+
+#: ../src/stock_icons.c:77
+msgid "Edit day note"
+msgstr "Tagesnotizen bearbeiten"
+
+#: ../src/stock_icons.c:78
+msgid "Display full-year calendar"
+msgstr "Jahreskalender anzeigen"
+
+#: ../src/stock_icons.c:79
+msgid "Help"
+msgstr "Hilfe"
+
+#: ../src/stock_icons.c:85
+msgid "Preferences"
+msgstr "Einstellungen"
+
+#: ../src/stock_icons.c:89 ../src/tasks_items.c:389
+msgid "Add task"
+msgstr "Aufgabe hinzufügen"
+
+#: ../src/stock_icons.c:90 ../src/tasks.c:751 ../src/tasks_items.c:387
+msgid "Edit task"
+msgstr "Aufgabe bearbeiten"
+
+#: ../src/stock_icons.c:91 ../src/tasks.c:752
+msgid "Remove task"
+msgstr "Aufgabe entfernen"
+
+#: ../src/tasks.c:71
+msgid "All items"
+msgstr "Alle Punkte"
+
+#: ../src/tasks.c:91 ../src/tasks.c:116 ../src/tasks_items.c:500
+msgid "Low"
+msgstr "Niedrig"
+
+#: ../src/tasks.c:91 ../src/tasks.c:116 ../src/tasks_items.c:502
+msgid "High"
+msgstr "Hoch"
+
+#: ../src/tasks.c:278
+msgid "Started"
+msgstr "Angefangen"
+
+#: ../src/tasks.c:466
+msgid "no entries"
+msgstr "keine Einträge"
+
+#: ../src/tasks.c:468
+msgid "entry"
+msgid_plural "entries"
+msgstr[0] "Eintrag"
+msgstr[1] "Einträge"
+
+#: ../src/tasks.c:750
+msgid "New task"
+msgstr "Neue Aufgabe"
+
+#: ../src/tasks.c:814
+msgid "Category filter"
+msgstr "Kategoriefilter"
+
+#: ../src/tasks.c:957 ../src/tasks_items.c:421
+msgid "Summary"
+msgstr "Zusammenfassung"
+
+#: ../src/tasks.c:967 ../src/tasks_items.c:511
+msgid "Description"
+msgstr "Beschreibung"
+
+#: ../src/tasks.c:1012
+msgid "Task details"
+msgstr "Aufgabendetails"
+
+#: ../src/tasks.c:1024
+msgid "Close description panel"
+msgstr "Beschreibungsanzeige schließen"
+
+#: ../src/tasks_items.c:344
+msgid "Selected task will be removed."
+msgstr "Die ausgewählte Aufgabe wird entfernt."
+
+#, fuzzy
+#~ msgid "24 hours"
+#~ msgstr "Stunde"

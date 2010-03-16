@@ -1,0 +1,9 @@
+
+2007-10-22: version 0.1.1
+  * Importing contacts from CSV files has been added
+  * Multiline fields are exported correctly in CSV files
+  * Various minor fixes and enhancements
+
+2007-09-27: version 0.1.0
+  * First public release
+

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svnroot/osmo-pim/!svn/ver/858/trunk/data
+END
+osmo.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/osmo-pim/!svn/ver/722/trunk/data/osmo.desktop
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/osmo-pim/!svn/ver/711/trunk/data/Makefile.am
+END
+osmo.1
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/osmo-pim/!svn/ver/858/trunk/data/osmo.1
+END

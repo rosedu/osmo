@@ -1,0 +1,71 @@
+
+-----------------------------------------------------------------------------
+-----                  O S M O - a handy personal organizer             -----
+-----                                                                   -----
+-----                           version 0.1.2                           -----
+-----------------------------------------------------------------------------
+
+-----> WHERE ?
+
+Homepage: http://clay.ll.pl/osmo
+
+
+-----> WHO ?
+
+Programming:
+     Tomasz Maka <pasp@users.sourceforge.net>
+
+Graphics:
+     Maja Kocon (http://ironya.ll.pl)
+
+
+-----> WHAT ?
+
+Osmo is a handy personal organizer which includes calendar, tasks manager and 
+address book modules. It was designed to be a small, easy to use and good 
+looking PIM tool to help to manage personal information. In current state the 
+organizer is quite convenient in use - for example, user can perform nearly all 
+operations using keyboard. Also, a lot of parameters are configurable to meet 
+user preferences. On the technical side, Osmo is GTK+ based tool which use plain 
+XML database to store all personal data.
+
+Currently, Osmo has the following features:
+
+    * Calendar:
+          o note per day
+          o arbitrary coloring of the days with notes
+          o date calculator
+          o built-in full year calendar
+          o 'jump to date' function
+          o compact mode (run as 'osmo -cal')
+          o handy popup menu for month change
+          o integration with Tasks and Contacts modules
+    * Tasks:
+          o category filter
+          o priority per task
+          o date dependent task color
+          o hide/unhide complete tasks
+    * Contacts:
+          o 'find as you type' support
+          o robust search functionality
+          o photo support
+          o import/export support for CSV files 
+          o optional export to XHTML format
+
+Please note that works in progress, so you can expect much more features 
+(remainder, .ics parser, etc.) in the future.
+
+
+-----> CONTACT ?
+
+Please subscribe to our "Osmo friends" mailing list located here:
+
+https://lists.sourceforge.net/lists/listinfo/osmo-pim-friends
+
+Also, please use following trackers to help us to improve the Osmo:
+
+Bug tracker - https://sourceforge.net/tracker/?group_id=206587&atid=998196
+Feature requests - https://sourceforge.net/tracker/?group_id=206587&atid=998199
+
+Any suggestions, patches, criticism are kindly welcome.
+

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/osmo-pim/!svn/ver/3/tags/RELEASE_0_1_0
+END
+osmo.png
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/osmo-pim/!svn/ver/3/tags/RELEASE_0_1_0/osmo.png
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/osmo-pim/!svn/ver/3/tags/RELEASE_0_1_0/configure.ac
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/osmo-pim/!svn/ver/3/tags/RELEASE_0_1_0/AUTHORS
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/osmo-pim/!svn/ver/3/tags/RELEASE_0_1_0/ChangeLog
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/osmo-pim/!svn/ver/3/tags/RELEASE_0_1_0/COPYING
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/osmo-pim/!svn/ver/3/tags/RELEASE_0_1_0/Makefile.am
+END
+autogen.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/osmo-pim/!svn/ver/3/tags/RELEASE_0_1_0/autogen.sh
+END
+osmo.svg
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/osmo-pim/!svn/ver/3/tags/RELEASE_0_1_0/osmo.svg
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/osmo-pim/!svn/ver/3/tags/RELEASE_0_1_0/README
+END

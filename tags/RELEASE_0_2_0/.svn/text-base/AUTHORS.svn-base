@@ -1,0 +1,28 @@
+
+Authors
+-------
+
+Tomasz Maka <pasp@users.sourceforge.net>    (Programming)
+Maja Kocon  <ironya@ll.pl>                  (Graphics)
+
+Contributors
+------------
+
+Piotr Maka <silloz@users.sourceforge.net>   (Date calculator, fixes)
+
+Borrowed code
+-------------
+
+- The calendar widget is slighty modified version of standard GTK+ 
+  calendar widget developed by GTK+ Development Team
+
+- Routines to get and put text with tags into text view widget
+  have been written by Michael Terry, the author of xpad (http://xpad.sf.net)
+
+Bug reports
+-----------
+
+Bruno Miguel <brunoalexandremiguel@gmail.com>
+Andrea Antolini <a.antolini@infinito.it>
+Nacho Alonso González <nacho.alonso.gonzalez@gmail.com>
+

@@ -1,0 +1,37 @@
+
+2007-12-24: version 0.1.6
+  * Support for iCalendar files added
+  * Configurable day info panel
+  * Option to change tab bar position
+  * A temporary holiday logo
+  * Several usability changes
+  * Added Dutch translation
+  * Updated Czech and Polish translations
+
+2007-12-04: version 0.1.4
+  * System tray support
+  * Birthdays browser
+  * Windows sizes and positions are preserved between sessions
+  * Auxiliary calendars for the previous and next month added
+  * Current time is displayed in the day info panel
+  * Many bug fixes and cleanups
+  * Updated Polish translation
+
+2007-11-17: version 0.1.2
+  * Arbitrary colors can be assigned to days with notes
+  * Date calculator
+  * Popup menu to change month in calendar 
+  * A new type of calendar mark
+  * Many small GUI changes and updates
+  * A lot of code rewritten
+  * Added French, Czech and German translations
+  * Updated Portuguese and Polish translations
+
+2007-10-22: version 0.1.1
+  * Importing contacts from CSV files is now available
+  * Multiline fields are exported correctly in CSV files
+  * Various minor fixes and enhancements
+
+2007-09-27: version 0.1.0
+  * First public release
+

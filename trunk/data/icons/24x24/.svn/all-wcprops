@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/osmo-pim/!svn/ver/660/trunk/data/icons/24x24
+END
+osmo.png
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/osmo-pim/!svn/ver/660/trunk/data/icons/24x24/osmo.png
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/osmo-pim/!svn/ver/660/trunk/data/icons/24x24/Makefile.am
+END

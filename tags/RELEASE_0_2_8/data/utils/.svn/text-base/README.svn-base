@@ -1,0 +1,4 @@
+osmo.vim        Osmo syntax for VIM editor
+w2o.pl          Perl script to convert the wammu files to .csv
+                and then import them into Osmo from there (joakim@bildrulle.nu)
+

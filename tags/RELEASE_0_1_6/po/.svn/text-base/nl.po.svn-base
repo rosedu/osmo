@@ -1,0 +1,1734 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: osmo 0.1.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-12-22 02:39+0100\n"
+"PO-Revision-Date: 2007-12-08 18:44+0100\n"
+"Last-Translator: Tiger!P <tigerp@tigerp.net>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../src/calendar.c:329
+msgid "was born"
+msgstr "was geboren"
+
+#: ../src/calendar.c:332
+msgid "year old"
+msgid_plural "years old"
+msgstr[0] "jaar oud"
+msgstr[1] "jaren oud"
+
+#: ../src/calendar.c:372
+msgid "Day tasks"
+msgstr "Dag taken"
+
+#: ../src/calendar.c:383 ../src/stock_icons.c:63
+msgid "Birthday"
+msgstr "Verjaardag"
+
+#: ../src/calendar.c:525 ../src/calendar_calc.c:672 ../src/calendar_calc.c:837
+#: ../src/calendar_calc.c:1064 ../src/options_gui_calendar.c:1970
+msgid "Current time"
+msgstr "Huidige tijd"
+
+#: ../src/calendar.c:537 ../src/options_gui_calendar.c:1979
+msgid "Day number"
+msgstr "Dag nummer"
+
+#: ../src/calendar.c:549 ../src/options_gui_calendar.c:1997
+msgid "Week number"
+msgstr "Week nummer"
+
+#: ../src/calendar.c:561 ../src/options_gui_calendar.c:1988
+msgid "Marked days"
+msgstr "Gemarkeerde dagen"
+
+#: ../src/calendar.c:573 ../src/options_gui_calendar.c:2006
+msgid "Weekend days"
+msgstr "Weekend dagen"
+
+#: ../src/calendar.c:585 ../src/options_gui_calendar.c:2015
+msgid "Moon phase"
+msgstr "Maan schijngestalte"
+
+#: ../src/calendar.c:680
+msgid "day till end of year"
+msgid_plural "days till end of year"
+msgstr[0] "dag tot het einde van jaar"
+msgstr[1] "dagen tot het einde van jaar"
+
+#: ../src/calendar.c:682
+msgid "the last day of the year"
+msgstr "De laatste dag van het jaar"
+
+#: ../src/calendar.c:716 ../src/options_gui_calendar.c:2024
+msgid "Day notes"
+msgstr "Dag notities"
+
+#: ../src/calendar.c:882
+msgid "Selected day note will be removed."
+msgstr "Geselecteerde dag notitie zal worden verwijderd"
+
+#: ../src/calendar.c:882
+msgid "Continue?"
+msgstr "Doorgaan?"
+
+#: ../src/calendar.c:1403 ../src/calendar_fullyear.c:312
+#: ../src/stock_icons.c:55 ../src/stock_icons.c:90
+msgid "Previous year"
+msgstr "Vorig jaar"
+
+#: ../src/calendar.c:1404 ../src/stock_icons.c:89
+msgid "Previous month"
+msgstr "Vorige maand"
+
+#: ../src/calendar.c:1405 ../src/stock_icons.c:88
+msgid "Previous day"
+msgstr "Vorige dag"
+
+#: ../src/calendar.c:1406 ../src/stock_icons.c:60 ../src/stock_icons.c:95
+#: ../src/tasks_items.c:245
+msgid "Today"
+msgstr "Vandaag"
+
+#: ../src/calendar.c:1407 ../src/stock_icons.c:84
+msgid "Next day"
+msgstr "Volgende dag"
+
+#: ../src/calendar.c:1408 ../src/stock_icons.c:85
+msgid "Next month"
+msgstr "Volgende maand"
+
+#: ../src/calendar.c:1409 ../src/calendar_fullyear.c:336
+#: ../src/stock_icons.c:51 ../src/stock_icons.c:86
+msgid "Next year"
+msgstr "Volgend jaar"
+
+#: ../src/calendar.c:1410 ../src/calendar_jumpto.c:197 ../src/stock_icons.c:80
+msgid "Jump to date"
+msgstr "Spring naar datum"
+
+#: ../src/calendar.c:1411 ../src/calendar_fullyear.c:269
+#, fuzzy
+msgid "Full-year calendar"
+msgstr "Volledig-jaar kalender"
+
+#: ../src/calendar.c:1412 ../src/calendar_calc.c:509
+msgid "Date calculator"
+msgstr "Datum rekenmachine"
+
+#: ../src/calendar.c:1416
+#, fuzzy
+msgid "Toggle day note panel"
+msgstr "Wissel dag notitie paneel"
+
+#: ../src/calendar.c:1426 ../src/calendar_ical.c:701 ../src/gui.c:945
+#: ../src/options_gui.c:144 ../src/options_gui_calendar.c:1866
+#: ../src/stock_icons.c:68
+msgid "Calendar"
+msgstr "Kalender"
+
+#: ../src/calendar.c:1541
+msgid "Previous and next month"
+msgstr "Vorige en volgende maand"
+
+#: ../src/calendar.c:1612
+msgid "Notes"
+msgstr "Notities"
+
+#: ../src/calendar.c:1624
+msgid "Close note panel"
+msgstr "Sluit notitie paneel"
+
+#: ../src/calendar.c:1637 ../src/calendar_timeline.c:161
+msgid "Insert timeline"
+msgstr "Voeg tijdlijn in"
+
+#: ../src/calendar.c:1646
+msgid "Clear text"
+msgstr "Tekst leegmaken"
+
+#: ../src/calendar.c:1655
+msgid "Select day color"
+msgstr "Selecteer dag kleur"
+
+#: ../src/calendar.c:1696
+msgid "Info"
+msgstr "Informatie"
+
+#: ../src/calendar.c:1875 ../src/stock_icons.c:57
+msgid "Select color"
+msgstr "Selecteer kleur"
+
+#: ../src/calendar.c:1933 ../src/contacts_export.c:761
+#: ../src/contacts_import.c:430 ../src/contacts_import.c:437
+#: ../src/contacts_import.c:444 ../src/contacts_import.c:750
+#: ../src/contacts_items.c:1161 ../src/contacts_items.c:1162
+#: ../src/options_gui_calendar.c:1349 ../src/tasks.c:69
+msgid "None"
+msgstr "Geen"
+
+#: ../src/calendar_calc.c:274
+msgid "Start date is after the end date!"
+msgstr "Start datum is na de eind datum!"
+
+#: ../src/calendar_calc.c:286
+msgid "year"
+msgid_plural "years"
+msgstr[0] "jaar"
+msgstr[1] "jaren"
+
+#: ../src/calendar_calc.c:287
+msgid "month"
+msgid_plural "months"
+msgstr[0] "maand"
+msgstr[1] "maanden"
+
+#: ../src/calendar_calc.c:288 ../src/calendar_calc.c:302
+msgid "day"
+msgid_plural "days"
+msgstr[0] "dag"
+msgstr[1] "dagen"
+
+#: ../src/calendar_calc.c:292 ../src/calendar_calc.c:303
+#: ../src/calendar_calc.c:316
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "uur"
+msgstr[1] "uren"
+
+#: ../src/calendar_calc.c:293 ../src/calendar_calc.c:304
+#: ../src/calendar_calc.c:315
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "minuut"
+msgstr[1] "minuten"
+
+#: ../src/calendar_calc.c:294 ../src/calendar_calc.c:305
+#: ../src/calendar_calc.c:314
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "seconde"
+msgstr[1] "seconden"
+
+#: ../src/calendar_calc.c:297 ../src/calendar_calc.c:899
+#, fuzzy
+msgid "Alternative time units"
+msgstr "Alternatieve tijd eenheden"
+
+#: ../src/calendar_calc.c:301
+msgid "or"
+msgstr "of"
+
+#: ../src/calendar_calc.c:315 ../src/calendar_calc.c:316
+#: ../src/calendar_calc.c:317
+msgid "rounded down"
+msgstr "naar beneden afronden"
+
+#: ../src/calendar_calc.c:317
+msgid "week"
+msgid_plural "weeks"
+msgstr[0] "week"
+msgstr[1] "weken"
+
+#: ../src/calendar_calc.c:445
+msgid "This calculator only supports dates after year 1."
+msgstr "Deze rekenmachine ondersteund alleen data na jaar 1."
+
+#: ../src/calendar_calc.c:561 ../src/calendar_calc.c:726
+#: ../src/calendar_calc.c:953 ../src/calendar_fullyear.c:288
+#: ../src/calendar_jumpto.c:245
+msgid "Year"
+msgstr "Jaar"
+
+#: ../src/calendar_calc.c:568 ../src/calendar_calc.c:733
+#: ../src/calendar_calc.c:960 ../src/calendar_jumpto.c:231
+msgid "Month"
+msgstr "Maand"
+
+#: ../src/calendar_calc.c:575 ../src/calendar_calc.c:740
+#: ../src/calendar_calc.c:967 ../src/calendar_jumpto.c:217
+msgid "Day"
+msgstr "Dag"
+
+#: ../src/calendar_calc.c:607 ../src/calendar_calc.c:772
+#: ../src/calendar_calc.c:999
+msgid "Current date"
+msgstr "Huidige datum"
+
+#: ../src/calendar_calc.c:612 ../src/calendar_calc.c:777
+#: ../src/calendar_calc.c:1004
+msgid "Set current date"
+msgstr "Gebruik huidige datum"
+
+#: ../src/calendar_calc.c:626 ../src/calendar_calc.c:791
+#: ../src/calendar_calc.c:1018
+msgid "Hour"
+msgstr "Uur"
+
+#: ../src/calendar_calc.c:633 ../src/calendar_calc.c:798
+#: ../src/calendar_calc.c:1025
+msgid "Minute"
+msgstr "Minuut"
+
+#: ../src/calendar_calc.c:640 ../src/calendar_calc.c:805
+#: ../src/calendar_calc.c:1032
+msgid "Second"
+msgstr "Seconde"
+
+#: ../src/calendar_calc.c:677 ../src/calendar_calc.c:842
+#: ../src/calendar_calc.c:1069
+msgid "Set current time"
+msgstr "Gebruik huidige tijd"
+
+#: ../src/calendar_calc.c:690 ../src/calendar_calc.c:855
+#: ../src/calendar_calc.c:1082
+#, fuzzy
+msgid "Reset time"
+msgstr "Herinitialiseer tijd"
+
+#: ../src/calendar_calc.c:693
+msgid "Start date and time"
+msgstr "Start datum en tijd"
+
+#: ../src/calendar_calc.c:858
+msgid "End date and time"
+msgstr "Eind datum en tijd"
+
+#: ../src/calendar_calc.c:912 ../src/calendar_calc.c:1279
+msgid "Result"
+msgstr "Resultaat"
+
+#: ../src/calendar_calc.c:918
+msgid "Duration between two dates"
+msgstr "Tijdsduur tussen twee data"
+
+#: ../src/calendar_calc.c:1085
+msgid "Date and time to add or substract from"
+msgstr "Datum en tijd om op te tellen of van af te trekken"
+
+#: ../src/calendar_calc.c:1113
+msgid "Years"
+msgstr "Jaren"
+
+#: ../src/calendar_calc.c:1120
+msgid "Months"
+msgstr "Maanden"
+
+#: ../src/calendar_calc.c:1148
+msgid "Days"
+msgstr "Dagen"
+
+#: ../src/calendar_calc.c:1155
+msgid "Weeks"
+msgstr "Weken"
+
+#: ../src/calendar_calc.c:1176
+msgid "Hours"
+msgstr "Uren"
+
+#: ../src/calendar_calc.c:1183
+msgid "Minutes"
+msgstr "Minuten"
+
+#: ../src/calendar_calc.c:1190
+msgid "Seconds"
+msgstr "Seconden"
+
+#: ../src/calendar_calc.c:1222
+#, fuzzy
+msgid "Operation"
+msgstr "Aktie"
+
+#: ../src/calendar_calc.c:1227
+msgid "add"
+msgstr "Optellen"
+
+#: ../src/calendar_calc.c:1233
+msgid "substract"
+msgstr "Aftrekken"
+
+#: ../src/calendar_calc.c:1249
+#, fuzzy
+msgid "Reset fields"
+msgstr "Herinitialiseer velden"
+
+#: ../src/calendar_calc.c:1252
+msgid "Time to add or substract"
+msgstr "Tijd om op te tellen of af te trekken"
+
+#: ../src/calendar_calc.c:1285
+msgid "Add to or subtract from a date"
+msgstr "Optellen bij of aftrekken van een datum"
+
+#: ../src/calendar_fullyear.c:324
+msgid "Current year"
+msgstr "Huidig jaar"
+
+#: ../src/calendar_fullyear.c:343
+msgid "Browse iCal events"
+msgstr ""
+
+#: ../src/calendar_ical.c:671
+#, fuzzy
+msgid "No calendars defined"
+msgstr "Geen verjaardagen gedefinieerd"
+
+#: ../src/calendar_ical.c:676
+#, fuzzy
+msgid "iCalendar events"
+msgstr "Kalender lettertype"
+
+#: ../src/calendar_ical.c:754
+#, fuzzy
+msgid "Date"
+msgstr "Provincie"
+
+#: ../src/calendar_ical.c:760 ../src/tasks.c:954 ../src/tasks_items.c:421
+msgid "Summary"
+msgstr "Samenvatting"
+
+#: ../src/calendar_timeline.c:180
+msgid "Timeline"
+msgstr "Tijdlijn"
+
+#: ../src/calendar_timeline.c:199
+msgid "From (hour)"
+msgstr "Van (uur)"
+
+#: ../src/calendar_timeline.c:215
+msgid "Step (minutes)"
+msgstr "Stap (minuten)"
+
+#: ../src/calendar_timeline.c:231
+msgid "To (hour)"
+msgstr "Naar (uur)"
+
+#: ../src/contacts_birthdays.c:106
+msgid "No birthdays defined"
+msgstr "Geen verjaardagen gedefinieerd"
+
+#: ../src/contacts_birthdays.c:111
+msgid "Birthdays list"
+msgstr "Verjaardagen lijst"
+
+#: ../src/contacts_birthdays.c:145 ../src/options_gui_calendar.c:398
+#: ../src/options_gui_calendar.c:1139 ../src/options_gui_calendar.c:1713
+#: ../src/options_gui_calendar.c:1824
+msgid "Name"
+msgstr "Naam"
+
+#: ../src/contacts_birthdays.c:151
+msgid "Days to birthday"
+msgstr "Dagen tot verjaardag"
+
+#: ../src/contacts_birthdays.c:158
+msgid "Age"
+msgstr "Leeftijd???"
+
+#: ../src/contacts.c:735 ../src/contacts_items.c:610
+#: ../src/options_gui_contacts.c:655 ../src/options_gui_contacts.c:657
+#: ../src/options_gui_contacts.c:659 ../src/options_gui_contacts.c:661
+#: ../src/options_gui_contacts.c:663 ../src/options_gui_contacts.c:665
+msgid "Group"
+msgstr "Groep"
+
+#: ../src/contacts.c:735
+msgid "First name"
+msgstr "Roepnaam"
+
+#: ../src/contacts.c:735
+msgid "Second name"
+msgstr "Tweede naam"
+
+#: ../src/contacts.c:736
+msgid "Last name"
+msgstr "Achternaam"
+
+#: ../src/contacts.c:737
+msgid "Nickname"
+msgstr "Nickname"
+
+#: ../src/contacts.c:737
+msgid "Birthday date"
+msgstr "Verjaardag datum"
+
+#: ../src/contacts.c:737
+msgid "Name day date"
+msgstr "Naam dag datum"
+
+#: ../src/contacts.c:740
+msgid "Home address"
+msgstr "Thuis adres"
+
+#: ../src/contacts.c:740
+msgid "Home postcode"
+msgstr "Thuis postcode"
+
+#: ../src/contacts.c:740
+msgid "Home city"
+msgstr "Thuis plaats"
+
+#: ../src/contacts.c:741
+msgid "Home state"
+msgstr "Thuis provincie"
+
+#: ../src/contacts.c:741
+msgid "Home country"
+msgstr "Thuis land"
+
+#: ../src/contacts.c:744
+msgid "Organization"
+msgstr "Organisatie"
+
+#: ../src/contacts.c:744
+msgid "Department"
+msgstr "Afdeling"
+
+#: ../src/contacts.c:747
+msgid "Work address"
+msgstr "Werk adres"
+
+#: ../src/contacts.c:747
+msgid "Work postcode"
+msgstr "Werk postcode"
+
+#: ../src/contacts.c:747
+msgid "Work city"
+msgstr "Werk plaats"
+
+#: ../src/contacts.c:748
+msgid "Work state"
+msgstr "Werk provincie"
+
+#: ../src/contacts.c:748
+msgid "Work country"
+msgstr "Werk land"
+
+#: ../src/contacts.c:751
+msgid "Fax"
+msgstr "Fax"
+
+#: ../src/contacts.c:754
+msgid "Home phone"
+msgstr "Thuis telefoon"
+
+#: ../src/contacts.c:754
+msgid "Home phone 2"
+msgstr "Thuis telefoon 2"
+
+#: ../src/contacts.c:755
+msgid "Home phone 3"
+msgstr "Thuis telefoon 3"
+
+#: ../src/contacts.c:755
+msgid "Home phone 4"
+msgstr "Thuis telefoon 4"
+
+#: ../src/contacts.c:756
+msgid "Work phone"
+msgstr "Werk telefoon"
+
+#: ../src/contacts.c:756
+msgid "Work phone 2"
+msgstr "Werk telefoon 2"
+
+#: ../src/contacts.c:757
+msgid "Work phone 3"
+msgstr "Werk telefoon 3"
+
+#: ../src/contacts.c:757
+msgid "Work phone 4"
+msgstr "Werk telefoon 4"
+
+#: ../src/contacts.c:758
+msgid "Cell phone"
+msgstr "Mobiele telefoon"
+
+#: ../src/contacts.c:758
+msgid "Cell phone 2"
+msgstr "Mobiele telefoon 2"
+
+#: ../src/contacts.c:759
+msgid "Cell phone 3"
+msgstr "Mobiele telefoon 3"
+
+#: ../src/contacts.c:759
+msgid "Cell phone 4"
+msgstr "Mobiele telefoon 4"
+
+#: ../src/contacts.c:760
+msgid "E-Mail"
+msgstr "E-mail"
+
+#: ../src/contacts.c:760
+msgid "E-Mail 2"
+msgstr "E-mail 2"
+
+#: ../src/contacts.c:760
+msgid "E-Mail 3"
+msgstr "E-mail 3"
+
+#: ../src/contacts.c:761
+msgid "E-Mail 4"
+msgstr "E-mail 4"
+
+#: ../src/contacts.c:761
+msgid "WWW"
+msgstr "WWW"
+
+#: ../src/contacts.c:761
+msgid "WWW 2"
+msgstr "WWW 2"
+
+#: ../src/contacts.c:761
+msgid "WWW 3"
+msgstr "WWW 3"
+
+#: ../src/contacts.c:762
+msgid "WWW 4"
+msgstr "WWW 4"
+
+#: ../src/contacts.c:765
+msgid "IM Gadu-Gadu"
+msgstr "IM Gadu-Gadu"
+
+#: ../src/contacts.c:765
+msgid "IM Yahoo"
+msgstr "IM Yahoo"
+
+#: ../src/contacts.c:765
+msgid "IM MSN"
+msgstr "IM MSN"
+
+#: ../src/contacts.c:766
+msgid "IM ICQ"
+msgstr "IM ICQ"
+
+#: ../src/contacts.c:766
+msgid "IM AOL"
+msgstr "IM AOL"
+
+#: ../src/contacts.c:767
+msgid "IM Jabber"
+msgstr "IM Jabber"
+
+#: ../src/contacts.c:767
+msgid "IM Skype"
+msgstr "IM Skype"
+
+#: ../src/contacts.c:767
+msgid "IM Tlen"
+msgstr "IM Tlen"
+
+#: ../src/contacts.c:768
+msgid "Blog"
+msgstr "Blog"
+
+#: ../src/contacts.c:768
+msgid "Photo"
+msgstr "Foto"
+
+#: ../src/contacts.c:768 ../src/contacts_items.c:968
+msgid "Additional info"
+msgstr "Extra informatie"
+
+#: ../src/contacts.c:784
+msgid "New contact"
+msgstr "Nieuw contact"
+
+#: ../src/contacts.c:785 ../src/stock_icons.c:75
+msgid "Remove contact"
+msgstr "Verwijder contact"
+
+#: ../src/contacts.c:786 ../src/contacts_items.c:535 ../src/stock_icons.c:72
+msgid "Edit contact"
+msgstr "Wijzig contact"
+
+#: ../src/contacts.c:787 ../src/stock_icons.c:71
+msgid "Show birthdays"
+msgstr "Laat verjaardagen zien"
+
+#: ../src/contacts.c:788 ../src/contacts_import.c:582 ../src/stock_icons.c:74
+msgid "Import contacts"
+msgstr "Importeer contacten"
+
+#: ../src/contacts.c:789 ../src/contacts_export.c:589 ../src/stock_icons.c:73
+msgid "Export contacts"
+msgstr "Exporteer contacten"
+
+#: ../src/contacts.c:806 ../src/gui.c:963 ../src/options_gui.c:171
+#: ../src/stock_icons.c:76
+msgid "Contacts"
+msgstr "Contacten"
+
+#: ../src/contacts.c:855
+msgid "Search"
+msgstr "Zoeken"
+
+#: ../src/contacts.c:881 ../src/options_gui_contacts.c:655
+#: ../src/options_gui_contacts.c:657 ../src/options_gui_contacts.c:659
+#: ../src/options_gui_contacts.c:661 ../src/options_gui_contacts.c:663
+#: ../src/options_gui_contacts.c:665
+msgid "First Name"
+msgstr "Roepnaam"
+
+#: ../src/contacts.c:882 ../src/options_gui_contacts.c:655
+#: ../src/options_gui_contacts.c:657 ../src/options_gui_contacts.c:659
+#: ../src/options_gui_contacts.c:661 ../src/options_gui_contacts.c:663
+#: ../src/options_gui_contacts.c:665
+msgid "Last Name"
+msgstr "Achternaam"
+
+#: ../src/contacts.c:883
+msgid "All fields"
+msgstr "Alle velden"
+
+#: ../src/contacts.c:983
+msgid "Contact details"
+msgstr "Contact details"
+
+#: ../src/contacts.c:995
+msgid "Close contact panel"
+msgstr "Sluit contact paneel"
+
+#: ../src/contacts_export.c:101
+msgid "Done!"
+msgstr "Klaar!"
+
+#: ../src/contacts_export.c:102
+msgid "contact exported"
+msgid_plural "contacts exported"
+msgstr[0] "contact geëxporteerd"
+msgstr[1] "contacten geëxporteerd"
+
+#: ../src/contacts_export.c:141
+msgid "Selected file exist! Overwrite?"
+msgstr "Geselecteerde bestand bestaat! Overschrijven?"
+
+#: ../src/contacts_export.c:417
+msgid "Cannot create file."
+msgstr "Kan bestand niet maken."
+
+#: ../src/contacts_export.c:434
+msgid "Select output file"
+msgstr "Selecteer uitvoer bestand"
+
+#: ../src/contacts_export.c:663
+msgid "Output format"
+msgstr "Uitvoer formaat"
+
+#: ../src/contacts_export.c:684 ../src/options_gui.c:129
+msgid "Options"
+msgstr "Opties"
+
+#: ../src/contacts_export.c:690
+msgid "Add header"
+msgstr "Voeg kop toe"
+
+#: ../src/contacts_export.c:730
+msgid "Fields to export"
+msgstr "Velden om te exporteren"
+
+#: ../src/contacts_export.c:752
+msgid "All"
+msgstr "Allemaal"
+
+#: ../src/contacts_export.c:770
+#, fuzzy
+msgid "Invert"
+msgstr "Verwissel"
+
+#: ../src/contacts_export.c:780
+msgid "Select fields"
+msgstr "Selecteer velden"
+
+#: ../src/contacts_export.c:839
+msgid "Output filename"
+msgstr "Uitvoer bestandsnaam"
+
+#: ../src/contacts_import.c:49
+msgid "Select CSV file"
+msgstr "Selecteer CSV bestand"
+
+#: ../src/contacts_import.c:62 ../src/options_gui_calendar.c:843
+msgid "All Files"
+msgstr "Alle bestanden"
+
+#: ../src/contacts_import.c:67
+msgid "CSV (comma-separated values) files (*.csv)"
+msgstr "CSV (comma gescheiden waarden) bestanden (*.csv)"
+
+#: ../src/contacts_import.c:349
+msgid "Nothing to import."
+msgstr "Niets om te importeren."
+
+#: ../src/contacts_import.c:452
+msgid "contact added"
+msgid_plural "contacts added"
+msgstr[0] "contact toegevoegd"
+msgstr[1] "contacten toegevoegd"
+
+#: ../src/contacts_import.c:617
+msgid "of"
+msgstr "van"
+
+#: ../src/contacts_import.c:631
+#, fuzzy
+msgid "Record"
+msgstr "Record"
+
+#: ../src/contacts_import.c:638
+#, fuzzy
+msgid "Number fields per record"
+msgstr "Aantal velden per record"
+
+#: ../src/contacts_import.c:667
+#, fuzzy
+msgid "Use first record as header"
+msgstr "Gebruik het eerste record veld als kop"
+
+#: ../src/contacts_import.c:715
+msgid "Field type"
+msgstr "Veld type"
+
+#: ../src/contacts_import.c:725
+msgid "Value"
+msgstr "Waarde"
+
+#: ../src/contacts_import.c:796
+msgid "No records found in selected file."
+msgstr "Geen records gevonden in het geselecteerde bestand."
+
+#: ../src/contacts_import.c:801
+msgid "Cannot read file."
+msgstr "Kan het bestand niet lezen."
+
+#: ../src/contacts_import.c:805
+msgid "Cannot open file."
+msgstr "Kan het bestand niet openen."
+
+#: ../src/contacts_items.c:171
+msgid "Selected contact will be removed."
+msgstr "Geselecteerde contact zal worden verwijderd."
+
+#: ../src/contacts_items.c:171 ../src/tasks_items.c:344
+msgid "Are you sure?"
+msgstr "Weet u het zeker?"
+
+#: ../src/contacts_items.c:393 ../src/date_utils.c:309 ../src/tasks.c:485
+#: ../src/tasks_items.c:178 ../src/tasks_items.c:251 ../src/tasks_items.c:569
+msgid "No date"
+msgstr "Geen datum"
+
+#: ../src/contacts_items.c:438
+msgid "Select photo"
+msgstr "Selecteer foto"
+
+#: ../src/contacts_items.c:528
+msgid "Address"
+msgstr "Adres"
+
+#: ../src/contacts_items.c:528
+msgid "Postcode"
+msgstr "Postcode"
+
+#: ../src/contacts_items.c:528
+msgid "City"
+msgstr "Plaats"
+
+#: ../src/contacts_items.c:528
+msgid "State"
+msgstr "Provincie"
+
+#: ../src/contacts_items.c:528
+msgid "Country"
+msgstr "Land"
+
+#: ../src/contacts_items.c:537 ../src/stock_icons.c:70
+msgid "Add contact"
+msgstr "Contact toevoegen"
+
+#: ../src/contacts_items.c:592
+msgid "Personal"
+msgstr "Persoonlijk"
+
+#: ../src/contacts_items.c:766
+msgid "Home"
+msgstr "Thuis"
+
+#: ../src/contacts_items.c:811
+msgid "Work"
+msgstr "Werk"
+
+#: ../src/contacts_items.c:860
+msgid "Phones"
+msgstr "Telefoons"
+
+#: ../src/contacts_items.c:913
+msgid "Internet"
+msgstr "Internet"
+
+#: ../src/date_utils.c:290
+msgid "New Moon"
+msgstr "Nieuwe maan"
+
+#: ../src/date_utils.c:290
+msgid "Waxing Crescent Moon"
+msgstr "Wassende maan"
+
+#: ../src/date_utils.c:290
+msgid "Quarter Moon"
+msgstr "Halve maan"
+
+#: ../src/date_utils.c:290
+msgid "Waxing Gibbous Moon"
+msgstr "Wassende maan"
+
+#: ../src/date_utils.c:291
+msgid "Full Moon"
+msgstr "Volle maan"
+
+#: ../src/date_utils.c:291
+msgid "Waning Gibbous Moon"
+msgstr "Afnemende maan"
+
+#: ../src/date_utils.c:291
+msgid "Last Quarter Moon"
+msgstr "Laatste kwartier"
+
+#: ../src/date_utils.c:291
+msgid "Waning Crescent Moon"
+msgstr "Afnemende maan"
+
+#: ../src/gui.c:635
+msgid "Birthday found"
+msgstr "Verjaardag gevonden"
+
+#: ../src/gui.c:644
+msgid "Task found"
+msgstr "Taak gevonden"
+
+#: ../src/gui.c:653
+msgid "Day note available"
+msgstr "Dag notitie beschikbaar"
+
+#: ../src/gui.c:674
+msgid "Show calendar"
+msgstr "Laat kalender zien"
+
+#: ../src/gui.c:680
+msgid "Show tasks"
+msgstr "Laat taken zien"
+
+#: ../src/gui.c:686
+msgid "Show contacts"
+msgstr "Laat contacten zien"
+
+#: ../src/gui.c:696
+msgid "Quit"
+msgstr "Afsluiten"
+
+#: ../src/gui.c:760 ../src/main.c:100
+#, fuzzy
+msgid "a handy personal organizer"
+msgstr "een handige persoonlijke organizer"
+
+#: ../src/gui.c:884
+msgid "switch to calendar tab"
+msgstr "wissel naar kalender tab"
+
+#: ../src/gui.c:885
+msgid "switch to tasks tab"
+msgstr "wissel naar taken tab"
+
+#: ../src/gui.c:886
+msgid "switch to options tab"
+msgstr "wissel naar opties tab"
+
+#: ../src/gui.c:887
+msgid "switch to about tab"
+msgstr "wissel naar over tab"
+
+#: ../src/gui.c:888
+msgid "switch to previous tab"
+msgstr "wissel naar vorige tab"
+
+#: ../src/gui.c:889
+msgid "switch to next tab"
+msgstr "wissel naar volgende tab"
+
+#: ../src/gui.c:890
+msgid "switch page in options and about tab"
+msgstr "wissel pagina in opties en over tab"
+
+#: ../src/gui.c:891
+msgid "exit"
+msgstr "exit"
+
+#: ../src/gui.c:895
+msgid "select current date"
+msgstr "selecteer huidige datum"
+
+#: ../src/gui.c:896
+msgid "change day"
+msgstr "verander dag"
+
+#: ../src/gui.c:897
+msgid "change day while note editing"
+msgstr "verander dag tijdens het wijzigen van notitie"
+
+#: ../src/gui.c:898
+#, fuzzy
+msgid "scroll the contents in the day info panel"
+msgstr "Laat notities in het informatie paneel zien"
+
+#: ../src/gui.c:899
+msgid "change month"
+msgstr "verander maand"
+
+#: ../src/gui.c:900
+msgid "change year"
+msgstr "verander jaar"
+
+#: ../src/gui.c:901
+msgid "assign background color to day note"
+msgstr "ken achtergrond kleur toe aan dag notitie"
+
+#: ../src/gui.c:902
+msgid "date calculator"
+msgstr "datum rekenmachine"
+
+#: ../src/gui.c:903
+msgid "jump to date"
+msgstr "spring naar datum"
+
+#: ../src/gui.c:904
+#, fuzzy
+msgid "show full-year calendar"
+msgstr "laat volledig-jaar kalender zien"
+
+#: ../src/gui.c:905
+msgid "toggle calendars for the previous and next month"
+msgstr "wissel kalenders voor de vorige en volgende maand"
+
+#: ../src/gui.c:906
+msgid "remove day note"
+msgstr "verwijder dag notitie"
+
+#: ../src/gui.c:907
+msgid "close day note panel"
+msgstr "sluit dag notitie paneel"
+
+#: ../src/gui.c:911
+msgid "add task"
+msgstr "taak toevoegen"
+
+#: ../src/gui.c:912
+msgid "edit task"
+msgstr "taak wijzigen"
+
+#: ../src/gui.c:913
+msgid "remove task"
+msgstr "taak verwijderen"
+
+#: ../src/gui.c:914
+msgid "toggle hidden tasks"
+msgstr "wissel verborgen taken"
+
+#: ../src/gui.c:915
+msgid "change category filter"
+msgstr "verander categorie filter"
+
+#: ../src/gui.c:916
+msgid "close task info panel"
+msgstr "sluit taak informatie paneel"
+
+#: ../src/gui.c:920
+msgid "add contact"
+msgstr "contact toevoegen"
+
+#: ../src/gui.c:921
+msgid "edit contact"
+msgstr "contact wijzigen"
+
+#: ../src/gui.c:922
+msgid "remove contact"
+msgstr "contact verwijderen"
+
+#: ../src/gui.c:923
+msgid "activate search field"
+msgstr "activeer zoek veld"
+
+#: ../src/gui.c:924
+msgid "change search mode"
+msgstr "verander zoek modus"
+
+#: ../src/gui.c:925
+msgid "close contact details panel"
+msgstr "sluit contact details paneel"
+
+#: ../src/gui.c:933
+msgid ""
+"OSMO was designed keeping in mind the user convenience, so there are many "
+"key shorctuts. Here is the full list:"
+msgstr ""
+"OSMO is met het gebruikers gemak in het hoofd ontworpen, dus er zijn een "
+"boel snel-toetsen. Hier is de volledige lijst:"
+
+#: ../src/gui.c:936 ../src/options_gui.c:184 ../src/options_gui_general.c:319
+msgid "General"
+msgstr "Algemeen"
+
+#: ../src/gui.c:954 ../src/options_gui.c:158 ../src/stock_icons.c:94
+#: ../src/tasks.c:762
+msgid "Tasks"
+msgstr "Taken"
+
+#: ../src/gui.c:987
+#, fuzzy
+msgid "A handy personal organizer"
+msgstr "Een handige persoonlijke organizer"
+
+#: ../src/gui.c:997
+msgid "compiled on"
+msgstr "gecompileerd op"
+
+#: ../src/gui.c:1001
+msgid "Programming"
+msgstr "Programmeren"
+
+#: ../src/gui.c:1011
+msgid "Graphics"
+msgstr "Plaatjes"
+
+#: ../src/gui.c:1021
+msgid "Contributors"
+msgstr "Medewerkers"
+
+#: ../src/gui.c:1031
+msgid "Translators"
+msgstr "Vertalers"
+
+#: ../src/gui.c:1156 ../src/gui.c:1188 ../src/stock_icons.c:67
+msgid "About"
+msgstr "Over"
+
+#: ../src/gui.c:1166
+msgid "version"
+msgstr "versie"
+
+#: ../src/gui.c:1168
+msgid "SVN revision"
+msgstr "SVN revisie"
+
+#: ../src/gui.c:1203
+msgid "Key shortcuts"
+msgstr "Snel-toetsen"
+
+#: ../src/gui.c:1216 ../src/stock_icons.c:81
+msgid "License"
+msgstr "Licentie"
+
+#: ../src/gui_utils.c:86 ../src/gui_utils.c:88
+msgid "Question"
+msgstr "Vraag"
+
+#: ../src/gui_utils.c:101 ../src/gui_utils.c:103
+msgid "Information"
+msgstr "Informatie"
+
+#: ../src/gui_utils.c:115 ../src/gui_utils.c:117
+msgid "Error"
+msgstr "Fout"
+
+#: ../src/gui_utils.c:129 ../src/gui_utils.c:131 ../src/main.c:135
+msgid "Warning"
+msgstr "Waarschuwing"
+
+#: ../src/main.c:102
+msgid "usage"
+msgstr "gebruik"
+
+#: ../src/main.c:102 ../src/main.c:103
+msgid "options"
+msgstr "opties"
+
+#: ../src/main.c:104
+msgid "show small calendar window"
+msgstr "Laat klein kalender venster zien"
+
+#: ../src/main.c:128
+msgid "Another copy of OSMO is already running."
+msgstr ""
+"Een andere kopie van OSMO draait al of het is niet goed afgesloten (in dit "
+"geval, verwijder het '%s' bestand en probeer opnieuw)."
+
+#: ../src/main.c:129
+msgid ""
+"Simultaneously use two or more copies of OSMO can be a cause of data loss."
+msgstr ""
+"Gelijktijdig gebruik van twee of meer kopies van OSMO kan een oorzaak zijn "
+"van gegevens verlies."
+
+#: ../src/main.c:130
+msgid "Do you really want to continue?"
+msgstr "Weet u zeker dat u door wilt gaan?"
+
+#: ../src/options_gui_calendar.c:61 ../src/options_gui_calendar.c:96
+#: ../src/options_gui_calendar.c:131 ../src/options_gui_tasks.c:60
+msgid "Select a font..."
+msgstr "Selecteer een lettertype..."
+
+#: ../src/options_gui_calendar.c:336
+msgid "Modify color"
+msgstr "Verander kleur"
+
+#: ../src/options_gui_calendar.c:374
+msgid "Color"
+msgstr "Kleur"
+
+#: ../src/options_gui_calendar.c:830
+#, fuzzy
+msgid "Select ICS file"
+msgstr "Selecteer CSV bestand"
+
+#: ../src/options_gui_calendar.c:848
+msgid "Calendar files (*.ics)"
+msgstr ""
+
+#: ../src/options_gui_calendar.c:1066
+msgid "Modify ICAL parameters"
+msgstr ""
+
+#: ../src/options_gui_calendar.c:1115 ../src/options_gui_calendar.c:1705
+#, fuzzy
+msgid "Filename"
+msgstr "Roepnaam"
+
+#: ../src/options_gui_calendar.c:1320 ../src/options_gui_contacts.c:340
+#: ../src/options_gui_general.c:257 ../src/options_gui_tasks.c:376
+msgid "Appearance"
+msgstr "Voorkomen"
+
+#: ../src/options_gui_calendar.c:1350
+msgid "Middle dot"
+msgstr "Gecentreerde punt"
+
+#: ../src/options_gui_calendar.c:1351
+msgid "Apostrophe"
+msgstr "Apostrof"
+
+#: ../src/options_gui_calendar.c:1352
+msgid "Asterisk"
+msgstr "Sterretje"
+
+#: ../src/options_gui_calendar.c:1353
+msgid "Tilde"
+msgstr "Tilde"
+
+#: ../src/options_gui_calendar.c:1354
+msgid "Vertical line"
+msgstr "Verticale lijn"
+
+#: ../src/options_gui_calendar.c:1355
+msgid "Degree sign"
+msgstr "Graden teken"
+
+#: ../src/options_gui_calendar.c:1369
+msgid "Header color"
+msgstr "Kop kleur"
+
+#: ../src/options_gui_calendar.c:1378
+msgid "Weekend days color"
+msgstr "Weekend dagen kleur"
+
+#: ../src/options_gui_calendar.c:1387
+msgid "Cursor color"
+msgstr "Cursor kleur"
+
+#: ../src/options_gui_calendar.c:1396
+msgid "Marked day color"
+msgstr "Gemarkeerde dag kleur"
+
+#: ../src/options_gui_calendar.c:1461 ../src/options_gui_contacts.c:362
+#: ../src/options_gui_tasks.c:459
+msgid "Colors"
+msgstr "Kleuren"
+
+#: ../src/options_gui_calendar.c:1469
+msgid "Date font"
+msgstr "Datum lettertype"
+
+#: ../src/options_gui_calendar.c:1477
+msgid "Calendar font"
+msgstr "Kalender lettertype"
+
+#: ../src/options_gui_calendar.c:1485
+msgid "Note font"
+msgstr "Notitie lettertype"
+
+#: ../src/options_gui_calendar.c:1493
+msgid "Mark symbol"
+msgstr "Markeer symbool"
+
+#: ../src/options_gui_calendar.c:1502
+msgid "Enable block cursor"
+msgstr "Zet blok cursor aan"
+
+#: ../src/options_gui_calendar.c:1511
+msgid "Cursor thickness"
+msgstr "Cursor dikheid"
+
+#: ../src/options_gui_calendar.c:1519
+msgid "Thin"
+msgstr "Dun"
+
+#: ../src/options_gui_calendar.c:1528
+msgid "Thick"
+msgstr "Dik"
+
+#: ../src/options_gui_calendar.c:1556
+msgid "Day categories"
+msgstr "Dag categorieën"
+
+#: ../src/options_gui_calendar.c:1682
+#, fuzzy
+msgid "iCalendar files"
+msgstr "Kalender lettertype"
+
+#: ../src/options_gui_calendar.c:1820
+#, fuzzy
+msgid "Valid"
+msgstr "Waarde"
+
+#: ../src/options_gui_calendar.c:1839 ../src/tasks.c:964
+#: ../src/tasks_items.c:511
+msgid "Description"
+msgstr "Beschrijving"
+
+#: ../src/options_gui_calendar.c:1845
+#, fuzzy
+msgid "Use year"
+msgstr "Volgend jaar"
+
+#: ../src/options_gui_calendar.c:1887
+msgid "Week start on Monday"
+msgstr "Week start op maandag"
+
+#: ../src/options_gui_calendar.c:1896
+msgid "Show day names"
+msgstr "Laat dag namen zien"
+
+#: ../src/options_gui_calendar.c:1905
+msgid "No month change"
+msgstr "Geen maand verandering"
+
+#: ../src/options_gui_calendar.c:1914
+msgid "Show week numbers"
+msgstr "Laat week nummers zien"
+
+#: ../src/options_gui_calendar.c:1923
+#, fuzzy
+msgid "Simple view in full-year calendar"
+msgstr "Eenvoudige weergave in volledig-jaar kalender"
+
+#: ../src/options_gui_calendar.c:1932
+msgid "Enable auxilary calendars"
+msgstr "Zet helper kalenders aan"
+
+#: ../src/options_gui_calendar.c:1949
+#, fuzzy
+msgid "Show in day info panel"
+msgstr "Laat notities in het informatie paneel zien"
+
+#: ../src/options_gui_contacts.c:380
+msgid "Color of contact tags"
+msgstr "Kleur van contact markeringen"
+
+#: ../src/options_gui_contacts.c:389
+msgid "Color of links"
+msgstr "Kleur van links"
+
+#: ../src/options_gui_contacts.c:394
+msgid "Name font size"
+msgstr "Naam korpsgrootte"
+
+#: ../src/options_gui_contacts.c:413
+msgid "Tags font size"
+msgstr "Markeringen korpsgrootte"
+
+#: ../src/options_gui_contacts.c:431
+msgid "Photo size"
+msgstr "Foto grootte"
+
+#: ../src/options_gui_contacts.c:450
+msgid "Small"
+msgstr "Klein"
+
+#: ../src/options_gui_contacts.c:451 ../src/tasks.c:91 ../src/tasks.c:116
+#: ../src/tasks_items.c:501
+msgid "Medium"
+msgstr "Middel"
+
+#: ../src/options_gui_contacts.c:452
+msgid "Large"
+msgstr "Groot"
+
+#: ../src/options_gui_contacts.c:462 ../src/options_gui_tasks.c:467
+msgid "Draw rows in alternating colors"
+msgstr "Geef de afwisselende rijen verschillende kleuren"
+
+#: ../src/options_gui_contacts.c:474
+msgid "Miscellaneous"
+msgstr "Overig"
+
+#: ../src/options_gui_contacts.c:491
+msgid "Select and show first item after search"
+msgstr "Selecteer en toon eerste ding na zoeken"
+
+#: ../src/options_gui_contacts.c:498
+msgid "Hide group column"
+msgstr "Verberg groep kolom"
+
+#: ../src/options_gui_contacts.c:510
+msgid "Groups"
+msgstr "Groepen"
+
+#: ../src/options_gui_contacts.c:599 ../src/options_gui_tasks.c:623
+msgid "Sorting"
+msgstr "Sorteren"
+
+#: ../src/options_gui_contacts.c:621 ../src/options_gui_tasks.c:645
+msgid "Order"
+msgstr "Rang"
+
+#: ../src/options_gui_contacts.c:629 ../src/options_gui_tasks.c:653
+msgid "Mode"
+msgstr "Manier"
+
+#: ../src/options_gui_contacts.c:644 ../src/options_gui_tasks.c:668
+msgid "Ascending"
+msgstr "Aflopend"
+
+#: ../src/options_gui_contacts.c:645 ../src/options_gui_tasks.c:669
+msgid "Descending"
+msgstr "Oplopend"
+
+#: ../src/options_gui_general.c:279
+#, fuzzy
+msgid "Tabs position"
+msgstr "Taak opties"
+
+#: ../src/options_gui_general.c:295
+msgid "Left"
+msgstr ""
+
+#: ../src/options_gui_general.c:296
+#, fuzzy
+msgid "Right"
+msgstr "Hoog"
+
+#: ../src/options_gui_general.c:297
+msgid "Top"
+msgstr ""
+
+#: ../src/options_gui_general.c:298
+msgid "Bottom"
+msgstr ""
+
+#: ../src/options_gui_general.c:301
+#, fuzzy
+msgid "Use default stock icons (needs restart)"
+msgstr "Gebruik standaard ikonen (heeft herstart nodig)"
+
+#: ../src/options_gui_general.c:308
+msgid "Disable underline in links"
+msgstr "Zet onderstrepen in links uit"
+
+#: ../src/options_gui_general.c:341
+msgid "Date format"
+msgstr "Datum formaat"
+
+#: ../src/options_gui_general.c:357
+msgid "DD-MM-YYYY"
+msgstr "DD-MM-JJJJ"
+
+#: ../src/options_gui_general.c:358
+msgid "MM-DD-YYYY"
+msgstr "MM-DD-JJJJ"
+
+#: ../src/options_gui_general.c:359
+msgid "YYYY-MM-DD"
+msgstr "JJJJ-MM-DD"
+
+#: ../src/options_gui_general.c:360
+msgid "YYYY-DD-MM"
+msgstr "JJJJ-DD-MM"
+
+#: ../src/options_gui_general.c:363
+msgid "Time format"
+msgstr "Tijd formaat"
+
+#: ../src/options_gui_general.c:379 ../src/options_gui_general.c:381
+msgid "hours"
+msgstr "uren"
+
+#: ../src/options_gui_general.c:386
+msgid "Enable tooltips"
+msgstr "Zet zwevende tips aan"
+
+#: ../src/options_gui_general.c:395
+msgid "Remember last selected page"
+msgstr "Herinner laatst geselecteerde pagina"
+
+#: ../src/options_gui_general.c:409
+#, fuzzy
+msgid "Helpers"
+msgstr "Helpers"
+
+#: ../src/options_gui_general.c:432
+#, fuzzy
+msgid "Web browser"
+msgstr "Web bladerprogramma"
+
+#: ../src/options_gui_general.c:440
+msgid "E-mail client"
+msgstr "E-mail programma"
+
+#: ../src/options_gui_general.c:470
+msgid "System tray"
+msgstr "Systeem balk"
+
+#: ../src/options_gui_general.c:492
+msgid "Enable system tray"
+msgstr "Zet systeem balk aan"
+
+#: ../src/options_gui_general.c:501
+msgid "Start minimised"
+msgstr "Start geminimalizeerd"
+
+#: ../src/options_gui_tasks.c:408
+msgid "Color of items that are due today"
+msgstr "Kleur van dingen die vandaag verwacht worden"
+
+#: ../src/options_gui_tasks.c:417
+msgid "Color of items that are due in the next 7 days"
+msgstr "Kleur van dingen die de komende 7 dagen verwacht worden"
+
+#: ../src/options_gui_tasks.c:426
+msgid "Color of items that are past due"
+msgstr "Kleur van dingen die zijn vervallen"
+
+#: ../src/options_gui_tasks.c:451
+msgid "Task info font"
+msgstr "Taak informatie lettertype"
+
+#: ../src/options_gui_tasks.c:480
+msgid "Visible columns"
+msgstr "Zichtbare kolomen"
+
+#: ../src/options_gui_tasks.c:502 ../src/options_gui_tasks.c:679
+#: ../src/options_gui_tasks.c:681 ../src/options_gui_tasks.c:683
+#: ../src/options_gui_tasks.c:685 ../src/options_gui_tasks.c:687
+#: ../src/options_gui_tasks.c:689 ../src/tasks.c:902 ../src/tasks_items.c:431
+msgid "Due date"
+msgstr "Verwachtte datum"
+
+#: ../src/options_gui_tasks.c:511 ../src/options_gui_tasks.c:679
+#: ../src/options_gui_tasks.c:681 ../src/options_gui_tasks.c:683
+#: ../src/options_gui_tasks.c:685 ../src/options_gui_tasks.c:687
+#: ../src/options_gui_tasks.c:689 ../src/tasks.c:932 ../src/tasks_items.c:488
+msgid "Priority"
+msgstr "Prioriteit"
+
+#: ../src/options_gui_tasks.c:520 ../src/tasks.c:942 ../src/tasks_items.c:467
+msgid "Category"
+msgstr "Categorie"
+
+#: ../src/options_gui_tasks.c:534
+msgid "Categories"
+msgstr "Categorieen???"
+
+#: ../src/options_gui_tasks.c:679 ../src/options_gui_tasks.c:681
+#: ../src/options_gui_tasks.c:683 ../src/options_gui_tasks.c:685
+#: ../src/options_gui_tasks.c:687 ../src/options_gui_tasks.c:689
+#: ../src/tasks.c:893
+msgid "Done"
+msgstr "Gedaan"
+
+#: ../src/options_gui_tasks.c:697
+msgid "Tasks options"
+msgstr "Taak opties"
+
+#: ../src/options_gui_tasks.c:713
+msgid "Hide completed tasks"
+msgstr "Verberg taken die gedaan zijn"
+
+#: ../src/options_gui_tasks.c:722
+msgid "Delete completed tasks without confirmation"
+msgstr "Verwijder taken die gedaan zijn zonder bevestiging"
+
+#: ../src/stock_icons.c:42
+msgid "Add"
+msgstr "Voeg toe"
+
+#: ../src/stock_icons.c:43
+msgid "Clear"
+msgstr "Leegmaken"
+
+#: ../src/stock_icons.c:44
+msgid "Close"
+msgstr "Sluit"
+
+#: ../src/stock_icons.c:45
+msgid "Cancel"
+msgstr "Annuleer"
+
+#: ../src/stock_icons.c:46
+msgid "Jump to"
+msgstr "Spring naar"
+
+#: ../src/stock_icons.c:47
+msgid "Export"
+msgstr "Export"
+
+#: ../src/stock_icons.c:48
+msgid "Import"
+msgstr "Import"
+
+#: ../src/stock_icons.c:49
+msgid "Edit"
+msgstr "Wijzig"
+
+#: ../src/stock_icons.c:50
+msgid "Insert"
+msgstr "Invoegen"
+
+#: ../src/stock_icons.c:52
+msgid "No"
+msgstr "Nee"
+
+#: ../src/stock_icons.c:53
+msgid "OK"
+msgstr "OK"
+
+#: ../src/stock_icons.c:54
+msgid "Browse"
+msgstr "Bladeren"
+
+#: ../src/stock_icons.c:56
+msgid "Remove"
+msgstr "Verwijder"
+
+#: ../src/stock_icons.c:58
+msgid "Select date"
+msgstr "Selecteer datum"
+
+#: ../src/stock_icons.c:59
+msgid "Select font"
+msgstr "Selecteer lettertype"
+
+#: ../src/stock_icons.c:61
+msgid "Yes"
+msgstr "Ja"
+
+#: ../src/stock_icons.c:65
+msgid "Task"
+msgstr "Taak"
+
+#: ../src/stock_icons.c:69
+msgid "Calculator"
+msgstr "Rekenmachine"
+
+#: ../src/stock_icons.c:77
+msgid "Edit day note"
+msgstr "Wijzig dag notitie"
+
+#: ../src/stock_icons.c:78
+#, fuzzy
+msgid "Display full-year calendar"
+msgstr "Laat volledig-jaar kalender zien"
+
+#: ../src/stock_icons.c:79
+msgid "Help"
+msgstr "Help"
+
+#: ../src/stock_icons.c:82
+msgid "Invalid item"
+msgstr ""
+
+#: ../src/stock_icons.c:83
+#, fuzzy
+msgid "Valid item"
+msgstr "Alle dingen"
+
+#: ../src/stock_icons.c:87
+msgid "Preferences"
+msgstr "Voorkeuren"
+
+#: ../src/stock_icons.c:91 ../src/tasks_items.c:389
+msgid "Add task"
+msgstr "Voeg taak toe"
+
+#: ../src/stock_icons.c:92 ../src/tasks.c:751 ../src/tasks_items.c:387
+msgid "Edit task"
+msgstr "Wijzig taak"
+
+#: ../src/stock_icons.c:93 ../src/tasks.c:752
+msgid "Remove task"
+msgstr "Verwijder taak"
+
+#: ../src/tasks.c:71
+msgid "All items"
+msgstr "Alle dingen"
+
+#: ../src/tasks.c:91 ../src/tasks.c:116 ../src/tasks_items.c:500
+msgid "Low"
+msgstr "Laag"
+
+#: ../src/tasks.c:91 ../src/tasks.c:116 ../src/tasks_items.c:502
+msgid "High"
+msgstr "Hoog"
+
+#: ../src/tasks.c:278
+msgid "Started"
+msgstr "Gestart"
+
+#: ../src/tasks.c:466
+msgid "no entries"
+msgstr "Geen items"
+
+#: ../src/tasks.c:468
+#, fuzzy
+msgid "entry"
+msgid_plural "entries"
+msgstr[0] "item"
+msgstr[1] "items"
+
+#: ../src/tasks.c:750
+msgid "New task"
+msgstr "Nieuwe taak"
+
+#: ../src/tasks.c:811
+msgid "Category filter"
+msgstr "Categorie filter"
+
+#: ../src/tasks.c:1009
+msgid "Task details"
+msgstr "Taak details"
+
+#: ../src/tasks.c:1021
+msgid "Close description panel"
+msgstr "Sluit beschrijvings paneel"
+
+#: ../src/tasks_items.c:344
+#, fuzzy
+msgid "Selected task will be removed."
+msgstr "Geselecteerde taak wordt verwijderd"
+
+#~ msgid "Finished"
+#~ msgstr "Beëindigd"

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/osmo-pim/!svn/ver/3/tags/RELEASE_0_1_0/po
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/osmo-pim/!svn/ver/3/tags/RELEASE_0_1_0/po/Makefile.am
+END
+osmo.pot
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/osmo-pim/!svn/ver/3/tags/RELEASE_0_1_0/po/osmo.pot
+END

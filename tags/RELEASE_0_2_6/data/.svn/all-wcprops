@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/osmo-pim/!svn/ver/690/tags/RELEASE_0_2_6/data
+END
+osmo.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/osmo-pim/!svn/ver/690/tags/RELEASE_0_2_6/data/osmo.desktop
+END
+osmo.vim
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/osmo-pim/!svn/ver/690/tags/RELEASE_0_2_6/data/osmo.vim
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/osmo-pim/!svn/ver/690/tags/RELEASE_0_2_6/data/Makefile.am
+END
+osmo.1
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/osmo-pim/!svn/ver/690/tags/RELEASE_0_2_6/data/osmo.1
+END

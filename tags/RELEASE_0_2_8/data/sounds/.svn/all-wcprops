@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/osmo-pim/!svn/ver/790/tags/RELEASE_0_2_8/data/sounds
+END
+alarm.wav
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/osmo-pim/!svn/ver/790/tags/RELEASE_0_2_8/data/sounds/alarm.wav
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/osmo-pim/!svn/ver/790/tags/RELEASE_0_2_8/data/sounds/Makefile.am
+END

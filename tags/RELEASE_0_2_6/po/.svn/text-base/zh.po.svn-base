@@ -1,0 +1,2074 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: osmo 0.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-02-27 21:58+0100\n"
+"PO-Revision-Date: 2008-07-19 18:04+0800\n"
+"Last-Translator: sasaqqdan <sasaqqdan@gmail.com>\n"
+"Language-Team: puppy.cnbits.com <laborer@126.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: CHINA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+msgid "was born"
+msgstr "生日"
+
+msgid "year old"
+msgid_plural "years old"
+msgstr[0] "岁"
+msgstr[1] "岁"
+
+msgid "Current time"
+msgstr "当前时间"
+
+msgid "Day number"
+msgstr "天数"
+
+msgid "Today distance"
+msgstr ""
+
+msgid "Week number"
+msgstr "周数"
+
+msgid "Marked days"
+msgstr "高亮日期"
+
+msgid "Weekend days"
+msgstr "双休日"
+
+#, fuzzy
+msgid "Day category"
+msgstr "日类别"
+
+msgid "Moon phase"
+msgstr "月相"
+
+msgid "Zodiac sign"
+msgstr ""
+
+msgid "day till end of year"
+msgid_plural "days till end of year"
+msgstr[0] "到年底的天数"
+msgstr[1] "到年底的天数"
+
+msgid "the last day of the year"
+msgstr "一年的最后一天"
+
+msgid "Day notes"
+msgstr "每日记录"
+
+msgid "Day tasks"
+msgstr "每日任务"
+
+msgid "Birthday"
+msgstr "生日"
+
+msgid "Selected day note will be removed."
+msgstr "已选择的日记将被删除"
+
+msgid "Continue?"
+msgstr "是否继续？"
+
+msgid "Previous year"
+msgstr "前一年"
+
+msgid "Previous month"
+msgstr "前个月"
+
+msgid "Previous day"
+msgstr "前一天"
+
+msgid "Today"
+msgstr "今日"
+
+msgid "Next day"
+msgstr "下一天"
+
+msgid "Next month"
+msgstr "下一个月"
+
+msgid "Next year"
+msgstr "下一年"
+
+msgid "Jump to date"
+msgstr "跳转到日期"
+
+msgid "Full-year calendar"
+msgstr "全年日历"
+
+#, fuzzy
+msgid "Print calendar"
+msgstr "日历"
+
+msgid "Date calculator"
+msgstr "日期计算器"
+
+msgid "Toggle day note panel"
+msgstr "切换日记面板"
+
+msgid "Calendar"
+msgstr "日历"
+
+msgid "Add task"
+msgstr "添加任务"
+
+msgid "Select day color"
+msgstr "选择日期颜色"
+
+#, fuzzy
+msgid "Browse notes"
+msgstr "浏览"
+
+msgid "Browse iCal events"
+msgstr ""
+
+msgid "Export to iCal file"
+msgstr ""
+
+#, fuzzy
+msgid "Previous and next month"
+msgstr "前个月"
+
+msgid "Notes"
+msgstr "笔记"
+
+msgid "Close note panel"
+msgstr "关闭笔记面板"
+
+msgid "Insert timeline"
+msgstr "插入时间线"
+
+msgid "Clear text"
+msgstr "清除文本"
+
+msgid "Info"
+msgstr "信息"
+
+msgid "Select color"
+msgstr "选择颜色"
+
+msgid "None"
+msgstr "没有"
+
+msgid "year"
+msgid_plural "years"
+msgstr[0] "年"
+msgstr[1] "年"
+
+msgid "month"
+msgid_plural "months"
+msgstr[0] "月"
+msgstr[1] "月"
+
+msgid "day"
+msgid_plural "days"
+msgstr[0] "日"
+msgstr[1] "日"
+
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "小时"
+msgstr[1] "小时"
+
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "分"
+msgstr[1] "分"
+
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "秒"
+msgstr[1] "秒"
+
+msgid "or"
+msgstr "或"
+
+msgid "rounded down"
+msgstr "四舍五入"
+
+msgid "week"
+msgid_plural "weeks"
+msgstr[0] "周"
+msgstr[1] "周"
+
+msgid "This calculator only supports dates after year 1."
+msgstr "该计算器只支持一年后的日期。"
+
+msgid "Year"
+msgstr "年"
+
+msgid "Month"
+msgstr "月"
+
+msgid "Day"
+msgstr "日"
+
+msgid "Current date"
+msgstr "当前日期"
+
+msgid "Set current date"
+msgstr "设置当前日期"
+
+msgid "Hour"
+msgstr "小时"
+
+msgid "Minute"
+msgstr "分钟"
+
+msgid "Second"
+msgstr "秒"
+
+msgid "Set current time"
+msgstr "设置当前时间"
+
+msgid "Reset time"
+msgstr "重设时间"
+
+#, fuzzy
+msgid "First date and time"
+msgstr "起始的日期和时间"
+
+#, fuzzy
+msgid "Second date and time"
+msgstr "完成日期和时间"
+
+msgid "Alternative time units"
+msgstr "选择时间单位"
+
+msgid "Result"
+msgstr "結果"
+
+msgid "Duration between two dates"
+msgstr "两个不同日期的时间差"
+
+#, fuzzy
+msgid "Date and time to add or subtract from"
+msgstr "日期和时间增减"
+
+msgid "Years"
+msgstr "年"
+
+msgid "Months"
+msgstr "月"
+
+msgid "Days"
+msgstr "日"
+
+msgid "Weeks"
+msgstr "周"
+
+msgid "Hours"
+msgstr "小时"
+
+msgid "Minutes"
+msgstr "分钟"
+
+msgid "Seconds"
+msgstr "秒"
+
+msgid "Operation"
+msgstr "操作"
+
+msgid "add"
+msgstr "添加"
+
+#, fuzzy
+msgid "subtract"
+msgstr "减少"
+
+msgid "Reset fields"
+msgstr "重设字段"
+
+#, fuzzy
+msgid "Time to add or subtract"
+msgstr "时间的增减"
+
+msgid "Add to or subtract from a date"
+msgstr "一天任务的增减"
+
+#, fuzzy
+msgid "Leap year"
+msgstr "下一年"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "No"
+msgstr "否"
+
+msgid "Chinese year animal"
+msgstr ""
+
+msgid "Number of days"
+msgstr ""
+
+msgid "Number of weeks"
+msgstr ""
+
+#, fuzzy
+msgid "Number of weekend days"
+msgstr "双休日"
+
+#, fuzzy
+msgid "Year info"
+msgstr "年"
+
+msgid "Current year"
+msgstr "当前年份"
+
+#, fuzzy
+msgid "Alternative view"
+msgstr "选择时间单位"
+
+#, fuzzy
+msgid "event"
+msgid_plural "events"
+msgstr[0] "条目"
+msgstr[1] "条目"
+
+#, fuzzy
+msgid "No calendars defined"
+msgstr "显示小日历窗口"
+
+#, fuzzy
+msgid "iCalendar events"
+msgstr "日历字体"
+
+#, fuzzy
+msgid "Date"
+msgstr "预定时间"
+
+msgid "Summary"
+msgstr "摘要"
+
+msgid "Select output file"
+msgstr "选择输出文件"
+
+msgid "The list will be cleared and all entries will be lost."
+msgstr ""
+
+msgid "Are you sure?"
+msgstr "你确定吗？"
+
+msgid "Done!"
+msgstr "完成！"
+
+#, fuzzy
+msgid "event exported"
+msgid_plural "events exported"
+msgstr[0] "导出联系人"
+msgstr[1] "导出多个联系人"
+
+#, fuzzy
+msgid "iCalendar export"
+msgstr "日历字体"
+
+#, fuzzy
+msgid "Day Selector"
+msgstr "选择颜色"
+
+#, fuzzy
+msgid "Use date period"
+msgstr "日期字体"
+
+msgid "Output filename"
+msgstr "输出文件名"
+
+msgid "Export"
+msgstr "导出"
+
+msgid "no entries"
+msgstr "没有导入"
+
+msgid "entry"
+msgid_plural "entries"
+msgstr[0] "条目"
+msgstr[1] "条目"
+
+#, fuzzy
+msgid "Calendar notes"
+msgstr "日历字体"
+
+msgid "Search"
+msgstr "查找"
+
+#, fuzzy
+msgid "Filter"
+msgstr "字段类型"
+
+#, fuzzy
+msgid "Current month"
+msgstr "当前日期"
+
+#, fuzzy
+msgid "Selected month"
+msgstr "选择字体"
+
+#, fuzzy
+msgid "Selected year"
+msgstr "选择日期"
+
+msgid "Selected month and year"
+msgstr ""
+
+#, fuzzy
+msgid "All notes"
+msgstr "所有项目"
+
+msgid "Case sensitive"
+msgstr ""
+
+msgid "Strikethrough past day notes"
+msgstr ""
+
+#, fuzzy
+msgid "Note"
+msgstr "笔记"
+
+#, fuzzy
+msgid "Name day"
+msgstr "日期名称"
+
+msgid "Error printing"
+msgstr ""
+
+msgid "Printing properties"
+msgstr ""
+
+#, fuzzy
+msgid "Month name"
+msgstr "姓氏"
+
+#, fuzzy
+msgid "Day name"
+msgstr "天数"
+
+msgid "Events"
+msgstr ""
+
+#, fuzzy
+msgid "Fonts"
+msgstr "月"
+
+msgid "Tasks"
+msgstr "任务"
+
+#, fuzzy
+msgid "Birthdays"
+msgstr "生日"
+
+#, fuzzy
+msgid "Namedays"
+msgstr "姓名"
+
+#, fuzzy
+msgid "ICal"
+msgstr "取消"
+
+#, fuzzy
+msgid "Visible events"
+msgstr "列可见"
+
+msgid "Options"
+msgstr "选项"
+
+#, fuzzy
+msgid "Padding"
+msgstr "添加"
+
+msgid "Event maximum length"
+msgstr ""
+
+msgid "Page orientation:"
+msgstr ""
+
+#, fuzzy
+msgid "Portrait"
+msgstr "优先顺序"
+
+msgid "Landscape"
+msgstr ""
+
+msgid "Timeline"
+msgstr "时间线"
+
+msgid "From (hour)"
+msgstr "来自（小时）"
+
+msgid "Step (minutes)"
+msgstr "步进(分) "
+
+msgid "To (hour)"
+msgstr "到（小时）"
+
+msgid "No date"
+msgstr "不是日期"
+
+msgid "Rat"
+msgstr ""
+
+msgid "Ox"
+msgstr ""
+
+#, fuzzy
+msgid "Tiger"
+msgstr "波形符号"
+
+#, fuzzy
+msgid "Hare"
+msgstr "大的"
+
+#, fuzzy
+msgid "Dragon"
+msgstr "完成"
+
+#, fuzzy
+msgid "Snake"
+msgstr "省"
+
+#, fuzzy
+msgid "Horse"
+msgstr "小时"
+
+msgid "Sheep"
+msgstr ""
+
+#, fuzzy
+msgid "Monkey"
+msgstr "完成"
+
+msgid "Fowl"
+msgstr ""
+
+msgid "Dog"
+msgstr ""
+
+msgid "Pig"
+msgstr ""
+
+msgid "Unknown"
+msgstr ""
+
+msgid "Aquarius"
+msgstr ""
+
+#, fuzzy
+msgid "Pisces"
+msgstr "许可证"
+
+#, fuzzy
+msgid "Aries"
+msgstr "地址"
+
+msgid "Taurus"
+msgstr ""
+
+msgid "Gemini"
+msgstr ""
+
+#, fuzzy
+msgid "Cancer"
+msgstr "取消"
+
+#, fuzzy
+msgid "Leo"
+msgstr "低的"
+
+msgid "Virgo"
+msgstr ""
+
+msgid "Libra"
+msgstr ""
+
+msgid "Scorpio"
+msgstr ""
+
+msgid "Sagittarius"
+msgstr ""
+
+msgid "Capricorn"
+msgstr ""
+
+msgid "Cannot perform selected operation."
+msgstr ""
+
+msgid "Task has been modified or removed."
+msgstr ""
+
+msgid "Remind me later"
+msgstr ""
+
+msgid "Done"
+msgstr "完成"
+
+#, fuzzy
+msgid "postponed"
+msgstr "称呼"
+
+#, fuzzy
+msgid "Show task"
+msgstr "新任务"
+
+msgid "Alarm warning!"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+#, fuzzy
+msgid "Event"
+msgstr "条目"
+
+#, fuzzy
+msgid "Day note"
+msgstr "每日记录"
+
+#, fuzzy
+msgid "Task"
+msgstr "任务"
+
+msgid "Show Osmo"
+msgstr ""
+
+#, fuzzy
+msgid "No birthdays defined"
+msgstr "生日"
+
+#, fuzzy
+msgid "Birthdays list"
+msgstr "生日"
+
+msgid "Name"
+msgstr "姓名"
+
+msgid "Days to birthday"
+msgstr "距离生日天数"
+
+msgid "Age"
+msgstr "年龄"
+
+msgid "Birthday date"
+msgstr "生日"
+
+#, fuzzy
+msgid "today"
+msgstr "今日"
+
+msgid "Please select address"
+msgstr ""
+
+msgid "Information"
+msgstr "信息"
+
+msgid "Work"
+msgstr "工作"
+
+msgid "Home"
+msgstr "个人"
+
+msgid "Group"
+msgstr "组"
+
+msgid "First name"
+msgstr "名字"
+
+msgid "Last name"
+msgstr "姓氏"
+
+msgid "Second name"
+msgstr "名字"
+
+msgid "Nickname"
+msgstr "昵称"
+
+#, fuzzy
+msgid "Tags"
+msgstr "任务"
+
+msgid "Name day date"
+msgstr "日期名称"
+
+msgid "Home address"
+msgstr "个人地址"
+
+msgid "Home postcode"
+msgstr "个人邮编"
+
+msgid "Home city"
+msgstr "个人所在城市"
+
+msgid "Home state"
+msgstr "个人所在省份"
+
+msgid "Home country"
+msgstr "个人所在国家"
+
+msgid "Organization"
+msgstr "组织"
+
+msgid "Department"
+msgstr "部署"
+
+msgid "Work address"
+msgstr "工作所在地"
+
+msgid "Work postcode"
+msgstr "工作地邮编"
+
+msgid "Work city"
+msgstr "工作所在城市"
+
+msgid "Work state"
+msgstr "工作所在省份"
+
+msgid "Work country"
+msgstr "工作所在国家"
+
+msgid "Fax"
+msgstr "传真"
+
+msgid "Home phone"
+msgstr "个人电话"
+
+msgid "Home phone 2"
+msgstr "个人电话 2 "
+
+msgid "Home phone 3"
+msgstr "个人电话 3 "
+
+msgid "Home phone 4"
+msgstr "个人电话 4 "
+
+msgid "Work phone"
+msgstr "工作电话"
+
+msgid "Work phone 2"
+msgstr "工作电话 2 "
+
+msgid "Work phone 3"
+msgstr "工作电话 3 "
+
+msgid "Work phone 4"
+msgstr "工作电话 4 "
+
+msgid "Cell phone"
+msgstr "手机"
+
+msgid "Cell phone 2"
+msgstr "手机 2"
+
+msgid "Cell phone 3"
+msgstr "手机 3"
+
+msgid "Cell phone 4"
+msgstr "手机 4"
+
+msgid "E-Mail"
+msgstr "电子邮件"
+
+msgid "E-Mail 2"
+msgstr "电子邮件 2"
+
+msgid "E-Mail 3"
+msgstr "电子邮件 3"
+
+msgid "E-Mail 4"
+msgstr "电子邮件 4"
+
+msgid "WWW"
+msgstr "网址"
+
+msgid "WWW 2"
+msgstr "网址 2"
+
+msgid "WWW 3"
+msgstr "网址 3"
+
+msgid "WWW 4"
+msgstr "网址 4"
+
+msgid "IM Gadu-Gadu"
+msgstr "Gadu-Gadu号码"
+
+msgid "IM Yahoo"
+msgstr "Yahoo号码"
+
+msgid "IM MSN"
+msgstr "MSN号码"
+
+msgid "IM ICQ"
+msgstr "ICQ号码"
+
+msgid "IM AOL"
+msgstr "AOL 号码"
+
+msgid "IM Jabber"
+msgstr "Jabber号码"
+
+msgid "IM Skype"
+msgstr "Skype号码"
+
+msgid "IM Tlen"
+msgstr "Tlen号码"
+
+msgid "Blog"
+msgstr "博客"
+
+msgid "Photo"
+msgstr "照片"
+
+msgid "Additional info"
+msgstr "附加信息"
+
+msgid "New contact"
+msgstr "新建联系人"
+
+msgid "Remove contact"
+msgstr "删除联系人"
+
+msgid "Edit contact"
+msgstr "编辑联系人"
+
+#, fuzzy
+msgid "Show birthdays"
+msgstr "距离生日天数"
+
+msgid "Show contact location on the map"
+msgstr ""
+
+msgid "Import contacts"
+msgstr "导入联系人"
+
+msgid "Export contacts"
+msgstr "导出联系人"
+
+msgid "Contacts"
+msgstr "联系人"
+
+msgid "First Name"
+msgstr "名字"
+
+msgid "Last Name"
+msgstr "姓氏"
+
+msgid "All fields"
+msgstr "全部字段"
+
+msgid "Contact details"
+msgstr "联系人细节"
+
+msgid "Close contact panel"
+msgstr "关闭联系人面板"
+
+msgid "contact exported"
+msgid_plural "contacts exported"
+msgstr[0] "导出联系人"
+msgstr[1] "导出多个联系人"
+
+msgid "Cannot create file."
+msgstr "无法创建文件。"
+
+msgid "Output format"
+msgstr "输出格式"
+
+msgid "Add header"
+msgstr "添加标题"
+
+msgid "Fields to export"
+msgstr "导出字段"
+
+msgid "All"
+msgstr "全部"
+
+msgid "Invert"
+msgstr "转化"
+
+msgid "Select fields"
+msgstr "选择字段"
+
+msgid "Select CSV file"
+msgstr "选择CSV文件"
+
+msgid "All Files"
+msgstr "全部文件"
+
+msgid "CSV (comma-separated values) files (*.csv)"
+msgstr "CSV文件（逗号分隔值）（*.csv）"
+
+msgid "Please select file first."
+msgstr ""
+
+#, fuzzy
+msgid "Import type"
+msgstr "导入"
+
+#, fuzzy
+msgid "File"
+msgstr "波形符号"
+
+#, fuzzy
+msgid "Input filename"
+msgstr "输出文件名"
+
+msgid "Address"
+msgstr "地址"
+
+#, fuzzy
+msgid "Channel"
+msgstr "取消"
+
+#, fuzzy
+msgid "Interface"
+msgstr "互联网"
+
+msgid "Use binary XML (WBXML)"
+msgstr ""
+
+msgid "Nothing to import."
+msgstr "没有导出"
+
+msgid "contact added"
+msgid_plural "contacts added"
+msgstr[0] "添加联系人"
+msgstr[1] "添加多个联系人"
+
+msgid "of"
+msgstr "的"
+
+msgid "Record"
+msgstr "记录"
+
+msgid "Number fields per record"
+msgstr "每个记录字段数"
+
+msgid "Use first record as header"
+msgstr "使用第一条记录作为标题"
+
+msgid "Field type"
+msgstr "字段类型"
+
+msgid "Value"
+msgstr "值"
+
+msgid "No records found in selected file."
+msgstr "在所选文件中未找到记录。"
+
+msgid "Cannot read file."
+msgstr "无法读取文件。"
+
+msgid "Cannot open file."
+msgstr "无法打开文件。"
+
+msgid "Selected contact will be removed."
+msgstr "已选择的联系人将被删除。"
+
+msgid "Select photo"
+msgstr "选择照片"
+
+msgid "Postcode"
+msgstr "邮编"
+
+msgid "City"
+msgstr "城市"
+
+msgid "State"
+msgstr "省"
+
+msgid "Country"
+msgstr "国家"
+
+msgid "Add contact"
+msgstr "添加联系人"
+
+msgid "Personal"
+msgstr "个人"
+
+msgid "Phones"
+msgstr "电话号码"
+
+msgid "Internet"
+msgstr "互联网"
+
+#, fuzzy
+msgid "Show calendar"
+msgstr "日历"
+
+#, fuzzy
+msgid "Show tasks"
+msgstr "新任务"
+
+#, fuzzy
+msgid "Show contacts"
+msgstr "新建联系人"
+
+#, fuzzy
+msgid "Show notes"
+msgstr "显示日名"
+
+#, fuzzy
+msgid "Show options"
+msgstr "选项"
+
+msgid "Quit"
+msgstr "退出"
+
+msgid "switch to previous tab"
+msgstr "切换到前一个标签"
+
+msgid "switch to next tab"
+msgstr "切换到下一个标签"
+
+#, fuzzy
+msgid "switch to selected page"
+msgstr "切换到下一个标签"
+
+msgid "switch page in options and about tab"
+msgstr "在关于标签和选项之间切换页面"
+
+msgid "exit"
+msgstr "退出"
+
+msgid "select current date"
+msgstr "选择当前时间"
+
+msgid "toggle personal data visibility"
+msgstr ""
+
+msgid "change day"
+msgstr "日期変更"
+
+msgid "change day while note editing"
+msgstr "在编辑日记时改变时间"
+
+#, fuzzy
+msgid "scroll the contents in the day info panel"
+msgstr "在信息面板中显示日记"
+
+msgid "change month"
+msgstr "改变月份"
+
+msgid "change year"
+msgstr "改变年"
+
+msgid "toggle calendars for the previous and next month"
+msgstr "在前个月和下个月中切换日历"
+
+#, fuzzy
+msgid "day notes browser"
+msgstr "浏览器"
+
+msgid "assign background color to day note"
+msgstr "为日记指定背景色"
+
+msgid "date calculator"
+msgstr "日期计算器"
+
+msgid "show full-year calendar"
+msgstr "显示全年日历"
+
+msgid "jump to date"
+msgstr "跳转到日期"
+
+msgid "remove day note"
+msgstr "删除日记"
+
+msgid "close day note panel"
+msgstr "关闭日记面板"
+
+msgid "add task"
+msgstr "添加任务"
+
+msgid "edit task"
+msgstr "编辑任务"
+
+msgid "remove task"
+msgstr "删除任务"
+
+msgid "toggle hidden tasks"
+msgstr "隐藏任务切换"
+
+msgid "change category filter"
+msgstr "変更类别筛选"
+
+msgid "close task info panel"
+msgstr "关闭任务信息面板"
+
+msgid "add contact"
+msgstr "添加联系人"
+
+msgid "edit contact"
+msgstr "编辑联系人"
+
+msgid "remove contact"
+msgstr "删除联系人"
+
+msgid "activate search field"
+msgstr "激活查找字段"
+
+msgid "change search mode"
+msgstr "改变查找模式"
+
+msgid "close contact details panel"
+msgstr "关闭联系人细节面板"
+
+msgid "open note"
+msgstr ""
+
+#, fuzzy
+msgid "add note"
+msgstr "每日记录"
+
+#, fuzzy
+msgid "remove note"
+msgstr "删除日记"
+
+msgid "edit note name and category"
+msgstr ""
+
+#, fuzzy
+msgid "close note editor"
+msgstr "关闭笔记面板"
+
+#, fuzzy
+msgid "save note"
+msgstr "每日记录"
+
+msgid "find text"
+msgstr ""
+
+msgid "mark selection in bold"
+msgstr ""
+
+msgid "mark selection in italic"
+msgstr ""
+
+#, fuzzy
+msgid "mark selection in background color"
+msgstr "为日记指定背景色"
+
+msgid "underline selection"
+msgstr ""
+
+msgid "strikethrough selection"
+msgstr ""
+
+msgid "clear selection attributes"
+msgstr ""
+
+msgid ""
+"OSMO was designed keeping in mind the user convenience, so there are many "
+"key shorctuts. Here is the full list:"
+msgstr "OSMO被设计以改善用户体验，所以有许多快捷键。全部快捷键列表如下："
+
+msgid "General"
+msgstr "一般"
+
+#, fuzzy
+msgid "Selector"
+msgstr "选择颜色"
+
+#, fuzzy
+msgid "Editor"
+msgstr "编辑"
+
+msgid "A handy personal organizer"
+msgstr "个人日程安排工具"
+
+msgid "compiled on"
+msgstr "编译自"
+
+msgid "Programming"
+msgstr "计划"
+
+msgid "Graphics"
+msgstr "图示"
+
+msgid "Contributors"
+msgstr "贡献者"
+
+msgid "Translators"
+msgstr "翻译者"
+
+msgid "Available modules"
+msgstr ""
+
+msgid "Compiled-in features"
+msgstr ""
+
+#, fuzzy
+msgid "iCalendar support"
+msgstr "日历字体"
+
+msgid "Encrypted notes support"
+msgstr ""
+
+msgid "SyncML enabled device support"
+msgstr ""
+
+#, fuzzy
+msgid "Printing support"
+msgstr "日历字体"
+
+msgid "Spell checker support"
+msgstr ""
+
+msgid "About"
+msgstr "关于"
+
+msgid "version"
+msgstr "版本"
+
+msgid "SVN revision"
+msgstr "SVN-修订"
+
+msgid "Key shortcuts"
+msgstr "快捷键"
+
+msgid "License"
+msgstr "许可证"
+
+#, fuzzy
+msgid "Show small calendar window"
+msgstr "显示小日历窗口"
+
+msgid "Check for events since last run"
+msgstr ""
+
+msgid "Number of days to check forward for events (default: 0)"
+msgstr ""
+
+msgid "Set absolute path for settings and data files"
+msgstr ""
+
+msgid "Modify GUI to use Osmo on low resolutions"
+msgstr ""
+
+msgid "a handy personal organizer"
+msgstr "个人日程安排工具"
+
+#, fuzzy
+msgid "ERROR: Cannot create config files"
+msgstr "无法创建文件。"
+
+msgid "Another copy of OSMO is already running."
+msgstr ""
+
+msgid ""
+"Simultaneously use two or more copies of OSMO can be a cause of data loss."
+msgstr "同时运行两个以上的OSMO可能会导致数据丢失。"
+
+msgid "Do you really want to continue?"
+msgstr "你真是想继续吗？"
+
+msgid "Warning"
+msgstr "警告"
+
+#, fuzzy
+msgid "The note has changed."
+msgstr "不改变月份"
+
+#, fuzzy
+msgid "Do you want to save it?"
+msgstr "你真是想继续吗？"
+
+#, fuzzy
+msgid "Words"
+msgstr "工作"
+
+#, fuzzy
+msgid "Lines"
+msgstr "分钟"
+
+#, fuzzy
+msgid "Characters"
+msgstr "取消"
+
+msgid "White characters"
+msgstr ""
+
+#, fuzzy
+msgid "Bytes"
+msgstr "結果"
+
+#, fuzzy
+msgid "Created"
+msgstr "当前日期"
+
+#, fuzzy
+msgid "Modified"
+msgstr "状态"
+
+#, fuzzy
+msgid "New note"
+msgstr "新建联系人"
+
+#, fuzzy
+msgid "Add note"
+msgstr "编辑日记录"
+
+#, fuzzy
+msgid "Edit note"
+msgstr "编辑日记录"
+
+#, fuzzy
+msgid "Delete note"
+msgstr "选择日期"
+
+#, fuzzy
+msgid "Remove note"
+msgstr "删除日记"
+
+#, fuzzy
+msgid "Find"
+msgstr "完成"
+
+msgid "Bold"
+msgstr ""
+
+msgid "Italic"
+msgstr ""
+
+msgid "Underline"
+msgstr ""
+
+msgid "Strikethrough"
+msgstr ""
+
+#, fuzzy
+msgid "Highlight"
+msgstr "高级"
+
+#, fuzzy
+msgid "Clear attributes"
+msgstr "清除文本"
+
+#, fuzzy
+msgid "Save note"
+msgstr "每日记录"
+
+#, fuzzy
+msgid "Insert current date and time"
+msgstr "完成日期和时间"
+
+msgid "Insert separator"
+msgstr ""
+
+msgid "Statistics"
+msgstr ""
+
+msgid "Close editor"
+msgstr ""
+
+msgid "Toggle spell checker"
+msgstr ""
+
+msgid "Category filter"
+msgstr "类别筛选"
+
+#, fuzzy
+msgid "Note name"
+msgstr "姓氏"
+
+msgid "Category"
+msgstr "类别"
+
+#, fuzzy
+msgid "Last changes"
+msgstr "姓氏"
+
+msgid "case sensitive"
+msgstr ""
+
+msgid "Close find entry"
+msgstr ""
+
+#, fuzzy
+msgid "Edit entry"
+msgstr "条目"
+
+#, fuzzy
+msgid "Remember cursor position"
+msgstr "选项"
+
+#, fuzzy
+msgid "Selected note will be removed."
+msgstr "已选择的日记将被删除"
+
+msgid "No further data recovery will be possible."
+msgstr ""
+
+msgid "Passwords do not match!"
+msgstr ""
+
+#, fuzzy
+msgid "Plain"
+msgstr "添加"
+
+#, fuzzy
+msgid "Encrypted"
+msgstr "描述"
+
+#, fuzzy
+msgid "Note type"
+msgstr "导入"
+
+msgid "Enter password"
+msgstr ""
+
+msgid "Re-enter password"
+msgstr ""
+
+msgid "Incorrect password!"
+msgstr ""
+
+#, fuzzy
+msgid "Cannot open the note."
+msgstr "无法打开文件。"
+
+msgid "encryption support is disabled"
+msgstr ""
+
+#, fuzzy
+msgid "Authorization"
+msgstr "组织"
+
+msgid "Modify color"
+msgstr "改变颜色"
+
+msgid "Color"
+msgstr "颜色"
+
+#, fuzzy
+msgid "Select ICS file"
+msgstr "选择CSV文件"
+
+msgid "Calendar files (*.ics)"
+msgstr ""
+
+msgid "Modify ICAL parameters"
+msgstr ""
+
+#, fuzzy
+msgid "Filename"
+msgstr "名字"
+
+msgid "Appearance"
+msgstr "外观"
+
+#, fuzzy
+msgid "Day note marker"
+msgstr "可用的每日记录"
+
+msgid "Event marker"
+msgstr ""
+
+msgid "Circle"
+msgstr ""
+
+msgid "Ellipse"
+msgstr ""
+
+msgid "Wave"
+msgstr ""
+
+#, fuzzy
+msgid "Current day marker"
+msgstr "当前日期"
+
+#, fuzzy
+msgid "Arrow"
+msgstr "错误"
+
+msgid "Free-hand circle"
+msgstr ""
+
+msgid "Colors"
+msgstr "色彩"
+
+msgid "Header color"
+msgstr "标题着色"
+
+msgid "Weekend days color"
+msgstr "双休日颜色"
+
+msgid "Cursor color"
+msgstr "光标颜色"
+
+#, fuzzy
+msgid "Event marker color"
+msgstr "标题着色"
+
+#, fuzzy
+msgid "Current day marker color"
+msgstr "当前日期"
+
+msgid "Date font"
+msgstr "日期字体"
+
+msgid "Calendar font"
+msgstr "日历字体"
+
+msgid "Note font"
+msgstr "笔记字体"
+
+msgid "Enable block cursor"
+msgstr "块光标可用"
+
+msgid "Cursor thickness"
+msgstr "光标幅度"
+
+msgid "Thin"
+msgstr "薄"
+
+msgid "Thick"
+msgstr "厚"
+
+msgid "Day categories"
+msgstr "日类别"
+
+#, fuzzy
+msgid "iCalendar files"
+msgstr "日历字体"
+
+#, fuzzy
+msgid "Valid"
+msgstr "值"
+
+msgid "Description"
+msgstr "描述"
+
+#, fuzzy
+msgid "Use year"
+msgstr "下一年"
+
+msgid "Week start on Monday"
+msgstr "一周从星期一开始"
+
+msgid "Show day names"
+msgstr "显示日名"
+
+msgid "No month change"
+msgstr "不改变月份"
+
+msgid "Show week numbers"
+msgstr "显示周数"
+
+msgid "Simple view in full-year calendar"
+msgstr "预览全年日历"
+
+#, fuzzy
+msgid "Enable auxilary calendars"
+msgstr "全年日历"
+
+msgid "Ascending sorting in day notes browser"
+msgstr ""
+
+msgid "Enable spell checker in day notes"
+msgstr ""
+
+#, fuzzy
+msgid "Show in day info panel"
+msgstr "在信息面板中显示日记"
+
+msgid "Select a font..."
+msgstr "选择字体..."
+
+msgid "Color of contact tags"
+msgstr "联系人标签颜色"
+
+msgid "Color of links"
+msgstr "链接颜色"
+
+#, fuzzy
+msgid "Name font"
+msgstr "字体大小名称"
+
+#, fuzzy
+msgid "Item font"
+msgstr "日期字体"
+
+msgid "Photo size"
+msgstr "照片大小"
+
+msgid "Small"
+msgstr "小的"
+
+msgid "Medium"
+msgstr "普通"
+
+msgid "Large"
+msgstr "大的"
+
+msgid "Draw rows in alternating colors"
+msgstr "交替变化行颜色"
+
+msgid "Miscellaneous"
+msgstr "各种各样的"
+
+msgid "Select and show first item after search"
+msgstr "选择并显示查找到的第一个结果"
+
+msgid "Hide group column"
+msgstr "隐藏分组栏"
+
+msgid "Groups"
+msgstr "群组"
+
+msgid "Sorting"
+msgstr "排序"
+
+msgid "Order"
+msgstr "序列"
+
+msgid "Mode"
+msgstr "状态"
+
+msgid "Ascending"
+msgstr "递增"
+
+msgid "Descending"
+msgstr "递减"
+
+msgid "Visible columns in birthdays browser"
+msgstr ""
+
+msgid "At least one module must be visible."
+msgstr ""
+
+#, fuzzy
+msgid "Tabs position"
+msgstr "任务选项"
+
+msgid "Left"
+msgstr ""
+
+#, fuzzy
+msgid "Right"
+msgstr "高级"
+
+msgid "Top"
+msgstr ""
+
+msgid "Bottom"
+msgstr ""
+
+msgid "Use default stock icons (needs restart)"
+msgstr "使用默认备用图标（需重启）"
+
+msgid "Disable underline in links"
+msgstr "链接下划线不可用"
+
+#, fuzzy
+msgid "Hide"
+msgstr "波形符号"
+
+msgid "Date format"
+msgstr "日期格式"
+
+msgid "DD-MM-YYYY"
+msgstr "DD-MM-YYYY"
+
+msgid "MM-DD-YYYY"
+msgstr "MM-DD-YYYY"
+
+msgid "YYYY-MM-DD"
+msgstr "YYYY-MM-DD"
+
+msgid "YYYY-DD-MM"
+msgstr "YYYY-DD-MM"
+
+#, fuzzy
+msgid "Time format"
+msgstr "日期格式"
+
+#, fuzzy
+msgid "hours"
+msgstr "小时"
+
+msgid "Spell checker language"
+msgstr ""
+
+msgid "Enable tooltips"
+msgstr "工具提示可用"
+
+msgid "Remember last selected page"
+msgstr "记录最近选择页面"
+
+msgid "Save data after every modification"
+msgstr ""
+
+msgid "Helpers"
+msgstr "帮助者"
+
+msgid "Web browser"
+msgstr "浏览器"
+
+msgid "E-mail client"
+msgstr "邮件客户端"
+
+#, c-format
+msgid "The %s pattern will be replaced with www or e-mail address"
+msgstr ""
+
+msgid "System tray"
+msgstr "任务栏"
+
+msgid "Enable system tray"
+msgstr "任务栏可用"
+
+#, fuzzy
+msgid "Start minimised"
+msgstr "开始"
+
+msgid "Blink on events"
+msgstr ""
+
+#, fuzzy
+msgid "Ignore day note events"
+msgstr "关闭日记面板"
+
+#, fuzzy
+msgid "Editor font"
+msgstr "编辑联系人"
+
+#, fuzzy
+msgid "Encryption"
+msgstr "描述"
+
+msgid "Algorithm"
+msgstr ""
+
+msgid "Hashing"
+msgstr ""
+
+msgid "Compression"
+msgstr ""
+
+msgid "Ratio"
+msgstr ""
+
+msgid "Fast"
+msgstr ""
+
+msgid "Good"
+msgstr ""
+
+#, fuzzy
+msgid "Best"
+msgstr "結果"
+
+msgid "Visible columns"
+msgstr "列可见"
+
+msgid "Categories"
+msgstr "类别"
+
+#, fuzzy
+msgid "Notes options"
+msgstr "选项"
+
+#, fuzzy
+msgid "Remember the last selected category"
+msgstr "记录最近选择页面"
+
+#, fuzzy
+msgid "Use system format for date and time"
+msgstr "完成日期和时间"
+
+msgid "Color of items that are due today"
+msgstr "今日到期项目颜色"
+
+msgid "Color of items that are due in the next 7 days"
+msgstr "下7天到期项目颜色"
+
+msgid "Color of items that are past due"
+msgstr "已过期项目颜色"
+
+msgid "Task info font"
+msgstr "任务信息字体"
+
+msgid "Show in bold tasks with high priority"
+msgstr ""
+
+msgid "Due date"
+msgstr "预定时间"
+
+msgid "Priority"
+msgstr "优先顺序"
+
+msgid "Tasks options"
+msgstr "任务选项"
+
+msgid "Hide completed tasks"
+msgstr "隐藏已完成任务"
+
+msgid "Delete completed tasks without confirmation"
+msgstr "不经确认删除已完成任务"
+
+msgid "Add new task when double clicked on tasks list"
+msgstr ""
+
+#, fuzzy
+msgid "Reminder options"
+msgstr "选项"
+
+#, fuzzy
+msgid "Postpone time"
+msgstr "照片大小"
+
+#, fuzzy
+msgid "minutes"
+msgstr "分"
+
+msgid "0 for disable"
+msgstr ""
+
+msgid "Global notification command"
+msgstr ""
+
+msgid "Add"
+msgstr "添加"
+
+msgid "Clear"
+msgstr "清除"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Jump to"
+msgstr "跳转到"
+
+msgid "Edit"
+msgstr "编辑"
+
+msgid "Go Down"
+msgstr ""
+
+msgid "Insert"
+msgstr "插入"
+
+msgid "OK"
+msgstr "好"
+
+msgid "Browse"
+msgstr "浏览"
+
+msgid "Remove"
+msgstr "移除"
+
+msgid "Select date"
+msgstr "选择日期"
+
+msgid "Select font"
+msgstr "选择字体"
+
+msgid "Calculator"
+msgstr "计算器"
+
+msgid "Edit day note"
+msgstr "编辑日记录"
+
+msgid "Contact map location"
+msgstr ""
+
+msgid "Import"
+msgstr "导入"
+
+#, fuzzy
+msgid "Save"
+msgstr "省"
+
+msgid "Display full-year calendar"
+msgstr "显示全年日历"
+
+msgid "Help"
+msgstr "帮助"
+
+msgid "Invalid item"
+msgstr ""
+
+#, fuzzy
+msgid "Valid item"
+msgstr "所有项目"
+
+msgid "Preferences"
+msgstr "设置"
+
+msgid "Edit task"
+msgstr "编辑任务"
+
+msgid "Remove task"
+msgstr "删除任务"
+
+msgid "Change due date to previous day"
+msgstr ""
+
+msgid "Change due date to next day"
+msgstr ""
+
+#, fuzzy
+msgid "Print"
+msgstr "优先顺序"
+
+#, fuzzy
+msgid "Normal"
+msgstr "删除任务"
+
+#, fuzzy
+msgid "Recurrent"
+msgstr "设置当前日期"
+
+msgid "Inactive recurrent"
+msgstr ""
+
+msgid "Low"
+msgstr "低的"
+
+msgid "High"
+msgstr "高级"
+
+msgid "Started"
+msgstr "开始"
+
+#, fuzzy
+msgid "Finished"
+msgstr "完成"
+
+msgid "All items"
+msgstr "所有项目"
+
+msgid "New task"
+msgstr "新任务"
+
+msgid "Print visible tasks list"
+msgstr ""
+
+msgid "Task details"
+msgstr "任务细节"
+
+msgid "Close description panel"
+msgstr "关闭说明面板"
+
+msgid "Please select at least one day when recurrency is enabled."
+msgstr ""
+
+#, fuzzy
+msgid "Set time"
+msgstr "重设时间"
+
+msgid "Tomorrow"
+msgstr ""
+
+msgid "Selected task will be removed."
+msgstr "选择的任务将被删除。"
+
+msgid "Basic"
+msgstr ""
+
+#, fuzzy
+msgid "Select date and time"
+msgstr "完成日期和时间"
+
+msgid "Advanced"
+msgstr ""
+
+#, fuzzy
+msgid "Alarm warning"
+msgstr "警告"
+
+msgid "Alarm command"
+msgstr ""
+
+#, fuzzy
+msgid "Recurrent task"
+msgstr "设置当前日期"
+
+msgid "Enable"
+msgstr ""
+
+#, fuzzy
+msgid "Start"
+msgstr "开始"
+
+msgid "End"
+msgstr ""
+
+#, fuzzy
+msgid "Interval"
+msgstr "一般"
+
+msgid "Time period"
+msgstr ""
+
+#, fuzzy
+msgid "Date period"
+msgstr "日期字体"
+
+msgid "Repeat"
+msgstr ""
+
+msgid "Repeat in the following days"
+msgstr ""
+
+msgid "Ignore alarm when task expired offline"
+msgstr ""
+
+#, fuzzy
+msgid "Tasks list"
+msgstr "任务选项"
+
+#. TRANSLATORS: "No." is an abbreviation of word "number"
+#, fuzzy
+msgid "No."
+msgstr "否"
+
+msgid "New Moon"
+msgstr "新月"
+
+msgid "Waxing Crescent Moon"
+msgstr "娥眉月"
+
+msgid "Quarter Moon"
+msgstr "半弦月"
+
+msgid "Waxing Gibbous Moon"
+msgstr "盈凸月"
+
+msgid "Full Moon"
+msgstr "满月"
+
+msgid "Waning Gibbous Moon"
+msgstr "亏凸月"
+
+msgid "Last Quarter Moon"
+msgstr "下弦月"
+
+msgid "Waning Crescent Moon"
+msgstr "残月"
+
+msgid "Question"
+msgstr "问题"
+
+msgid "Error"
+msgstr "错误"
+
+msgid "Selected file exist! Overwrite?"
+msgstr "选择的文件已存在！是否覆盖？"
+
+#, fuzzy
+#~ msgid "Birthday found"
+#~ msgstr "生日"
+
+#, fuzzy
+#~ msgid "Task found"
+#~ msgstr "任务信息字体"
+
+#~ msgid "Day note available"
+#~ msgstr "可用的每日记录"

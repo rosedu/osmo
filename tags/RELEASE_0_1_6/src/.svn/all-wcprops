@@ -1,0 +1,359 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src
+END
+calendar_ical.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/calendar_ical.c
+END
+options_gui_tasks.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/options_gui_tasks.c
+END
+calendar_ical.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/calendar_ical.h
+END
+calendar.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/calendar.c
+END
+gui_logo.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/gui_logo.h
+END
+options_gui_tasks.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/options_gui_tasks.h
+END
+calendar_fullyear.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/calendar_fullyear.c
+END
+calendar.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/calendar.h
+END
+stock_icons.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/stock_icons.c
+END
+time_utils.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/time_utils.c
+END
+calendar_fullyear.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/calendar_fullyear.h
+END
+stock_icons.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/stock_icons.h
+END
+time_utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/time_utils.h
+END
+options_prefs.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/options_prefs.c
+END
+calendar_calc.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/calendar_calc.c
+END
+options_gui_general.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/options_gui_general.c
+END
+date_utils.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/date_utils.c
+END
+options_gui_contacts.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/options_gui_contacts.c
+END
+calendar_timeline.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/calendar_timeline.c
+END
+options_gui.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/options_gui.c
+END
+options_prefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/options_prefs.h
+END
+calendar_calc.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/calendar_calc.h
+END
+gui_icon.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/gui_icon.h
+END
+options_gui_general.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/options_gui_general.h
+END
+date_utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/date_utils.h
+END
+options_gui_contacts.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/options_gui_contacts.h
+END
+calendar_timeline.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/calendar_timeline.h
+END
+gui_utils.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/gui_utils.c
+END
+options_gui.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/options_gui.h
+END
+calendar_moon.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/calendar_moon.h
+END
+calendar_jumpto.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/calendar_jumpto.c
+END
+contacts_import.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/contacts_import.c
+END
+gui_utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/gui_utils.h
+END
+calendar_widget.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/calendar_widget.c
+END
+calendar_jumpto.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/calendar_jumpto.h
+END
+stock_icons_data.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/stock_icons_data.h
+END
+contacts_import.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/contacts_import.h
+END
+contacts.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/contacts.c
+END
+contacts_items.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/contacts_items.c
+END
+contacts_export.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/contacts_export.c
+END
+calendar_widget.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/calendar_widget.h
+END
+calendar_notes.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/calendar_notes.c
+END
+contacts.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/contacts.h
+END
+gui.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/gui.c
+END
+contacts_items.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/contacts_items.h
+END
+contacts_export.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/contacts_export.h
+END
+i18n.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/i18n.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/main.c
+END
+tasks.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/tasks.c
+END
+calendar_notes.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/calendar_notes.h
+END
+tasks_items.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/tasks_items.c
+END
+contacts_birthdays.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/contacts_birthdays.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/Makefile.am
+END
+options_gui_calendar.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/options_gui_calendar.c
+END
+gui.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/gui.h
+END
+tasks.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/tasks.h
+END
+tasks_items.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/tasks_items.h
+END
+contacts_birthdays.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/contacts_birthdays.h
+END
+options_gui_calendar.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/osmo-pim/!svn/ver/220/tags/RELEASE_0_1_6/src/options_gui_calendar.h
+END

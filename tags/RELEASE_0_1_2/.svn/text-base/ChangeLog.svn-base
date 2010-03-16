@@ -1,0 +1,19 @@
+
+2007-11-17: version 0.1.2
+  * Arbitrary colors can be assigned to days with notes
+  * Date calculator
+  * Popup menu to change month in calendar 
+  * A new type of calendar mark
+  * Many small GUI changes and updates
+  * A lot of code rewritten
+  * Added French, Czech and German translations
+  * Updated Portuguese and Polish translations
+
+2007-10-22: version 0.1.1
+  * Importing contacts from CSV files is now available
+  * Multiline fields are exported correctly in CSV files
+  * Various minor fixes and enhancements
+
+2007-09-27: version 0.1.0
+  * First public release
+
