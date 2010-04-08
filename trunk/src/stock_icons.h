@@ -109,6 +109,7 @@
 #define     OSMO_STOCK_TASKS_REMOVE             "osmo-tasks-remove"
 #define     OSMO_STOCK_TASKS_IMPORT             "osmo-tasks-import"
 #define     OSMO_STOCK_TASKS_EXPORT             "osmo-tasks-export"
+#define		OSMO_STOCK_TASKS_GCALEXPORT			"osmo-tasks-gcalexport"
 #define     OSMO_STOCK_TASKS_PREV_DATE          "osmo-tasks-prev-date"
 #define     OSMO_STOCK_TASKS_NEXT_DATE          "osmo-tasks-next-date"
 #define     OSMO_STOCK_TASKS                    "osmo-tasks"

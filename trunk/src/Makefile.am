@@ -39,6 +39,7 @@ osmo_SOURCES = about.c about.h \
 			   stock_icons.c stock_icons.h stock_icons_data.h \
 			   tasks.c tasks.h \
 			   tasks_export.c tasks_export.h \
+			   tasks_gcal.c tasks_gcal.h \
 			   tasks_items.c tasks_items.h \
 			   tasks_print.c tasks_print.h \
 			   tasks_preferences_gui.c tasks_preferences_gui.h \
@@ -72,6 +73,11 @@ endif
 if HAVE_LIBICAL
 CFLAGS += @LIBICAL_CFLAGS@
 LIBS += @LIBICAL_LIBS@
+endif
+
+if HAVE_LIBGCAL
+CFLAGS += @LIBGCAL_CFLAGS@
+LIBS += @LIBGCAL_LIBS@
 endif
 
 if HAVE_GTKSPELL

@@ -671,7 +671,7 @@ gui_create_about (GtkWidget *vbox_top, GUI *appGUI)
 #ifndef REV
 	str = g_strdup_printf ("%s %s", _("version"), VERSION);
 #else
-	str = g_strdup_printf ("%s %d", _("SVN revision"), REV);
+	//str = g_strdup_printf ("%s %d", _("SVN revision"), REV);
 #endif
 
 	label = gtk_label_new (str);

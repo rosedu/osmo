@@ -83,15 +83,26 @@ if test "x$lib" = "xyes"; then
 fi
 
 # Checks for libical
-PKG_CHECK_MODULES(LIBICAL, libical >= 0.33, have_libical=true,
+PKG_CHECK_MODULES(LIBICAL, libical >= 0.33, have_libical=false,
 	have_libical=false)
 if test "x$have_libical" = "xtrue"; then
 	AC_DEFINE([HAVE_LIBICAL], [1], [Definded to 1 if compile with libical support])
-	libical="yes"
+	libical="no"
 else
 	libical="no"
 fi
 AM_CONDITIONAL([HAVE_LIBICAL], test "x$have_libical" = "xtrue")
+
+# Checks for libgcal
+PKG_CHECK_MODULES(LIBGCAL, libgcal >= 0.9.3, have_libgcal=true,
+	have_libgcal=false)
+if test "x$have_libgcal" = "xtrue"; then
+	AC_DEFINE([HAVE_LIBGCAL], [1], [Defined to 1 if compile with libgcal support])
+	libgcal="yes"
+else
+	libgcal="no"
+fi
+AM_CONDITIONAL([HAVE_LIBGCAL], test "x$have_libgcal" = "xtrue")
 
 # Checks for gtkspell
 PKG_CHECK_MODULES(GTKSPELL, gtkspell-2.0 >= 2.0.5, have_gtkspell=true,
@@ -250,6 +261,7 @@ Optional features:
 
     gtkspell:           $gtkspell
     libical:            $libical
+    libgcal:		$libgcal
     libnotify:          $libnotify
     libgtkhtml:         $libgtkhtml
     libtar:             $libtar

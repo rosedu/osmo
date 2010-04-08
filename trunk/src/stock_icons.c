@@ -129,7 +129,7 @@ GtkStockItem osmo_stock_items[] = {
     { (gchar*) OSMO_STOCK_TASKS_REMOVE,            (gchar*) N_("Remove task"),                  0, 0, TRANSLATION_DOMAIN },
     { (gchar*) OSMO_STOCK_TASKS_IMPORT,            (gchar*) N_("Import tasks"),                 0, 0, TRANSLATION_DOMAIN },
     { (gchar*) OSMO_STOCK_TASKS_EXPORT,            (gchar*) N_("Export tasks"),                 0, 0, TRANSLATION_DOMAIN },
-    { (gchar*) OSMO_STOCK_TASKS_PREV_DATE,         (gchar*) N_("Change to previous date"),      0, 0, TRANSLATION_DOMAIN },
+	{ (gchar*) OSMO_STOCK_TASKS_PREV_DATE,         (gchar*) N_("Change to previous date"),      0, 0, TRANSLATION_DOMAIN },
     { (gchar*) OSMO_STOCK_TASKS_NEXT_DATE,         (gchar*) N_("Change to next date"),          0, 0, TRANSLATION_DOMAIN },
     { (gchar*) OSMO_STOCK_TASKS,                   (gchar*) N_("Tasks"),                        0, 0, TRANSLATION_DOMAIN },
     { (gchar*) OSMO_STOCK_SYSTRAY_TASK,            (gchar*) N_("Task"),                         0, 0, TRANSLATION_DOMAIN },
@@ -141,7 +141,9 @@ GtkStockItem osmo_stock_items[] = {
 #ifdef PRINTING_SUPPORT
     { (gchar*) OSMO_STOCK_PRINT,                   (gchar*) N_("Print"),                        0, 0, TRANSLATION_DOMAIN },
 #endif /* PRINTING_SUPPORT */
-
+#ifdef HAVE_LIBGCAL
+    { (gchar*) OSMO_STOCK_TASKS_GCALEXPORT,         (gchar*) N_("Google	Export"),               0, 0, TRANSLATION_DOMAIN },
+#endif /* HAVE_LIBGCAL */
 	{ (gchar*) OSMO_STOCK_TYPE_NORMAL,              (gchar*) N_("Normal"),                      0, 0, TRANSLATION_DOMAIN },
 	{ (gchar*) OSMO_STOCK_TYPE_ENCRYPTED,           (gchar*) N_("Encrypted"),                   0, 0, TRANSLATION_DOMAIN },
     /*{ (gchar*) OSMO_STOCK_TYPE_RECURRENT_INACTIVE,  (gchar*) N_("Inactive recurrent"),          0, 0, TRANSLATION_DOMAIN },*/
@@ -254,7 +256,9 @@ const guint8* osmo_stock_item_data[] = {
 #ifdef PRINTING_SUPPORT
     (const guint8*) osmo_stock_print,
 #endif /* PRINTING_SUPPORT */
-
+#ifdef HAVE_LIBGCAL
+    (const guint8*) osmo_stock_tasks_gcalexport,
+#endif /* HAVE_LIBGCAL */
 	(const guint8*) osmo_stock_type_normal,
 	(const guint8*) osmo_stock_type_encrypted,
     /*(const guint8*) osmo_stock_type_recurrent_inactive,*/

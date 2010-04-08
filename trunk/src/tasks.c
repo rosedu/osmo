@@ -32,6 +32,7 @@
 #include "tasks_items.h"
 #include "tasks_export.h"
 #include "tasks_print.h"
+#include "tasks_gcal.h"
 #include "tasks_utils.h"
 #include "utils.h"
 #include "utils_gui.h"
@@ -425,6 +426,17 @@ tasks_export_visible_items_cb (GtkWidget *widget, gpointer data) {
 	export_tasks_to_file (appGUI);
 }
 #endif /* HAVE_LIBICAL */
+
+/*------------------------------------------------------------------------------*/
+
+#ifdef HAVE_LIBGCAL
+void
+tasks_export_to_google (GtkWidget *widget, gpointer data) {
+	g_print("Exporting...\n");
+	GUI *appGUI = (GUI *)data;
+	tasks_export_gcal (appGUI);
+}
+#endif /* HAVE_LIBGCAL */
 
 /*------------------------------------------------------------------------------*/
 
@@ -1231,6 +1243,11 @@ gint i, n;
 #ifdef HAVE_LIBICAL
 "    <toolitem name=\"export\" action=\"export\" />\n"
 #endif
+#ifdef HAVE_LIBGCAL
+"    <separator/>\n"
+"    <toolitem name=\"gcalexport\" action=\"gcalexport\" />\n"
+"    <separator/>\n"
+#endif /* HAVE_LIBGCAL */
 #ifdef PRINTING_SUPPORT
 "    <separator/>\n"
 "    <toolitem name=\"print\" action=\"print\" />\n"
@@ -1252,6 +1269,9 @@ GtkActionEntry entries[] = {
 #ifdef HAVE_LIBICAL
   { "export", OSMO_STOCK_TASKS_EXPORT, _("Export tasks"), NULL, _("Export tasks"), NULL },
 #endif
+#ifdef HAVE_LIBGCAL
+  { "gcalexport", OSMO_STOCK_TASKS_GCALEXPORT, _("Export tasks to Google Calendar"), NULL, _("Export tasks to Google Calendar"), NULL },
+#endif /* HAVE_LIBGCAL */
 #ifdef PRINTING_SUPPORT
   { "print", OSMO_STOCK_PRINT, _("Print visible tasks list"), NULL, _("Print visible tasks list"), NULL },
 #endif /* PRINTING_SUPPORT */
@@ -1318,6 +1338,11 @@ guint n_entries = G_N_ELEMENTS (entries);
     g_signal_connect (G_OBJECT(gtk_ui_manager_get_widget (appGUI->tsk->tasks_uim_widget, "/toolbar/export")), "clicked", 
                       G_CALLBACK(tasks_export_visible_items_cb), appGUI);
 #endif /* HAVE_LIBICAL */
+#ifdef HAVE_LIBGCAL
+    g_signal_connect (G_OBJECT(gtk_ui_manager_get_widget (appGUI->tsk->tasks_uim_widget, "/toolbar/gcalexport")), "clicked", 
+                      G_CALLBACK(tasks_export_to_google), appGUI);
+#endif /* HAVE_LIBGCAL */
+
 #ifdef PRINTING_SUPPORT
     g_signal_connect (G_OBJECT(gtk_ui_manager_get_widget (appGUI->tsk->tasks_uim_widget, "/toolbar/print")), "clicked", 
                       G_CALLBACK(tasks_print_visible_items_cb), appGUI);
