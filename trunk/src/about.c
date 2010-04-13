@@ -541,6 +541,15 @@ display_about (GUI *appGUI)
 	gtk_text_buffer_insert (appGUI->about_entry_buffer, &appGUI->about_entry_iter, str, -1);
 	g_free (str);
 
+#ifdef HAVE_LIBGCAL
+	str = g_strdup_printf ("     [+]\t%s (libgcal)\n", _("Google Calendar Synchronization support"));
+#else
+	str = g_strdup_printf (" 	 [-]\t%s (libgcal)\n", _("Google Calendar Synchronization support"));
+#endif /* HAVE_LIBGCAL */
+	gtk_text_buffer_insert (appGUI->about_entry_buffer,
+					&appGUI->about_entry_iter, str, -1);
+	g_free (str);
+
 #ifdef HAVE_LIBGRINGOTTS
 	str = g_strdup_printf ("     [+]\t%s (libgringotts)\n", _("Encrypted notes support"));
 #else
@@ -668,10 +677,10 @@ gui_create_about (GtkWidget *vbox_top, GUI *appGUI)
 		                                       GDK_INTERP_HYPER);
 	}
 
-#ifndef REV
+#ifdef REV
 	str = g_strdup_printf ("%s %s", _("version"), VERSION);
 #else
-	//str = g_strdup_printf ("%s %d", _("SVN revision"), REV);
+	str = g_strdup_printf ("%s %d", _("SVN revision"), REV);
 #endif
 
 	label = gtk_label_new (str);
