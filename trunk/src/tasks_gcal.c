@@ -109,20 +109,23 @@ gchar* gcal_julian_to_date (guint32 julian_day, gint time) {
 				if (day < 10) {
 					strcat (cdate, "0");
 				}
-				g_sprintf (cdate, "%s%dT", cdate, day);
-				if (hours < 10) {
-					strcat (cdate, "0");
+				g_sprintf (cdate, "%s%d", cdate, day);
+				if (time != -1) {
+					strcat (cdate, "T");
+					if (hours < 10) {
+						strcat (cdate, "0");
+					}
+					g_sprintf (cdate, "%s%d:", cdate, hours);
+					if (minutes < 10) {
+						strcat (cdate, "0");
+					}
+					g_sprintf (cdate, "%s%d:", cdate, minutes);
+					if (seconds < 10) {
+						strcat (cdate, "0");
+					}
+					/* TODO: Solve problem with the timezone */
+					g_sprintf (cdate, "%s%d+03:00", cdate, seconds);
 				}
-				g_sprintf (cdate, "%s%d:", cdate, hours);
-				if (minutes < 10) {
-					strcat (cdate, "0");
-				}
-				g_sprintf (cdate, "%s%d:", cdate, minutes);
-				if (seconds < 10) {
-					strcat (cdate, "0");
-				}
-				/* TODO: Solve problem with the timezone */
-				g_sprintf (cdate, "%s%d+02:00", cdate, seconds);
 			}
 			else {
 				cdate = NULL;
