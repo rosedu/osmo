@@ -83,16 +83,12 @@ gchar* gcal_julian_to_date (guint32 julian_day, gint time) {
 	GDateMonth month;
 	GDateDay day;
 	gchar *cdate = NULL;
-	gint hours = 0, minutes = 0, seconds = 0;
+	gint hours, minutes, seconds;
 	if (julian_day != 0) {
 		if (time != -1) {
-			g_print ("Time from item stuct: %d\n", time);
 			hours = time / 3600;
-			g_print ("Hours: %d\n", hours);
 			minutes = (time - hours * 3600) / 60;
-			g_print ("Minutes: %d\n", minutes);
 			seconds = time - hours * 3600 - minutes * 60;
-			g_print ("Seconds: %d\n", seconds);
 		}
 		date = g_date_new_julian (julian_day);
 		cdate = malloc (sizeof(gchar) * 21);
@@ -123,8 +119,7 @@ gchar* gcal_julian_to_date (guint32 julian_day, gint time) {
 					if (seconds < 10) {
 						strcat (cdate, "0");
 					}
-					/* TODO: Solve problem with the timezone */
-					g_sprintf (cdate, "%s%d+03:00", cdate, seconds);
+					g_sprintf (cdate, "%s%d", cdate, seconds);
 				}
 			}
 			else {
@@ -137,32 +132,102 @@ gchar* gcal_julian_to_date (guint32 julian_day, gint time) {
 }
 
 /*------------------------------------------------------------------------------*/
+/**
+  *@brief Compare 2 events
+  *@param a First event to compare
+  *@param b Second event to compare
+  *@return 0 if the events match certain relevant fields
+  */
+
+int gcal_events_compare (gcal_event_t a, gcal_event_t b) {
+	/* Compare the titles */
+	if (strcmp (gcal_event_get_title (a), gcal_event_get_title (b)) !=
+					0) {
+		return 1;
+	}
+	/* Compare the content */
+	if (strcmp (gcal_event_get_content (a), gcal_event_get_content (b)) !=
+					0) {
+		return 1;
+	}
+	/* Compare the start date */
+	if (strcmp (gcal_event_get_start (a), gcal_event_get_start (b)) !=
+					0) {
+		return 1;
+	}
+	/* Compare the end date */
+	if (strcmp (gcal_event_get_end (a), gcal_event_get_end (b)) !=
+					0) {
+		return 1;
+	}
+	return 0;
+}
+
+/*------------------------------------------------------------------------------*/
+/**
+  *@brief Compare event to all the events returned by Google
+  *@param event Event to compare
+  *@param events List of events from Google
+  *@return 0 if found  a match
+  *@todo Better search mechanism (binary maybe)
+  */
+
+int gcal_event_search_match (gcal_event_t event, struct gcal_event_array *events) {
+	size_t i;
+	/* TODO: Find a better way to deal with the NULL pointer */
+	if (events == NULL) {
+		return 1;
+	}
+	for (i = 0; i < events->length; i++) {
+		/* Found a matching event in the list, not good */
+		if (!gcal_events_compare (event, gcal_event_element (events, i))) {
+			return 0;
+		}
+	}
+	return 1;
+}
+
+/*------------------------------------------------------------------------------*/
 
 void *tasks_export_gcal (void *parameter) {
 	GUI *appGUI = (GUI *) parameter;
 	gcal_t gcal;
 	gcal_event_t event;
+	struct gcal_event_array *events;
 	int result, i;
 	GtkTreeIter iter;
 	TASK_ITEM *item;
 	gchar username[] = {"osmosync1@gmail.com"},
 		  password[] = {"osmopass"},
-		  *gcal_date,
-		  *xml = NULL;
+		  *gcal_date;
 	
-	/*xml = read_raw_xml_file ("contacts.xml");
-	g_print("%s\n", xml);*/
 	gcal = gcal_new (GCALENDAR);
-	if (gcal == NULL)
-	{
+	if (gcal == NULL) {
 		g_print ("Failed to initialize gcal\n");
 		return;
 	}
 	result = gcal_get_authentication (gcal, username, password);
-	if (result != 0)
-	{
+	if (result != 0) {
 		g_print ("Failed to authenticate\n");
 		return;
+	}
+	
+	/* Load all the events from Google
+	   to avoid redundancy
+	   */
+	events = malloc (sizeof (struct gcal_event_array));
+	if (events == NULL) {
+		g_print ("tasks_export_gcal(): Failed to allocate memory for events\n");
+		result = 1;
+	}
+	else {
+		result = gcal_get_events (gcal, events);
+	}
+	if (result != 0) {
+		g_print ("tasks_export_gcal(): Failed to load the events from Google\n");
+	}
+	else {
+		g_print ("Loaded the events list from Google\n");
 	}
 
 	i = 0;
@@ -172,11 +237,10 @@ void *tasks_export_gcal (void *parameter) {
 							NULL, i++)) {
 			item = tsk_get_item (&iter, appGUI);
 			if (item != NULL) {
-				g_print ("Got item number %d\n", i);
+				g_print ("Got item number %d\n\"%s\"\n", i, (char *)
+								item->summary);
 				/* Create empty event and fill it up */
-				/* TODO: Check if the event to add was added before */
 				event = gcal_event_new (NULL);
-				/*event = malloc (sizeof (gcal_event_t));*/
 				if (event == NULL) {
 						g_print ("Failed to allocate memory for event\n");
 						tsk_item_free (item);
@@ -186,55 +250,39 @@ void *tasks_export_gcal (void *parameter) {
 				gcal_event_set_content (event, (char*) item->desc);
 				gcal_date = gcal_julian_to_date (item->due_date_julian,
 								item->due_time);
-				g_print ("Formated due date: %s\n", gcal_date);
+				g_print ("Date: %s\n", gcal_date);
+				/* Google will reject events with no date so no point
+				   in wasting time waiting for a failed response
+				   */
 				if (gcal_date != NULL) {
 					gcal_event_set_start (event, gcal_date);
 					gcal_event_set_end (event, gcal_date);
-				}
-				free (gcal_date);
-				/*g_print ("Event address: %d\n", (int)event);*/
-				/*event->title = malloc (sizeof (char) *
-								(strlen(item->summary) + 1));
-				if (event->title == NULL) {
-						g_print ("Failed to allocate memory\n");
-						continue;
-				}
-				else {
-					g_print ("%s\n", event->title);
-				}*/
-				//gcal_event_set_title (event, item->summary);
-				//gcal_event_set_content (event, item->desc);
-				/*g_print ("Entry fields:\n");*/
-				/*temp = malloc (sizeof (char) * 33);
-				g_sprintf (temp, "%d", item->id);
-				gcal_event_set_id (event, temp);
-				free (temp);*/
-				/*g_print ("Entry ID: %s\n", gcal_event_get_id
-				 * (event));*/
-			    
-				/*gcal_event_set_title (event, item->summary);*/
-				/*g_print ("Entry title: \%s\n", gcal_event_get_title
-								(event));*/
-
-				//g_print("Store xml: %c\n", (char)event->store_xml);
-				
-				/*g_print ("Event fields:\n");
-				gcal_event_set_content (event, item->desc);
-				g_print ("Entry content: \%s\n",
-								gcal_event_get_content
-								(event));*/
-				result = gcal_add_event (gcal, event);
-				if (result == 0) {
-					g_print ("Event added\n");
+					/* Search similar event and ignore it */
+					if (gcal_event_search_match (event, events)) {
+						result = gcal_add_event (gcal, event);
+							if (result == 0) {
+								g_print ("Event \"%s\" added\n", (char *)
+												item->summary);
+							}
+							else {		
+								g_print ("Event \"%s\" rejected by Google\n", (char *)
+												item->summary);
+							}
+					}
+					else {
+						g_print ("Event %s already synched\n", (char *)
+										item->summary);
+					}
+					free (gcal_date);
 				}
 				else {
-					g_print ("Failed to add event to Google\n");
+					g_print ("This event lacks a due date and is not sent");
 				}
-				g_print ("Result: %d\n\n", result);
 				gcal_destroy_entry (event);
 				tsk_item_free (item);
 			}
 	}
+	gcal_cleanup_events (events);
 	gcal_delete (gcal);
 }
 

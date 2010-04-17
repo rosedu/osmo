@@ -23,6 +23,25 @@
 #define _TASKS_EXPORT_GCAL_H
 #include <gcalendar.h>
 
+/**
+  * @brief Generates a date compatible with the RFC 3339 standard
+  * 
+  * I wrote this function to generate a date compatible with
+  * the Google Calendar format (RFC 3339).
+  * @param julian_day This is the amount of days since the birth of
+  * Christ :)
+  * @param time This is the number of seconds elapsed from 00:00 that
+  * day
+  * @return Pointer to a string representing the formated date
+  * @author Vlad Bagrin
+  * @todo Think of a way to set the UTC time and the DST values. This is
+  * tricky because in some cases Linux will not take DST into account,
+  * causing problems with the Google synchronization. In this current
+  * state the time sent will have the UTC and DST values of the Google 
+  * Calendar.
+  */
+gchar* gcal_julian_to_date (guint32 julian_day, gint time);
+
 void    *tasks_export_gcal     (void *parameter);
 
 

@@ -435,11 +435,10 @@ void
 tasks_export_to_google (GtkWidget *widget, gpointer data) {
 	pthread_t thread;
 	int result;
-	g_print("Exporting...\n");
 	void *appGUI = (void *)data;
 	result = pthread_create (&thread, NULL, tasks_export_gcal, appGUI);
 	if (result != 0) {
-		g_print ("Thread failed to create\n");
+		g_print ("tasks_export_to_google(): Thread failed to create\n");
 	}
 }
 #endif /* HAVE_LIBGCAL */
