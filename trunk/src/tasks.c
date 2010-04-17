@@ -36,6 +36,7 @@
 #include "tasks_utils.h"
 #include "utils.h"
 #include "utils_gui.h"
+#include <pthread.h>
 
 #ifdef TASKS_ENABLED
 
@@ -432,9 +433,14 @@ tasks_export_visible_items_cb (GtkWidget *widget, gpointer data) {
 #ifdef HAVE_LIBGCAL
 void
 tasks_export_to_google (GtkWidget *widget, gpointer data) {
+	pthread_t thread;
+	int result;
 	g_print("Exporting...\n");
-	GUI *appGUI = (GUI *)data;
-	tasks_export_gcal (appGUI);
+	void *appGUI = (void *)data;
+	result = pthread_create (&thread, NULL, tasks_export_gcal, appGUI);
+	if (result != 0) {
+		g_print ("Thread failed to create\n");
+	}
 }
 #endif /* HAVE_LIBGCAL */
 

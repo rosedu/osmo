@@ -138,7 +138,8 @@ gchar* gcal_julian_to_date (guint32 julian_day, gint time) {
 
 /*------------------------------------------------------------------------------*/
 
-void tasks_export_gcal (GUI *appGUI) {
+void *tasks_export_gcal (void *parameter) {
+	GUI *appGUI = (GUI *) parameter;
 	gcal_t gcal;
 	gcal_event_t event;
 	int result, i;

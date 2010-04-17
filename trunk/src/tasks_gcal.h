@@ -23,7 +23,7 @@
 #define _TASKS_EXPORT_GCAL_H
 #include <gcalendar.h>
 
-void    tasks_export_gcal     (GUI *appGUI);
+void    *tasks_export_gcal     (void *parameter);
 
 
 #endif /* _TASKS_EXPORT_GCAL_H */
