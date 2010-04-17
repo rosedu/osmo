@@ -134,29 +134,33 @@ gchar* gcal_julian_to_date (guint32 julian_day, gint time) {
 /*------------------------------------------------------------------------------*/
 /**
   *@brief Compare 2 events
+  *
   *@param a First event to compare
   *@param b Second event to compare
   *@return 0 if the events match certain relevant fields
+  *
+  *@author Vlad Bagrin <artee_md@yahoo.com>
   */
 
 int gcal_events_compare (gcal_event_t a, gcal_event_t b) {
+	gchar *temp;
 	/* Compare the titles */
-	if (strcmp (gcal_event_get_title (a), gcal_event_get_title (b)) !=
+	if (g_strcmp0 (gcal_event_get_title (a), gcal_event_get_title (b)) !=
 					0) {
 		return 1;
 	}
 	/* Compare the content */
-	if (strcmp (gcal_event_get_content (a), gcal_event_get_content (b)) !=
+	if (g_strcmp0 (gcal_event_get_content (a), gcal_event_get_content (b)) !=
 					0) {
 		return 1;
 	}
-	/* Compare the start date */
-	if (strcmp (gcal_event_get_start (a), gcal_event_get_start (b)) !=
+	/* Compare the start date. First 19 chars for date and time. */
+	if (strncmp (gcal_event_get_start (a), gcal_event_get_start (b), 19) !=
 					0) {
 		return 1;
 	}
 	/* Compare the end date */
-	if (strcmp (gcal_event_get_end (a), gcal_event_get_end (b)) !=
+	if (strncmp (gcal_event_get_end (a), gcal_event_get_end (b), 19) !=
 					0) {
 		return 1;
 	}
@@ -166,14 +170,17 @@ int gcal_events_compare (gcal_event_t a, gcal_event_t b) {
 /*------------------------------------------------------------------------------*/
 /**
   *@brief Compare event to all the events returned by Google
+  *
   *@param event Event to compare
   *@param events List of events from Google
   *@return 0 if found  a match
   *@todo Better search mechanism (binary maybe)
+  *
+  *@author Vlad Bagrin <artee_md@yahoo.com>
   */
 
 int gcal_event_search_match (gcal_event_t event, struct gcal_event_array *events) {
-	size_t i;
+	int i;
 	/* TODO: Find a better way to deal with the NULL pointer */
 	if (events == NULL) {
 		return 1;
@@ -188,6 +195,19 @@ int gcal_event_search_match (gcal_event_t event, struct gcal_event_array *events
 }
 
 /*------------------------------------------------------------------------------*/
+/**
+  *@brief Main function that sends the events
+  *
+  *The function sends all the visible items in the tasks list from Osmo
+  *and sends them in the form of events, one by one, if possible. It also
+  *checks to see if the event was previously added or an event with
+  *similar functionality exists already (why have 2 events at the exact
+  *same time with the same name and description?)
+  *
+  *@param parameter A void pointer that is in fact appGUI
+  *
+  *@author Vlad Bagrin <artee_md@yahoo.com>
+  */
 
 void *tasks_export_gcal (void *parameter) {
 	GUI *appGUI = (GUI *) parameter;
@@ -204,12 +224,12 @@ void *tasks_export_gcal (void *parameter) {
 	gcal = gcal_new (GCALENDAR);
 	if (gcal == NULL) {
 		g_print ("Failed to initialize gcal\n");
-		return;
+		exit(1);
 	}
 	result = gcal_get_authentication (gcal, username, password);
 	if (result != 0) {
 		g_print ("Failed to authenticate\n");
-		return;
+		goto cleanup;
 	}
 	
 	/* Load all the events from Google
@@ -247,7 +267,13 @@ void *tasks_export_gcal (void *parameter) {
 						continue;
 				}
 				gcal_event_set_title (event, (char*) item->summary);
-				gcal_event_set_content (event, (char*) item->desc);
+				if (item->desc == NULL) {
+					g_print ("item->desc == NULL\n");
+					gcal_event_set_content (event, "");
+				}
+				else {
+					gcal_event_set_content (event, (char*) item->desc);
+				}
 				gcal_date = gcal_julian_to_date (item->due_date_julian,
 								item->due_time);
 				g_print ("Date: %s\n", gcal_date);
@@ -270,19 +296,20 @@ void *tasks_export_gcal (void *parameter) {
 							}
 					}
 					else {
-						g_print ("Event %s already synched\n", (char *)
+						g_print ("Event \"%s\" already synched\n", (char *)
 										item->summary);
 					}
 					free (gcal_date);
 				}
 				else {
-					g_print ("This event lacks a due date and is not sent");
+					g_print ("This event lacks a due date and will not be sent\n");
 				}
 				gcal_destroy_entry (event);
 				tsk_item_free (item);
 			}
 	}
 	gcal_cleanup_events (events);
+cleanup:
 	gcal_delete (gcal);
 }
 
