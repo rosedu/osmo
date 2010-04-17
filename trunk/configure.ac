@@ -83,11 +83,11 @@ if test "x$lib" = "xyes"; then
 fi
 
 # Checks for libical
-PKG_CHECK_MODULES(LIBICAL, libical >= 0.33, have_libical=false,
+PKG_CHECK_MODULES(LIBICAL, libical >= 0.33, have_libical=true,
 	have_libical=false)
 if test "x$have_libical" = "xtrue"; then
 	AC_DEFINE([HAVE_LIBICAL], [1], [Definded to 1 if compile with libical support])
-	libical="no"
+	libical="yes"
 else
 	libical="no"
 fi
