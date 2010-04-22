@@ -30,53 +30,6 @@
 
 /*------------------------------------------------------------------------------*/
 
-char *read_raw_xml_file(char *filename) {
-	FILE *f;
-	char *ret, *temp, *test;
-	ret = malloc (sizeof (char) * 2000);
-	temp = malloc (sizeof (char) * 2000);
-	if (ret == NULL) {
-			g_print("ret not created\n");
-			return NULL;
-	}
-	else
-			strcpy(ret, "");
-	if (temp == NULL)
-			return NULL;
-	f = fopen (filename, "r");
-	if (f != NULL) {
-		g_print ("File %s found\n", filename);
-		do {
-			test = fgets (temp, 100, f);
-			if (test != NULL) {
-				strcat (ret, temp);
-			}
-		} while (!feof (f));
-		fclose (f);
-	}
-	else {
-			g_print("File %s not found\n", filename);
-			free (temp);
-			return NULL;
-	}
-	free (temp);
-	return ret;
-}
-
-/*------------------------------------------------------------------------------*/
-
-void temporary_test () {
-	FILE *f;
-	f = fopen ("test_file", "w");
-	if (f != NULL) {
-		g_print ("Test file written\n");
-		fputs ("If you can read this then you found me", f);
-		fclose (f);
-	}
-}
-
-/*------------------------------------------------------------------------------*/
-
 gchar* gcal_julian_to_date (guint32 julian_day, gint time) {
 	GDate *date;
 	GDateYear year;
@@ -244,16 +197,6 @@ void *tasks_export_gcal (void *parameter) {
 
 	i = 0;
 
-	if (appGUI) {
-		g_print ("%d\n", appGUI);
-	}	
-	if (appGUI->tsk) {
-		g_print ("%d\n", appGUI->tsk);
-	}
-	if (appGUI->tsk->tasks_list_store) {
-		g_print ("%d\nAll was well\n", appGUI->tsk->tasks_list_store);
-	}
-
 	while (gtk_tree_model_iter_nth_child (GTK_TREE_MODEL
 							(appGUI->tsk->tasks_list_store), &iter,
 							NULL, i++)) {
@@ -317,4 +260,133 @@ cleanup:
 
 /*------------------------------------------------------------------------------*/
 
+guint32 date_to_julian (char *date) {
+	int year, month, day;
+
+	/* In case Google returns only iCal recurrent code */	
+	if (*date == '\0') {
+		g_print ("Recurrent events not supported yet\n");
+		return 0;
+	}
+
+	year = atoi (strndup (date, 4));
+	date = date + 5;
+	month = atoi (strndup (date, 2));
+	date = date + 3;
+	day = atoi (strndup (date, 2));
+
+	return g_date_get_julian ( g_date_new_dmy (day, month, year));
+}
+
+/*------------------------------------------------------------------------------*/
+/**
+  *@brief Extract due time
+  *A very risky function here, I'm not sure about it. Seems fine atm.
+  *@param date String from Google
+  *@return Number of seconds from 00:00
+  */
+
+gint date_to_time (char *date) {
+	int hours = 0, minutes = 0, seconds = 0;
+	/* In case Google returns only iCal recurrent code */	
+	if (*date == '\0') {
+		return -1;
+	}
+	date = date + strlen ("2010-01-15T");
+	if (*date == '\0') {
+		return -1;
+	}
+	hours = atoi (strndup (date, 2));
+	date = date + 3;
+	minutes = atoi (strndup (date, 2));
+	date = date + 3;
+	seconds = atoi (strndup (date, 2));
+
+	return seconds * 3600 + minutes * 60 + hours;
+}
+
+/*------------------------------------------------------------------------------*/
+
+int add_event_to_list (gcal_event_t event, GUI *appGUI) {
+	TASK_ITEM *item;
+
+	item = g_new0 (TASK_ITEM, 1);
+	if (item == NULL) {
+		g_print ("add_event_to_list(): No memory for item\n");
+		return 1;
+	}
+	/* item initialization */
+	/* ID changes here */
+	item->id = appGUI->tsk->next_id++;
+	item->done = FALSE;
+	item->active = TRUE;
+	item->offline_ignore = FALSE;
+	item->repeat = FALSE;
+	item->repeat_day = 127;
+	item->repeat_day_interval = 0;
+	item->repeat_start_day = 0;
+	item->repeat_month_interval = 0;
+	item->repeat_time_start = 0;
+	item->repeat_time_end = 0;
+	item->repeat_time_interval = 0;
+	item->repeat_counter = 0;
+	item->alarm_command = NULL;
+	item->warning_days = 0;
+	item->warning_time = 0;
+	item->postpone_time = 0;
+	/* Due date changes */
+	item->due_date_julian = date_to_julian (gcal_event_get_start (event));
+	/* Due time changes */
+	item->due_time = date_to_time (gcal_event_get_start (event));
+	item->start_date_julian = 0;
+	item->done_date_julian = 0;
+	item->priority = NULL;
+	item->category = NULL;
+	/* Summary changes */
+	item->summary = gcal_event_get_title (event);
+	/* Description changes */
+	item->desc = gcal_event_get_content (event);
+	item->sound_enable = TRUE;
+	
+	add_item_to_list (item, appGUI);
+	g_print ("Event \"%s\" added\n--------------------------------\n", item->summary);
+	tsk_item_free (item);
+}
+
+/*------------------------------------------------------------------------------*/
+
+void tasks_import_gcal (GUI *appGUI) {
+	gcal_t gcal;
+	int i;
+	struct gcal_event_array events;
+	gchar username[] = {"osmosync1@gmail.com"},
+		  password[] = {"osmopass"};
+
+	/* Initialize gcal structure */
+	gcal = gcal_new (GCALENDAR);
+	if (gcal == NULL) {
+		g_print ("Failed to initialize gcal\n");
+		return;
+	}
+	/* Connect */
+	if (gcal_get_authentication (gcal, username, password) != 0) {
+		g_print ("Failed to authenticate\n");
+		gcal_delete (gcal);
+		return;
+	}
+	/* Load the events */
+	if (gcal_get_events (gcal, &events) != 0) {
+		g_print ("tasks_import_gcal(): Failed to load the events from Google\n");
+		return;
+	}
+	else {
+		g_print ("Loaded the events list from Google\n");
+	}
+	/* Add the events to the visible list */
+	for (i = 0; i < events.length; i++) {
+		add_event_to_list(gcal_event_element (&events, i), appGUI);
+	}
+}
+
+/*------------------------------------------------------------------------------*/
 #endif

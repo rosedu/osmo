@@ -44,7 +44,7 @@ typedef struct {
 	GtkWidget *usrEntry, *pasEntry, *remember;
 } exportData;
 
-static void export_clicked( GtkWidget *widget, exportData *data)
+static void export_clicked( GtkWidget *widget, GUI *appGUIlol)
 {
 	/*
 	gchar *usr_entry_text,*pas_entry_text;
@@ -64,16 +64,18 @@ static void export_clicked( GtkWidget *widget, exportData *data)
 	//tasks_export_gcal((void *)data->appGUI);
 	pthread_t thread;
 	int result;
-	void *appGUI = (void *)data->appGUI;
+	//void *appGUI = (void *)data->appGUI;
+	void *appGUI = (void *)appGUIlol;	
 	result = pthread_create (&thread, NULL, tasks_export_gcal, appGUI);
 	if (result != 0) {
 		g_print ("tasks_export_to_google(): Thread failed to create\n");
 	}	
 }
 
-static void import_clicked( GtkWidget *widget, exportData *data)
+static void import_clicked( GtkWidget *widget, GUI *appGUI)
 {
 	g_print ("Importing...\n");
+	tasks_import_gcal (appGUI);
 }
 
 void login_gcal_window(GUI *appGUI){
@@ -117,13 +119,13 @@ void login_gcal_window(GUI *appGUI){
 	gtk_fixed_put(GTK_FIXED(fixed), importBtn, 180, 110);
 	gtk_widget_set_size_request(importBtn, 80, 25);
 	
-	data->appGUI=appGUI;
+	/*data->appGUI=appGUI;
 	data->usrEntry=usrEntry;
 	data->pasEntry=pasEntry;
-	data->remember=check;	
+	data->remember=check;	*/
         
-	g_signal_connect (G_OBJECT (exportBtn), "clicked",G_CALLBACK(export_clicked), data);
-    g_signal_connect (G_OBJECT (importBtn), "clicked",G_CALLBACK(import_clicked), data);
+	g_signal_connect (G_OBJECT (exportBtn), "clicked",G_CALLBACK(export_clicked), appGUI);
+  	g_signal_connect (G_OBJECT (importBtn), "clicked",G_CALLBACK(import_clicked), appGUI);
     
 	gtk_widget_show_all(window);
 }
