@@ -302,7 +302,7 @@ gint date_to_time (char *date) {
 	date = date + 3;
 	seconds = atoi (strndup (date, 2));
 
-	return seconds * 3600 + minutes * 60 + hours;
+	return hours * 3600 + minutes * 60 + seconds;
 }
 
 /*------------------------------------------------------------------------------*/
