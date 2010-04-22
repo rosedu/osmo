@@ -1611,7 +1611,7 @@ gui_create_window (GUI *appGUI)
 
     gtk_notebook_set_current_page(GTK_NOTEBOOK(appGUI->notebook), appGUI->current_tab);
 
-    return TRUE;
+	return TRUE;
 }
 
 /*------------------------------------------------------------------------------*/

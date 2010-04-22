@@ -143,7 +143,6 @@ gchar* gcal_julian_to_date (guint32 julian_day, gint time) {
   */
 
 int gcal_events_compare (gcal_event_t a, gcal_event_t b) {
-	gchar *temp;
 	/* Compare the titles */
 	if (g_strcmp0 (gcal_event_get_title (a), gcal_event_get_title (b)) !=
 					0) {
@@ -213,7 +212,7 @@ void *tasks_export_gcal (void *parameter) {
 	GUI *appGUI = (GUI *) parameter;
 	gcal_t gcal;
 	gcal_event_t event;
-	struct gcal_event_array *events;
+	struct gcal_event_array events;
 	int result, i;
 	GtkTreeIter iter;
 	TASK_ITEM *item;
@@ -235,14 +234,7 @@ void *tasks_export_gcal (void *parameter) {
 	/* Load all the events from Google
 	   to avoid redundancy
 	   */
-	events = malloc (sizeof (struct gcal_event_array));
-	if (events == NULL) {
-		g_print ("tasks_export_gcal(): Failed to allocate memory for events\n");
-		result = 1;
-	}
-	else {
-		result = gcal_get_events (gcal, events);
-	}
+	result = gcal_get_events (gcal, &events);
 	if (result != 0) {
 		g_print ("tasks_export_gcal(): Failed to load the events from Google\n");
 	}
@@ -252,12 +244,22 @@ void *tasks_export_gcal (void *parameter) {
 
 	i = 0;
 
+	if (appGUI) {
+		g_print ("%d\n", appGUI);
+	}	
+	if (appGUI->tsk) {
+		g_print ("%d\n", appGUI->tsk);
+	}
+	if (appGUI->tsk->tasks_list_store) {
+		g_print ("%d\nAll was well\n", appGUI->tsk->tasks_list_store);
+	}
+
 	while (gtk_tree_model_iter_nth_child (GTK_TREE_MODEL
 							(appGUI->tsk->tasks_list_store), &iter,
 							NULL, i++)) {
 			item = tsk_get_item (&iter, appGUI);
 			if (item != NULL) {
-				g_print ("Got item number %d\n\"%s\"\n", i, (char *)
+				g_print ("------------------\nGot item number %d\n\"%s\"\n", i, (char *)
 								item->summary);
 				/* Create empty event and fill it up */
 				event = gcal_event_new (NULL);
@@ -284,7 +286,7 @@ void *tasks_export_gcal (void *parameter) {
 					gcal_event_set_start (event, gcal_date);
 					gcal_event_set_end (event, gcal_date);
 					/* Search similar event and ignore it */
-					if (gcal_event_search_match (event, events)) {
+					if (gcal_event_search_match (event, &events)) {
 						result = gcal_add_event (gcal, event);
 							if (result == 0) {
 								g_print ("Event \"%s\" added\n", (char *)
@@ -308,7 +310,7 @@ void *tasks_export_gcal (void *parameter) {
 				tsk_item_free (item);
 			}
 	}
-	gcal_cleanup_events (events);
+	gcal_cleanup_events (&events);
 cleanup:
 	gcal_delete (gcal);
 }

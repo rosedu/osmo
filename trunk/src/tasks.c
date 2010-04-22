@@ -39,7 +39,94 @@
 #include <pthread.h>
 
 #ifdef TASKS_ENABLED
+typedef struct {
+	GUI *appGUI;
+	GtkWidget *usrEntry, *pasEntry, *remember;
+} exportData;
 
+static void export_clicked( GtkWidget *widget, exportData *data)
+{
+	/*
+	gchar *usr_entry_text,*pas_entry_text;
+	usr_entry_text = gtk_entry_get_text(GTK_ENTRY(data->usrEntry));
+	g_print(usr_entry_text);
+	
+	pas_entry_text = gtk_entry_get_text(GTK_ENTRY(data->pasEntry));
+	
+	g_print(pas_entry_text);
+
+	int toRemember=gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON(data->remember));
+	
+	*/	
+	g_print("Exporting...\n");
+
+
+	//tasks_export_gcal((void *)data->appGUI);
+	pthread_t thread;
+	int result;
+	void *appGUI = (void *)data->appGUI;
+	result = pthread_create (&thread, NULL, tasks_export_gcal, appGUI);
+	if (result != 0) {
+		g_print ("tasks_export_to_google(): Thread failed to create\n");
+	}	
+}
+
+static void import_clicked( GtkWidget *widget, exportData *data)
+{
+	g_print ("Importing...\n");
+}
+
+void login_gcal_window(GUI *appGUI){
+	GtkWidget *window,*exportBtn,*importBtn,*fixed,*usrlabel,*paslabel,*usrEntry,*pasEntry,*check;
+	exportData *data;
+	data = (exportData*)malloc(sizeof(data));
+	
+	window = utl_gui_create_window (_(" Login "), 310, 300, appGUI);
+	
+	gtk_container_set_border_width (GTK_CONTAINER (window), 10);
+	gtk_window_set_resizable (GTK_WINDOW (window), FALSE);
+
+	fixed = gtk_fixed_new();
+  	gtk_container_add(GTK_CONTAINER(window), fixed);
+
+
+	usrlabel = gtk_label_new("Username : ");
+	gtk_fixed_put(GTK_FIXED(fixed), usrlabel, 10, 30); 
+
+	usrEntry = gtk_entry_new_with_max_length (50);
+	gtk_fixed_put(GTK_FIXED(fixed), usrEntry, 90, 30); 
+	
+
+	paslabel = gtk_label_new("Password : ");
+	gtk_fixed_put(GTK_FIXED(fixed), paslabel, 10, 58);
+	
+	pasEntry = gtk_entry_new_with_max_length (50);
+	gtk_fixed_put(GTK_FIXED(fixed), pasEntry, 90, 55); 
+	gtk_entry_set_visibility(GTK_ENTRY(pasEntry), FALSE);  
+
+	check = gtk_check_button_new_with_label(" Remember username and password");
+	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(check), FALSE);
+	gtk_fixed_put(GTK_FIXED(fixed), check, 10, 85);
+
+
+	exportBtn = gtk_button_new_with_label("Export");
+	gtk_fixed_put(GTK_FIXED(fixed), exportBtn, 100, 110);
+	gtk_widget_set_size_request(exportBtn, 80, 25);
+
+	importBtn = gtk_button_new_with_label("Import");
+	gtk_fixed_put(GTK_FIXED(fixed), importBtn, 180, 110);
+	gtk_widget_set_size_request(importBtn, 80, 25);
+	
+	data->appGUI=appGUI;
+	data->usrEntry=usrEntry;
+	data->pasEntry=pasEntry;
+	data->remember=check;	
+        
+	g_signal_connect (G_OBJECT (exportBtn), "clicked",G_CALLBACK(export_clicked), data);
+    g_signal_connect (G_OBJECT (importBtn), "clicked",G_CALLBACK(import_clicked), data);
+    
+	gtk_widget_show_all(window);
+}
 /*============================================================================*/
 
 static void
@@ -423,7 +510,7 @@ tasks_change_due_date_to_next_date_cb (GtkWidget *widget, gpointer data) {
 void
 tasks_export_visible_items_cb (GtkWidget *widget, gpointer data) {
 
-    GUI *appGUI = (GUI *)data;
+	GUI *appGUI = (GUI *)data;
 	export_tasks_to_file (appGUI);
 }
 #endif /* HAVE_LIBICAL */
@@ -433,13 +520,9 @@ tasks_export_visible_items_cb (GtkWidget *widget, gpointer data) {
 #ifdef HAVE_LIBGCAL
 void
 tasks_export_to_google (GtkWidget *widget, gpointer data) {
-	pthread_t thread;
-	int result;
-	void *appGUI = (void *)data;
-	result = pthread_create (&thread, NULL, tasks_export_gcal, appGUI);
-	if (result != 0) {
-		g_print ("tasks_export_to_google(): Thread failed to create\n");
-	}
+	
+	GUI *appGUI = (GUI *)data;
+	login_gcal_window (appGUI);	
 }
 #endif /* HAVE_LIBGCAL */
 
