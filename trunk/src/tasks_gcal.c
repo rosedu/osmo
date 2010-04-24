@@ -213,7 +213,6 @@ void *tasks_export_gcal (void *parameter) {
 				}
 				gcal_event_set_title (event, (char*) item->summary);
 				if (item->desc == NULL) {
-					g_print ("item->desc == NULL\n");
 					gcal_event_set_content (event, "");
 				}
 				else {
@@ -307,17 +306,76 @@ gint date_to_time (char *date) {
 
 /*------------------------------------------------------------------------------*/
 
+int items_compare (TASK_ITEM *item_a, TASK_ITEM *item_b) {
+	/* Compare due dates */
+	if (item_a->due_date_julian != item_b->due_date_julian) {
+		return 1;
+	}
+	/* Compare due times */
+	if (item_a->due_time != item_b->due_time) {
+		return 1;
+	}
+	/* Compare summaries */
+	if (g_strcmp0 (item_a->summary, item_b->summary) != 0) {
+		return 1;
+	}
+	/* Compare descriptions */
+	if (g_strcmp0 (item_a->desc, item_b->desc) != 0) {
+		return 1;
+	}
+	/* If all fields were equal, return 0 */
+	return 0;
+}
+
+/*------------------------------------------------------------------------------*/
+/**
+  *@brief Checks if a similar item is already listed
+  *@param item_a Item to check
+  *@param appGUI Need this to poke through data
+  *@return 0 if found, 1 otherwise
+  */
+
+int search_item_in_list (TASK_ITEM *item_a, GUI *appGUI) {
+	int i;
+	GtkTreeIter iter;
+	TASK_ITEM *item_b;
+
+	i = 0;
+	/* TODO: Better search algorithm */
+	while (gtk_tree_model_iter_nth_child (GTK_TREE_MODEL
+							(appGUI->tsk->tasks_list_store), &iter,
+							NULL, i++)) {
+		/* Create TASK_ITEM structure with info */
+		item_b = tsk_get_item (&iter, appGUI);
+		if (item_b == NULL) {
+			g_print ("search_item_in_list(): memory allocation error\n");
+			continue;		
+		}
+		/* Compare the two items */
+		if (items_compare (item_a, item_b) == 0) {
+			tsk_item_free (item_b);
+			return 0;
+		}
+		/* Don't forget to clean the mess */
+		tsk_item_free (item_b);
+	}
+	return 1;
+}
+
+/*------------------------------------------------------------------------------*/
+
 int add_event_to_list (gcal_event_t event, GUI *appGUI) {
 	TASK_ITEM *item;
-
+	
+	/* Terminal delimiter */
+	g_print ("--------------------------------\n");
+	/* Memory for empty item */
 	item = g_new0 (TASK_ITEM, 1);
 	if (item == NULL) {
 		g_print ("add_event_to_list(): No memory for item\n");
 		return 1;
 	}
 	/* item initialization */
-	/* ID changes here */
-	item->id = appGUI->tsk->next_id++;
 	item->done = FALSE;
 	item->active = TRUE;
 	item->offline_ignore = FALSE;
@@ -344,12 +402,28 @@ int add_event_to_list (gcal_event_t event, GUI *appGUI) {
 	item->category = NULL;
 	/* Summary changes */
 	item->summary = gcal_event_get_title (event);
+	/* Needed for compatibility with empty strings in Osmo */	
+	if (g_strcmp0 (item->summary, "") == 0) {
+		item->summary = NULL;
+	}
 	/* Description changes */
 	item->desc = gcal_event_get_content (event);
+	/* Needed for compatibility with empty strings in Osmo */	
+	if (g_strcmp0 (item->desc, "") == 0) {
+		item->desc = NULL;
+	}
 	item->sound_enable = TRUE;
 	
-	add_item_to_list (item, appGUI);
-	g_print ("Event \"%s\" added\n--------------------------------\n", item->summary);
+	if (search_item_in_list (item, appGUI) != 0) {
+		/* ID changes here */
+		item->id = appGUI->tsk->next_id++;
+		/* Item is put in the list */
+		add_item_to_list (item, appGUI);
+		g_print ("Event \"%s\" added\n", item->summary);
+	}
+	else {
+		g_print ("Event \"%s\" already synched\n", item->summary);
+	}
 	tsk_item_free (item);
 }
 
@@ -386,6 +460,8 @@ void tasks_import_gcal (GUI *appGUI) {
 	for (i = 0; i < events.length; i++) {
 		add_event_to_list(gcal_event_element (&events, i), appGUI);
 	}
+	/* Cleanup */
+	gcal_delete (gcal);
 }
 
 /*------------------------------------------------------------------------------*/
