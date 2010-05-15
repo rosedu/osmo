@@ -22,7 +22,7 @@
 #ifndef _TASKS_EXPORT_GCAL_H
 #define _TASKS_EXPORT_GCAL_H
 #include <gcalendar.h>
-
+#include "tasks.h"
 /**
   * @brief Generates a date compatible with the RFC 3339 standard
   * 
@@ -42,7 +42,7 @@
   */
 gchar* gcal_julian_to_date (guint32 julian_day, gint time);
 
-void    *tasks_export_gcal     (void *parameter);
+void    *tasks_export_gcal     (exportData *data);
 
 
 #endif /* _TASKS_EXPORT_GCAL_H */

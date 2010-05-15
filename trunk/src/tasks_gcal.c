@@ -161,24 +161,31 @@ int gcal_event_search_match (gcal_event_t event, struct gcal_event_array *events
   *@author Vlad Bagrin <artee_md@yahoo.com>
   */
 
-void *tasks_export_gcal (void *parameter) {
-	GUI *appGUI = (GUI *) parameter;
+void *tasks_export_gcal (exportData *data) {
+	GUI *appGUI = data->appGUI;
 	gcal_t gcal;
 	gcal_event_t event;
 	struct gcal_event_array events;
 	int result, i;
 	GtkTreeIter iter;
 	TASK_ITEM *item;
-	gchar username[] = {"osmosync1@gmail.com"},
-		  password[] = {"osmopass"},
-		  *gcal_date;
+	//gchar username[] = {"osmosync1@gmail.com"},
+	//	  password[] = {"osmopass"};
+
+	gchar *usr_entry_text,*pas_entry_text;
+	usr_entry_text = gtk_entry_get_text(GTK_ENTRY(data->usrEntry));
+	
+	pas_entry_text = gtk_entry_get_text(GTK_ENTRY(data->pasEntry));
+	
+
+	gchar	  *gcal_date;
 	
 	gcal = gcal_new (GCALENDAR);
 	if (gcal == NULL) {
 		g_print ("Failed to initialize gcal\n");
 		exit(1);
 	}
-	result = gcal_get_authentication (gcal, username, password);
+	result = gcal_get_authentication (gcal, usr_entry_text, pas_entry_text);
 	if (result != 0) {
 		g_print ("Failed to authenticate\n");
 		goto cleanup;
@@ -429,12 +436,21 @@ int add_event_to_list (gcal_event_t event, GUI *appGUI) {
 
 /*------------------------------------------------------------------------------*/
 
-void tasks_import_gcal (GUI *appGUI) {
+void tasks_import_gcal (exportData *data) {
 	gcal_t gcal;
 	int i;
 	struct gcal_event_array events;
-	gchar username[] = {"osmosync1@gmail.com"},
-		  password[] = {"osmopass"};
+	
+	gchar *usr_entry_text,*pas_entry_text;
+	usr_entry_text = gtk_entry_get_text(GTK_ENTRY(data->usrEntry));
+	
+	pas_entry_text = gtk_entry_get_text(GTK_ENTRY(data->pasEntry));
+	
+	
+
+
+	//gchar username[] = {"osmosync1@gmail.com"},
+	//password[] = {"osmopass"};
 
 	/* Initialize gcal structure */
 	gcal = gcal_new (GCALENDAR);
@@ -443,7 +459,7 @@ void tasks_import_gcal (GUI *appGUI) {
 		return;
 	}
 	/* Connect */
-	if (gcal_get_authentication (gcal, username, password) != 0) {
+	if (gcal_get_authentication (gcal, usr_entry_text, pas_entry_text) != 0) {
 		g_print ("Failed to authenticate\n");
 		gcal_delete (gcal);
 		return;
@@ -458,7 +474,7 @@ void tasks_import_gcal (GUI *appGUI) {
 	}
 	/* Add the events to the visible list */
 	for (i = 0; i < events.length; i++) {
-		add_event_to_list(gcal_event_element (&events, i), appGUI);
+		add_event_to_list(gcal_event_element (&events, i), data->appGUI);
 	}
 	/* Cleanup */
 	gcal_delete (gcal);

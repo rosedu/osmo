@@ -63,6 +63,11 @@ typedef struct {
 	gint postpone_time;
 } TASK_ITEM;
 
+typedef struct {
+	GUI *appGUI;
+	GtkWidget *usrEntry, *pasEntry;//*remember;
+} exportData;
+
 enum {
 	LOW_PRIORITY = 0,
 	MEDIUM_PRIORITY,
